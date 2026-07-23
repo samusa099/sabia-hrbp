@@ -20,8 +20,6 @@ jobs:
           ref: ${{ github.head_ref || 'main' }}
 
       - name: Verify payload chunk integrity
-        id: verify
-        continue-on-error: true
         shell: bash
         run: |
           cat > expected.txt <<'SUMS'
@@ -49,25 +47,7 @@ jobs:
           0867e6c3c0dd643b0c58820ae16de52deba17a3bb56a495cd7744bbe5a21df2e  .seed/seed_022_7.txt
           30d9fd2690a8398b2b23063a670f09740cdc5a3db1be3dc6d24cd48e2365f773  .seed/seed_023_024.txt
           SUMS
-          sha256sum --check expected.txt | tee verify-output.txt
-
-      - name: Report chunk verification
-        if: always() && github.event.pull_request.number
-        env:
-          GH_TOKEN: ${{ github.token }}
-        shell: bash
-        run: |
-          {
-            echo '## Payload chunk verification'
-            echo '```'
-            cat verify-output.txt 2>/dev/null || true
-            echo '```'
-          } > verify-comment.md
-          gh pr comment "${{ github.event.pull_request.number }}" --body-file verify-comment.md
-
-      - name: Stop on invalid chunk
-        if: steps.verify.outcome == 'failure'
-        run: exit 1
+          sha256sum --check expected.txt
 
       - name: Reassemble prepared project archive
         shell: bash
@@ -88,7 +68,6 @@ jobs:
           Path('sabia-project.tar.gz').write_bytes(base64.b64decode(encoded, validate=True))
           PY
           echo '54974f272af47ab663975269477cd66e53e47448d34c62c47699f73b62dd0b9b  sabia-project.tar.gz' | sha256sum --check
-          gzip -t sabia-project.tar.gz
           tar -xzf sabia-project.tar.gz
 
       - name: Install project dependencies
@@ -103,41 +82,16 @@ jobs:
       - name: Validate project
         run: python scripts/validate_project.py
 
-      - name: Create permanent validation workflow
-        shell: bash
-        run: |
-          mkdir -p .github/workflows
-          cat > .github/workflows/validate-project.yml <<'YAML'
-          name: Validate project
-          on:
-            push:
-              branches: [main]
-            pull_request:
-            workflow_dispatch:
-          permissions:
-            contents: read
-          jobs:
-            validate:
-              runs-on: ubuntu-latest
-              steps:
-                - uses: actions/checkout@v4
-                - uses: actions/setup-python@v5
-                  with:
-                    python-version: '3.11'
-                - run: python -m pip install --upgrade pip && python -m pip install -r 07_Python/requirements.txt
-                - run: python 07_Python/clean_and_validate.py
-                - run: python 13_Database_SQL/00_build_database.py
-                - run: python scripts/generate_binary_artifacts.py
-                - run: python scripts/validate_project.py
-          YAML
-
       - name: Commit complete portfolio project to PR branch
         shell: bash
         run: |
-          rm -rf .seed .bootstrap .payload sabia-project.tar.gz expected.txt verify-output.txt verify-comment.md
-          rm -f .publish-trigger .publish-final-trigger .github/workflows/publish-seeded-project.yml
+          set -euxo pipefail
+          rm -rf .seed .bootstrap .payload sabia-project.tar.gz expected.txt
+          rm -f .publish-trigger .publish-final-trigger
           git config user.name 'Musa Portfolio Bot'
           git config user.email 'siam.ahmad.musa574@gmail.com'
+          git status --short
           git add -A
+          git status --short
           git commit -m 'Publish complete Sabia HRBP analytics portfolio project'
           git push origin HEAD:${{ github.head_ref }}
