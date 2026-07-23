@@ -19,17 +19,49 @@ jobs:
           fetch-depth: 0
           ref: ${{ github.head_ref || 'main' }}
 
-      - name: Verify prepared payload
+      - name: Verify payload chunk integrity
+        id: verify
+        continue-on-error: true
         shell: bash
         run: |
-          for file in \
-            seed_000.txt seed_001_002.txt seed_003_004.txt seed_005_006.txt \
-            seed_007_008.txt seed_009_010.txt seed_011.txt seed_012.txt \
-            seed_013.txt seed_014.txt seed_015_016.txt seed_017_018.txt \
-            seed_019_020.txt seed_021.txt seed_022a.txt seed_022b.txt \
-            seed_023_024.txt; do
-            test -s ".seed/$file"
-          done
+          cat > expected.txt <<'SUMS'
+          251b4f0063c0db0c3871460937c0ea1dfe99c1ae9ddbecca35453a66211176e0  .seed/seed_000.txt
+          0e723707db8debbcd907d7ddc8ba61ef09040eb5c4d1c45e3cea1c4e712ed12d  .seed/seed_001_002.txt
+          e7495ec3aed69424eb43f68a558a8526c78f9f34d8fe65fb50157ba2cf657a0c  .seed/seed_003_004.txt
+          d8ddf3760d40f24037f2ce9dd841d91d9e25a5fe4ce39bfac0765e43035f259b  .seed/seed_005_006.txt
+          92426e6f2144af9979b6cf3d6b64a99a21483009fc51c8e24edc7944b8b6b024  .seed/seed_007_008.txt
+          de1eda774fe802cd1905fe8023fd0ec7b5a3d5186a7826f86434154e586a40d4  .seed/seed_009_010.txt
+          e5ca782377e9941b1acf628d0d8aa085787f0211e444a1502a4edf98857713c6  .seed/seed_011.txt
+          e82c00395eea1e1107578708146517db724e2dae870ba2d1e34970057503a28b  .seed/seed_012.txt
+          55d49048e70b1ca4d04cd419ff8d1d9b348eb279ea7ed24a6354c9116ec91246  .seed/seed_013.txt
+          c4d0195c62e7f285d7158694a377c32ea4bc8cf21c79979bd167680895e39f76  .seed/seed_014.txt
+          2affb76333e4392efa09d450b859589f216dd33b88b178d5a600d9b26051af38  .seed/seed_015_016.txt
+          b25272d4247a8e9fad04e629903785742862e625e4c6a0d3007aa2f5ca430853  .seed/seed_017_018.txt
+          692d60bc7d931f4d99ce6b930695bad48d99ce54c9659a4840b65f0575c10cf1  .seed/seed_019_020.txt
+          bd4c310ad2ac0340b2f6adfb9dff88e32f27d31375a2c58db09a4975263233c1  .seed/seed_021.txt
+          83f97367f2797f22ecc9e81c38aba6b99fe97254b7dc56bcb281ad17f54e28ed  .seed/seed_022a.txt
+          d60508c9537c36201564b70c867e013b329306a3a1537832350fda04a5fbb5cf  .seed/seed_022b.txt
+          30d9fd2690a8398b2b23063a670f09740cdc5a3db1be3dc6d24cd48e2365f773  .seed/seed_023_024.txt
+          SUMS
+          sha256sum --check expected.txt | tee verify-output.txt
+
+      - name: Report chunk verification
+        if: always() && github.event.pull_request.number
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          {
+            echo '## Payload chunk verification'
+            echo '```'
+            cat verify-output.txt 2>/dev/null || true
+            echo '```'
+          } > verify-comment.md
+          gh pr comment "${{ github.event.pull_request.number }}" --body-file verify-comment.md
+
+      - name: Stop on invalid chunk
+        if: steps.verify.outcome == 'failure'
+        run: exit 1
 
       - name: Reassemble prepared project archive
         shell: bash
@@ -37,30 +69,14 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           import base64
-
           order = [
-              'seed_000.txt',
-              'seed_001_002.txt',
-              'seed_003_004.txt',
-              'seed_005_006.txt',
-              'seed_007_008.txt',
-              'seed_009_010.txt',
-              'seed_011.txt',
-              'seed_012.txt',
-              'seed_013.txt',
-              'seed_014.txt',
-              'seed_015_016.txt',
-              'seed_017_018.txt',
-              'seed_019_020.txt',
-              'seed_021.txt',
-              'seed_022a.txt',
-              'seed_022b.txt',
-              'seed_023_024.txt',
+              'seed_000.txt','seed_001_002.txt','seed_003_004.txt','seed_005_006.txt',
+              'seed_007_008.txt','seed_009_010.txt','seed_011.txt','seed_012.txt',
+              'seed_013.txt','seed_014.txt','seed_015_016.txt','seed_017_018.txt',
+              'seed_019_020.txt','seed_021.txt','seed_022a.txt','seed_022b.txt','seed_023_024.txt',
           ]
-          seed_dir = Path('.seed')
-          encoded = ''.join((seed_dir / name).read_text(encoding='utf-8').strip() for name in order)
-          archive = base64.b64decode(encoded, validate=True)
-          Path('sabia-project.tar.gz').write_bytes(archive)
+          encoded = ''.join((Path('.seed') / name).read_text(encoding='utf-8').strip() for name in order)
+          Path('sabia-project.tar.gz').write_bytes(base64.b64decode(encoded, validate=True))
           PY
           echo '54974f272af47ab663975269477cd66e53e47448d34c62c47699f73b62dd0b9b  sabia-project.tar.gz' | sha256sum --check
           gzip -t sabia-project.tar.gz
@@ -109,7 +125,7 @@ jobs:
       - name: Commit complete portfolio project to PR branch
         shell: bash
         run: |
-          rm -rf .seed .bootstrap .payload sabia-project.tar.gz
+          rm -rf .seed .bootstrap .payload sabia-project.tar.gz expected.txt verify-output.txt verify-comment.md
           rm -f .publish-trigger .publish-final-trigger .github/workflows/publish-seeded-project.yml
           git config user.name 'Musa Portfolio Bot'
           git config user.email 'siam.ahmad.musa574@gmail.com'
