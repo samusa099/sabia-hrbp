@@ -24,6 +24,8 @@ jobs:
         run: |
           test -d .seed
           test -f .seed/seed_023_024.txt
+          test -f .seed/seed_011.txt
+          test -f .seed/seed_012.txt
 
       - name: Reassemble prepared project archive
         shell: bash
@@ -39,7 +41,8 @@ jobs:
               'seed_005_006.txt',
               'seed_007_008.txt',
               'seed_009_010.txt',
-              'seed_011_012.txt',
+              'seed_011.txt',
+              'seed_012.txt',
               'seed_013_014.txt',
               'seed_015_016.txt',
               'seed_017_018.txt',
