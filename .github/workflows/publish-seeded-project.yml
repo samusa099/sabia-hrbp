@@ -39,8 +39,14 @@ jobs:
           b25272d4247a8e9fad04e629903785742862e625e4c6a0d3007aa2f5ca430853  .seed/seed_017_018.txt
           692d60bc7d931f4d99ce6b930695bad48d99ce54c9659a4840b65f0575c10cf1  .seed/seed_019_020.txt
           bd4c310ad2ac0340b2f6adfb9dff88e32f27d31375a2c58db09a4975263233c1  .seed/seed_021.txt
-          83f97367f2797f22ecc9e81c38aba6b99fe97254b7dc56bcb281ad17f54e28ed  .seed/seed_022a.txt
-          d60508c9537c36201564b70c867e013b329306a3a1537832350fda04a5fbb5cf  .seed/seed_022b.txt
+          d23837c74faef38800cd6e60e28d6529cd3ff4512f661c08432b7c82eecb1a4a  .seed/seed_022_0.txt
+          25ac58bbc2723e243ab8301fd83a521e5ee7c9d142adf19656fc114e1fb6d391  .seed/seed_022_1.txt
+          c7e4e09c9e45372a91fd9cf8064d68ddb35f8fd40f59bcc5a0883207cd8a3575  .seed/seed_022_2.txt
+          c1ee076147ea52b33d261d64bfaff8efa165e0998c26b7b272deddfb47713d60  .seed/seed_022_3.txt
+          b8d195a791fbb880da59ef480de7fe60c6eca4847b66be098488a64323beffab  .seed/seed_022_4.txt
+          13cd143b09a7adb83b8cc98a6b4f83ce6a4773d09b147b9779ca40180d236272  .seed/seed_022_5.txt
+          67f0b18cac039a4a79ed0c4c692f3c3a6a091c28df4c6d2ada8ce93fe26478f0  .seed/seed_022_6.txt
+          0867e6c3c0dd643b0c58820ae16de52deba17a3bb56a495cd7744bbe5a21df2e  .seed/seed_022_7.txt
           30d9fd2690a8398b2b23063a670f09740cdc5a3db1be3dc6d24cd48e2365f773  .seed/seed_023_024.txt
           SUMS
           sha256sum --check expected.txt | tee verify-output.txt
@@ -73,7 +79,10 @@ jobs:
               'seed_000.txt','seed_001_002.txt','seed_003_004.txt','seed_005_006.txt',
               'seed_007_008.txt','seed_009_010.txt','seed_011.txt','seed_012.txt',
               'seed_013.txt','seed_014.txt','seed_015_016.txt','seed_017_018.txt',
-              'seed_019_020.txt','seed_021.txt','seed_022a.txt','seed_022b.txt','seed_023_024.txt',
+              'seed_019_020.txt','seed_021.txt',
+              'seed_022_0.txt','seed_022_1.txt','seed_022_2.txt','seed_022_3.txt',
+              'seed_022_4.txt','seed_022_5.txt','seed_022_6.txt','seed_022_7.txt',
+              'seed_023_024.txt',
           ]
           encoded = ''.join((Path('.seed') / name).read_text(encoding='utf-8').strip() for name in order)
           Path('sabia-project.tar.gz').write_bytes(base64.b64decode(encoded, validate=True))
