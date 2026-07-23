@@ -35,30 +35,32 @@
 </p>
 
 <p align="center">
-  <a href="#portfolio-overview">Executive Overview</a> ·
-  <a href="#project-status">Portfolio at a Glance</a> ·
-  <a href="#q1q4-transformation-journey">Transformation</a> ·
-  <a href="#analytics-capabilities">Analytics Architecture</a> ·
-  <a href="#data-cleaning-and-validation-workflow">Quick Start</a> ·
-  <a href="#ethics-and-limitations">Data Ethics</a>
+  <a href="#-portfolio-overview">Executive Overview</a> ·
+  <a href="#-project-status">Portfolio at a Glance</a> ·
+  <a href="#-q1q4-transformation-journey">Transformation</a> ·
+  <a href="#-analytics-capabilities">Analytics Architecture</a> ·
+  <a href="#-data-cleaning-and-validation-workflow">Quick Start</a> ·
+  <a href="#-ethics-and-limitations">Data Ethics</a>
 </p>
 
 <p align="center"><strong>Business improvement through systems, not system building alone.</strong></p>
 
 ---
 
-## Portfolio overview
+## ✨ Portfolio overview
 
 **Sabia Group HRBP Smartwatch Recovery 2026** is a synthetic HR Business Partner and data analytics portfolio project created by **Musa**.
 
 The project simulates a Bangladesh-based smartwatch manufacturing company facing workforce, quality, productivity and financial challenges. It demonstrates how an HRBP can connect people decisions with operational and financial outcomes using **Excel, Power BI, Python, SQL and SQLite**.
 
+> **Business improvement through systems, not system building alone.**
+
 <table>
 <tr>
-<td width="25%"><b>100</b><br>Starting workforce</td>
-<td width="25%"><b>114</b><br>Year-end active workforce</td>
-<td width="25%"><b>97.1%</b><br>Final first-pass yield</td>
-<td width="25%"><b>2.4%</b><br>Final defect rate</td>
+<td width="25%" align="center"><strong>100</strong><br>Starting workforce</td>
+<td width="25%" align="center"><strong>114</strong><br>Year-end active workforce</td>
+<td width="25%" align="center"><strong>97.1%</strong><br>Final first-pass yield</td>
+<td width="25%" align="center"><strong>2.4%</strong><br>Final defect rate</td>
 </tr>
 </table>
 
@@ -66,17 +68,15 @@ The project simulates a Bangladesh-based smartwatch manufacturing company facing
 
 This is not only a dashboard or data-cleaning exercise. It is a complete business-recovery case showing how HR can contribute to:
 
-- workforce strategy;
-- critical-skill protection;
-- organization redesign;
-- production-quality improvement;
-- productivity recovery;
-- financial stabilization;
-- evidence-based executive decisions.
+| Workforce | Operations | Decisions |
+|---|---|---|
+| workforce strategy | production-quality improvement | evidence-based executive decisions |
+| critical-skill protection | productivity recovery | financial stabilization |
+| organization redesign |  |  |
 
 ---
 
-## Project status
+## 📊 Project status
 
 | Workstream | Status |
 |---|---|
@@ -92,26 +92,38 @@ This is not only a dashboard or data-cleaning exercise. It is a complete busines
 
 ---
 
-## Executive business case
+## 🧭 Executive business case
 
 Sabia Group invested heavily in a **Made-in-Bangladesh smartwatch operation** but moved into production before validating an MVP or prototype.
 
 The simulated business experienced:
 
+<table>
+<tr>
+<td width="50%">
+
 - high defect and rework rates;
 - low first-pass yield;
 - excessive overtime;
 - employee skill gaps;
+
+</td>
+<td width="50%">
+
 - duplicated and mismatched roles;
 - fragmented HR and production data;
 - sustained operating losses;
 - increased risk of a distressed business sale.
 
+</td>
+</tr>
+</table>
+
 A newly appointed **Lead HR Business Partner**, also acting as **Head of HR / Acting CHRO**, was asked to diagnose the business with data and design a responsible recovery path.
 
 ---
 
-## Q1–Q4 transformation journey
+## 🔄 Q1–Q4 transformation journey
 
 | Quarter | Strategic focus | Key actions |
 |---|---|---|
@@ -122,14 +134,30 @@ A newly appointed **Lead HR Business Partner**, also acting as **Head of HR / Ac
 
 ### Simulated outcome
 
+<table>
+<tr>
+<td width="50%">
+
 - workforce moved from a stressed baseline toward a capability-led operating model;
 - quality improved to **97.1% first-pass yield**;
+
+</td>
+<td width="50%">
+
 - defect rate reduced to **2.4%**;
 - the business moved away from critical sale risk toward a profitable operating model.
 
+</td>
+</tr>
+</table>
+
 ---
 
-## Analytics capabilities
+## 🧱 Analytics capabilities
+
+<table>
+<tr>
+<td width="50%">
 
 ### HRBP and workforce strategy
 
@@ -146,6 +174,9 @@ A newly appointed **Lead HR Business Partner**, also acting as **Head of HR / Ac
 - legal, regulatory and ethical considerations;
 - employee exits and knowledge-transfer planning.
 
+</td>
+<td width="50%">
+
 ### Data and business analytics
 
 - Excel formulas, tables, scorecards and dashboards;
@@ -156,6 +187,10 @@ A newly appointed **Lead HR Business Partner**, also acting as **Head of HR / Ac
 - SQLite database practice;
 - production, quality, workforce and financial linkage;
 - Kaggle dataset and notebook publishing.
+
+</td>
+</tr>
+</table>
 
 ### Recommended tools
 
@@ -168,7 +203,7 @@ A newly appointed **Lead HR Business Partner**, also acting as **Head of HR / Ac
 
 ---
 
-## Data-cleaning and validation workflow
+## 🚀 Data-cleaning and validation workflow
 
 The deliberately messy employee data contains realistic quality issues, including inconsistent text values, mixed date formats, missing fields and duplicate employee IDs.
 
@@ -197,7 +232,7 @@ Generated outputs:
 
 ---
 
-## Database and SQL layer
+## 🗄️ Database and SQL layer
 
 The repository includes a ready-to-open SQLite database:
 
@@ -205,7 +240,11 @@ The repository includes a ready-to-open SQLite database:
 13_Database_SQL/Sabia_Group_HRBP_Analytics.sqlite
 ```
 
-It contains:
+<table>
+<tr>
+<td width="50%">
+
+### It contains
 
 - raw staging tables;
 - clean analytical tables;
@@ -214,13 +253,10 @@ It contains:
 - HRBP analytics queries;
 - `vw_bi_` reporting views for BI tools.
 
-Rebuild the database:
+</td>
+<td width="50%">
 
-```bash
-python 13_Database_SQL/00_build_database.py
-```
-
-Recommended use cases:
+### Recommended use cases
 
 - SQL practice;
 - data-quality audits;
@@ -228,9 +264,22 @@ Recommended use cases:
 - Power BI connectivity;
 - HRBP and production-analysis exercises.
 
+</td>
+</tr>
+</table>
+
+Rebuild the database:
+
+```bash
+python 13_Database_SQL/00_build_database.py
+```
+
 ---
 
-## Repository map
+## 🗂️ Repository map
+
+<details open>
+<summary><strong>View project structure</strong></summary>
 
 | Folder | Purpose |
 |---|---|
@@ -247,9 +296,14 @@ Recommended use cases:
 | `13_Database_SQL` | SQLite database, SQL scripts, audits and BI views |
 | `wiki` | GitHub Wiki-compatible documentation |
 
+</details>
+
 ---
 
-## Project Wiki
+## 📚 Project Wiki
+
+<details open>
+<summary><strong>View project documentation</strong></summary>
 
 - [Home](wiki/Home.md)
 - [Project Overview](wiki/Project-Overview.md)
@@ -261,9 +315,11 @@ Recommended use cases:
 - [Kaggle Publishing](wiki/Kaggle-Publishing.md)
 - [Ethics and Limitations](wiki/Ethics-and-Limitations.md)
 
+</details>
+
 ---
 
-## Suggested analysis questions
+## ❓ Suggested analysis questions
 
 1. How did workforce actions affect first-pass yield and defect rates?
 2. Did training and certification support production recovery?
@@ -275,7 +331,7 @@ Recommended use cases:
 
 ---
 
-## Ethics and limitations
+## 🛡️ Ethics and limitations
 
 All people, entities, events, production results and financial values in this repository are **fictional and synthetically generated for practice, education and portfolio demonstration**.
 
@@ -291,7 +347,7 @@ Protected characteristics such as gender, age, religion, disability, pregnancy, 
 
 ---
 
-## Author
+## 👤 Author
 
 <div align="center">
 
@@ -305,7 +361,7 @@ Workforce Strategy · People Analytics · Business Recovery · Excel · Power BI
 
 ---
 
-## Additional documentation
+## 📎 Additional documentation
 
 - [`13_Database_SQL/README_DATABASE_SQL.md`](13_Database_SQL/README_DATABASE_SQL.md)
 - [`08_PowerBI/POWER_BI_AND_OTHER_BI_USAGE_GUIDE.md`](08_PowerBI/POWER_BI_AND_OTHER_BI_USAGE_GUIDE.md)
