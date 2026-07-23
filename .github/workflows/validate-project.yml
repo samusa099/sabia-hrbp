@@ -1,4 +1,4 @@
-name: Validate project
+name: Live
 
 on:
   push:
