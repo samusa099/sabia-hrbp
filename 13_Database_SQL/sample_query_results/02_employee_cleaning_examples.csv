@@ -1,0 +1,29 @@
+﻿Raw_Row_Number,Employee_ID,Raw_Employee_Name,Clean_Employee_Name,Raw_Gender,Clean_Gender,Raw_Department,Clean_Department,Raw_Join_Date,Clean_Join_Date,Raw_Base_Salary,Clean_Base_Salary,Cleaning_Flag_Count
+5,SG-21023011902,Tamim Alam,Tamim Alam,male,Male,Smartwatch Production,Smartwatch Production,2019-01-23,2019-01-23,42000,42000.0,1
+6,SG-21015092303,Rumana Bari,Rumana Bari,Female,Female,Smartwatch Production,Smartwatch Production,2023-09-15,2023-09-15,"BDT 31,500",31500.0,1
+8,SG-21009112105,siam akter,Siam akter,Male,Male,Smartwatch Production,Smartwatch Production,2021-11-09,2021-11-09,27500,27500.0,1
+10,SG-21012042207,raisa karim,Raisa karim,Female,Female,Smartwatch Production,Smartwatch Production,2022-04-12,2022-04-12,17500,17500.0,1
+13,SG-21003032210,aminul jahan,Aminul jahan,Male,Male,Smartwatch Production,Smartwatch Production,2022-03-03,2022-03-03,29500,29500.0,1
+14,SG-21027092011,Saif Islam,Saif Islam,Male,Male,Smartwatch Production,Smartwatch Production,2020-09-27,2020-09-27,43000,43000.0,1
+26,SG-21019031923,siam miah,Siam miah,Male,Male,Smartwatch Production,Smartwatch Production,2019-03-19,2019-03-19,27000,27000.0,1
+38,SG-21014052035,Farzana Jahan,Farzana Jahan,Female,Female,Smartwatch Production,Smartwatch Production,2020-05-14,2020-05-14,20500,20500.0,1
+48,SG-21007011845,Rakib Chowdhury,Rakib Chowdhury,male,Male,Smartwatch Production,Smartwatch Production,2018-01-07,2018-01-07,20000,20000.0,1
+58,SG-22014022110,Rashed Sultana,Rashed Sultana,Male,Male,Quality Assurance,Quality Assurance,2021-02-14,2021-02-14,33000,33000.0,2
+80,SG-26014051901,siam ahmed,Siam ahmed,M,Male,Procurement,Procurement,14/05/2019,2019-05-14,32000,32000.0,1
+81,SG-26005022102,Raisa Islam,Raisa Islam,female,Female,Procurement,Procurement,2021-02-05,2021-02-05,"BDT 33,000",33000.0,1
+83,SG-26002032004,Tanjila Karim,Tanjila Karim,Female,Female,Procurement,Procurement,2020-03-02,2020-03-02,54000,54000.0,1
+87,SG-27024112004,jubayer chowdhury,Jubayer chowdhury,male,Male,Finance and Accounts,Finance and Accounts,2020-11-24,2020-11-24,45000,45000.0,1
+95,SG-29010112404,rafi bari,Rafi bari,M,Male,Sales Distribution and Service,Sales Distribution and Service,10/11/2024,2024-11-10,49000,49000.0,1
+97,SG-30001092002,Nabil Hossain,Nabil Hossain,M,Male,EHS and Regulatory Compliance,EHS and Regulatory Compliance,2020-09-01,2020-09-01,41000,41000.0,1
+99,SG-31002112302,Nabila Bari,Nabila Bari,F,Female,Administration & Security,Administration and Security,2023-11-02,2023-11-02,29500,29500.0,1
+103,SG-21025062648,Farzana Chowdhury,Farzana Chowdhury,Female,Female,Smartwatch Production,Smartwatch Production,25/06/2026,2026-06-25,31500,31500.0,1
+110,SG-22024042612,arafat karim,Arafat karim,Male,Male,Quality Assurance,Quality Assurance,2026-04-24,2026-04-24,32500,32500.0,1
+118,SG-12727052607,rakib kabir,Rakib kabir,M,Male,Human Resources and People,Human Resources and People,2026-05-27,2026-05-27,48500,48500.0,1
+124,SG-21012092657,Riyad Hossain,Riyad Hossain,male,Male,Smartwatch Production,Smartwatch Production,2026-09-12,2026-09-12,30500,30500.0,1
+132,SG-21006082665,sharmeen sultana,Sharmeen sultana,Female,Female,Smartwatch Production,Smartwatch Production,2026-08-06,2026-08-06,25000,25000.0,1
+146,SG-28031082608,Fahim Akter,Fahim Akter,M,Male,IT Data and HRIS,IT Data and HRIS,2026-08-31,2026-08-31,31000,31000.0,1
+151,SG-12724092608,Mim Alam,Mim Alam,F,Female,Human Resources & People,Human Resources and People,2026-09-24,2026-09-24,44000,44000.0,1
+159,SG-21004122674,Arafat Islam,Arafat Islam,Male,Male,Smartwatch Production,Smartwatch Production,2026-12-04,2026-12-04,20000,20000.0,2
+169,SG-12718112609,Imran Jahan,Imran Jahan,Male,Male,Human Resources and People,Human Resources and People,2026-11-18,2026-11-18,208000,208000.0,1
+170,SG-28025112609,Fahim Hasan,Fahim Hasan,male,Male,IT Data and HRIS,IT Data and HRIS,2026-11-25,2026-11-25,127500,127500.0,1
+171,SG-21003032210,aminul jahan,Aminul jahan,Male,Male,Smartwatch Production,Smartwatch Production,2022-03-03,2022-03-03,29500,29500.0,1

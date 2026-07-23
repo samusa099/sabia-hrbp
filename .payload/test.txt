@@ -1,1 +1,0 @@
-/mnt/data/payload_chunks/chunk_001.txt

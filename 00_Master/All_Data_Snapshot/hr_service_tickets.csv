@@ -1,0 +1,375 @@
+﻿Ticket_ID,Created_Date,Quarter,Ticket_Type,Priority,Resolution_Hours,SLA_Target_Hours,SLA_Met,Employee_Satisfaction,Channel
+TKT-0001,2026-01-17,Q1,Grievance routing,Low,4.6,40,Yes,5,HRIS
+TKT-0002,2026-01-09,Q1,Grievance routing,Medium,91.3,40,No,1,Walk-in
+TKT-0003,2026-01-01,Q1,Leave correction,Low,8.5,40,Yes,5,Manager referral
+TKT-0004,2026-01-30,Q1,Employee letter,Low,75.8,40,No,1,Walk-in
+TKT-0005,2026-01-02,Q1,Grievance routing,Medium,57.9,40,No,2,Manager referral
+TKT-0006,2026-01-26,Q1,HRIS access,High,72.8,40,No,2,Manager referral
+TKT-0007,2026-01-06,Q1,HRIS access,Low,61.7,40,No,1,Email
+TKT-0008,2026-01-16,Q1,HRIS access,Medium,31.0,40,Yes,5,Email
+TKT-0009,2026-01-21,Q1,Grievance routing,Medium,4.6,40,Yes,5,HRIS
+TKT-0010,2026-01-16,Q1,Leave correction,High,36.6,40,Yes,4,Walk-in
+TKT-0011,2026-01-24,Q1,Benefit query,Medium,21.0,40,Yes,4,Email
+TKT-0012,2026-01-27,Q1,Grievance routing,Medium,20.8,40,Yes,4,Manager referral
+TKT-0013,2026-01-17,Q1,HRIS access,High,57.6,40,No,1,HRIS
+TKT-0014,2026-01-23,Q1,Leave correction,Low,24.7,40,Yes,5,Email
+TKT-0015,2026-01-20,Q1,Leave correction,Medium,10.1,40,Yes,5,Email
+TKT-0016,2026-01-08,Q1,Leave correction,Medium,32.8,40,Yes,4,Walk-in
+TKT-0017,2026-01-19,Q1,HRIS access,Medium,32.7,40,Yes,5,Walk-in
+TKT-0018,2026-01-25,Q1,Grievance routing,Low,30.3,40,Yes,4,Manager referral
+TKT-0019,2026-01-12,Q1,Grievance routing,Low,7.8,40,Yes,5,Manager referral
+TKT-0020,2026-01-31,Q1,Leave correction,Medium,39.3,40,Yes,4,Email
+TKT-0021,2026-01-07,Q1,Benefit query,Low,13.1,40,Yes,5,Email
+TKT-0022,2026-01-12,Q1,Grievance routing,Low,95.2,40,No,1,HRIS
+TKT-0023,2026-01-27,Q1,HRIS access,Medium,109.8,40,No,2,Manager referral
+TKT-0024,2026-01-24,Q1,Leave correction,Low,39.7,40,Yes,4,Manager referral
+TKT-0025,2026-01-08,Q1,Payroll query,Medium,60.3,40,No,3,Email
+TKT-0026,2026-01-17,Q1,HRIS access,Low,23.8,40,Yes,5,HRIS
+TKT-0027,2026-01-22,Q1,Grievance routing,Medium,77.5,40,No,3,Email
+TKT-0028,2026-01-23,Q1,Attendance correction,Medium,18.6,40,Yes,4,Manager referral
+TKT-0029,2026-01-05,Q1,Attendance correction,Low,14.3,40,Yes,4,Manager referral
+TKT-0030,2026-01-01,Q1,Attendance correction,Medium,16.2,40,Yes,5,Walk-in
+TKT-0031,2026-01-26,Q1,Employee letter,Low,79.2,40,No,1,HRIS
+TKT-0032,2026-01-27,Q1,Leave correction,Medium,36.0,40,Yes,5,Manager referral
+TKT-0033,2026-01-11,Q1,HRIS access,Low,19.8,40,Yes,4,Manager referral
+TKT-0034,2026-01-03,Q1,Benefit query,High,85.8,40,No,3,Walk-in
+TKT-0035,2026-01-17,Q1,Employee letter,High,43.5,40,No,3,Manager referral
+TKT-0036,2026-02-11,Q1,Attendance correction,Medium,12.7,40,Yes,4,Email
+TKT-0037,2026-02-18,Q1,Leave correction,Medium,43.1,40,No,1,Email
+TKT-0038,2026-02-20,Q1,HRIS access,Medium,32.4,40,Yes,5,Manager referral
+TKT-0039,2026-02-24,Q1,Benefit query,Low,73.9,40,No,2,Manager referral
+TKT-0040,2026-02-02,Q1,Benefit query,High,10.0,40,Yes,5,HRIS
+TKT-0041,2026-02-12,Q1,Payroll query,Medium,60.1,40,No,1,Manager referral
+TKT-0042,2026-02-03,Q1,Payroll query,Medium,73.8,40,No,2,HRIS
+TKT-0043,2026-02-24,Q1,Benefit query,Medium,45.8,40,No,2,Email
+TKT-0044,2026-02-22,Q1,Grievance routing,Low,37.2,40,Yes,4,Email
+TKT-0045,2026-02-27,Q1,Leave correction,Medium,32.2,40,Yes,5,Walk-in
+TKT-0046,2026-02-28,Q1,Employee letter,High,13.5,40,Yes,4,Manager referral
+TKT-0047,2026-02-15,Q1,Grievance routing,Low,25.0,40,Yes,5,Email
+TKT-0048,2026-02-25,Q1,Employee letter,Low,33.6,40,Yes,5,Walk-in
+TKT-0049,2026-02-17,Q1,Grievance routing,Medium,7.8,40,Yes,4,Walk-in
+TKT-0050,2026-02-06,Q1,Benefit query,Medium,14.8,40,Yes,5,Manager referral
+TKT-0051,2026-02-12,Q1,Grievance routing,High,6.8,40,Yes,4,HRIS
+TKT-0052,2026-02-15,Q1,Attendance correction,Low,49.4,40,No,3,Walk-in
+TKT-0053,2026-02-11,Q1,Payroll query,High,45.3,40,No,2,HRIS
+TKT-0054,2026-02-18,Q1,Employee letter,Low,38.6,40,Yes,5,Email
+TKT-0055,2026-02-25,Q1,Grievance routing,Medium,38.8,40,Yes,5,Email
+TKT-0056,2026-02-24,Q1,Leave correction,Low,17.1,40,Yes,4,Manager referral
+TKT-0057,2026-02-26,Q1,Attendance correction,Medium,17.2,40,Yes,5,HRIS
+TKT-0058,2026-02-26,Q1,Employee letter,Low,21.2,40,Yes,4,Manager referral
+TKT-0059,2026-02-06,Q1,Grievance routing,High,95.4,40,No,2,Email
+TKT-0060,2026-02-09,Q1,Benefit query,Low,37.8,40,Yes,4,HRIS
+TKT-0061,2026-02-05,Q1,Employee letter,Low,8.3,40,Yes,5,HRIS
+TKT-0062,2026-02-28,Q1,HRIS access,Low,54.7,40,No,1,Walk-in
+TKT-0063,2026-02-07,Q1,Leave correction,Low,28.2,40,Yes,5,Manager referral
+TKT-0064,2026-02-01,Q1,Benefit query,Low,83.4,40,No,1,Walk-in
+TKT-0065,2026-02-21,Q1,Leave correction,Medium,83.0,40,No,1,Manager referral
+TKT-0066,2026-02-09,Q1,Leave correction,High,7.9,40,Yes,5,Walk-in
+TKT-0067,2026-03-19,Q1,Benefit query,Low,57.9,40,No,3,Email
+TKT-0068,2026-03-09,Q1,Attendance correction,Medium,42.6,40,No,3,Manager referral
+TKT-0069,2026-03-01,Q1,HRIS access,Medium,78.3,40,No,2,Email
+TKT-0070,2026-03-24,Q1,Leave correction,Low,34.5,40,Yes,5,Manager referral
+TKT-0071,2026-03-11,Q1,Employee letter,High,31.1,40,Yes,4,Manager referral
+TKT-0072,2026-03-17,Q1,Grievance routing,High,15.1,40,Yes,4,Email
+TKT-0073,2026-03-12,Q1,Leave correction,High,47.0,40,No,3,Walk-in
+TKT-0074,2026-03-19,Q1,Benefit query,Low,23.4,40,Yes,5,HRIS
+TKT-0075,2026-03-27,Q1,Employee letter,Medium,64.5,40,No,2,Email
+TKT-0076,2026-03-02,Q1,Payroll query,Low,66.0,40,No,2,Email
+TKT-0077,2026-03-14,Q1,Payroll query,Medium,89.4,40,No,2,Walk-in
+TKT-0078,2026-03-11,Q1,Grievance routing,Low,36.6,40,Yes,5,Manager referral
+TKT-0079,2026-03-24,Q1,Grievance routing,Medium,19.1,40,Yes,4,Walk-in
+TKT-0080,2026-03-30,Q1,Leave correction,Low,20.4,40,Yes,5,Walk-in
+TKT-0081,2026-03-14,Q1,Attendance correction,Medium,75.5,40,No,1,Email
+TKT-0082,2026-03-28,Q1,Employee letter,Low,92.7,40,No,2,Walk-in
+TKT-0083,2026-03-08,Q1,Attendance correction,Medium,56.0,40,No,3,Email
+TKT-0084,2026-03-20,Q1,Payroll query,Low,48.2,40,No,1,Email
+TKT-0085,2026-03-20,Q1,Benefit query,High,63.1,40,No,2,HRIS
+TKT-0086,2026-03-16,Q1,Leave correction,Medium,8.6,40,Yes,4,Email
+TKT-0087,2026-03-25,Q1,HRIS access,Medium,21.6,40,Yes,5,HRIS
+TKT-0088,2026-03-04,Q1,Payroll query,Medium,61.3,40,No,3,HRIS
+TKT-0089,2026-03-24,Q1,Benefit query,Medium,30.9,40,Yes,4,Email
+TKT-0090,2026-03-21,Q1,Payroll query,Low,30.6,40,Yes,5,Manager referral
+TKT-0091,2026-03-31,Q1,Employee letter,Medium,71.0,40,No,2,Email
+TKT-0092,2026-03-12,Q1,Payroll query,Low,33.9,40,Yes,5,HRIS
+TKT-0093,2026-03-20,Q1,Payroll query,Medium,96.8,40,No,3,Email
+TKT-0094,2026-03-16,Q1,Attendance correction,Medium,26.2,40,Yes,4,HRIS
+TKT-0095,2026-03-28,Q1,Payroll query,Low,75.9,40,No,1,Walk-in
+TKT-0096,2026-03-21,Q1,Payroll query,Medium,53.4,40,No,2,Manager referral
+TKT-0097,2026-03-08,Q1,Leave correction,High,14.0,40,Yes,5,Email
+TKT-0098,2026-04-13,Q2,Attendance correction,Low,4.7,40,Yes,5,Manager referral
+TKT-0099,2026-04-01,Q2,HRIS access,Medium,21.2,40,Yes,4,Email
+TKT-0100,2026-04-10,Q2,Payroll query,Medium,36.7,40,Yes,5,Email
+TKT-0101,2026-04-23,Q2,Attendance correction,Low,23.4,40,Yes,4,Manager referral
+TKT-0102,2026-04-16,Q2,Employee letter,Low,30.5,40,Yes,4,Walk-in
+TKT-0103,2026-04-28,Q2,Grievance routing,High,6.4,40,Yes,4,Walk-in
+TKT-0104,2026-04-22,Q2,HRIS access,Low,85.0,40,No,2,Email
+TKT-0105,2026-04-29,Q2,Benefit query,Medium,67.1,40,No,2,Walk-in
+TKT-0106,2026-04-26,Q2,Grievance routing,Low,92.4,40,No,1,HRIS
+TKT-0107,2026-04-28,Q2,Grievance routing,Medium,7.5,40,Yes,4,HRIS
+TKT-0108,2026-04-02,Q2,Attendance correction,Low,70.9,40,No,1,Manager referral
+TKT-0109,2026-04-13,Q2,Grievance routing,Medium,72.5,40,No,1,Walk-in
+TKT-0110,2026-04-17,Q2,Attendance correction,Low,16.1,40,Yes,4,Walk-in
+TKT-0111,2026-04-22,Q2,Payroll query,Low,11.4,40,Yes,5,Walk-in
+TKT-0112,2026-04-30,Q2,Employee letter,Low,17.4,40,Yes,5,HRIS
+TKT-0113,2026-04-11,Q2,Payroll query,Medium,6.8,40,Yes,4,Email
+TKT-0114,2026-04-16,Q2,Employee letter,Low,11.3,40,Yes,5,Email
+TKT-0115,2026-04-17,Q2,Grievance routing,Medium,93.6,40,No,3,HRIS
+TKT-0116,2026-04-05,Q2,Employee letter,Low,50.9,40,No,2,Email
+TKT-0117,2026-04-01,Q2,Attendance correction,High,72.3,40,No,2,Manager referral
+TKT-0118,2026-04-11,Q2,Grievance routing,Medium,75.4,40,No,1,Manager referral
+TKT-0119,2026-04-15,Q2,Attendance correction,High,36.6,40,Yes,4,Email
+TKT-0120,2026-05-29,Q2,Benefit query,Medium,15.6,40,Yes,4,Email
+TKT-0121,2026-05-15,Q2,Employee letter,High,36.9,40,Yes,4,HRIS
+TKT-0122,2026-05-13,Q2,Employee letter,Low,6.6,40,Yes,5,Email
+TKT-0123,2026-05-05,Q2,Benefit query,Low,37.0,40,Yes,4,Email
+TKT-0124,2026-05-03,Q2,Leave correction,Low,38.0,40,Yes,5,Email
+TKT-0125,2026-05-24,Q2,Grievance routing,Medium,23.4,40,Yes,4,Email
+TKT-0126,2026-05-21,Q2,Benefit query,Medium,86.5,40,No,2,Email
+TKT-0127,2026-05-22,Q2,Payroll query,Low,30.2,40,Yes,5,Manager referral
+TKT-0128,2026-05-12,Q2,Grievance routing,Medium,73.8,40,No,3,HRIS
+TKT-0129,2026-05-03,Q2,Leave correction,Low,5.1,40,Yes,4,Manager referral
+TKT-0130,2026-05-28,Q2,Benefit query,High,98.7,40,No,2,Manager referral
+TKT-0131,2026-05-09,Q2,Attendance correction,High,37.9,40,Yes,4,Manager referral
+TKT-0132,2026-05-15,Q2,Leave correction,Low,85.3,40,No,3,HRIS
+TKT-0133,2026-05-05,Q2,Payroll query,Medium,7.6,40,Yes,5,Email
+TKT-0134,2026-05-21,Q2,Grievance routing,Medium,16.3,40,Yes,5,Walk-in
+TKT-0135,2026-05-15,Q2,Benefit query,Low,38.4,40,Yes,4,Walk-in
+TKT-0136,2026-05-20,Q2,Benefit query,High,30.3,40,Yes,5,Email
+TKT-0137,2026-05-10,Q2,Grievance routing,High,22.4,40,Yes,5,HRIS
+TKT-0138,2026-05-18,Q2,Employee letter,Low,38.8,40,Yes,4,Walk-in
+TKT-0139,2026-05-29,Q2,Attendance correction,Medium,19.7,40,Yes,4,Email
+TKT-0140,2026-05-04,Q2,Leave correction,Low,24.0,40,Yes,4,HRIS
+TKT-0141,2026-05-22,Q2,Employee letter,Low,23.2,40,Yes,4,Walk-in
+TKT-0142,2026-05-04,Q2,Leave correction,Low,21.2,40,Yes,4,Manager referral
+TKT-0143,2026-05-17,Q2,Leave correction,Low,5.1,40,Yes,4,Walk-in
+TKT-0144,2026-05-06,Q2,Leave correction,Low,9.4,40,Yes,5,HRIS
+TKT-0145,2026-05-15,Q2,HRIS access,Low,13.1,40,Yes,5,Manager referral
+TKT-0146,2026-05-09,Q2,Benefit query,Medium,32.5,40,Yes,4,Email
+TKT-0147,2026-05-27,Q2,Leave correction,Medium,90.5,40,No,2,Email
+TKT-0148,2026-06-20,Q2,Payroll query,Medium,78.0,40,No,2,HRIS
+TKT-0149,2026-06-19,Q2,Attendance correction,Low,14.9,40,Yes,5,HRIS
+TKT-0150,2026-06-18,Q2,Grievance routing,Medium,25.3,40,Yes,5,Email
+TKT-0151,2026-06-18,Q2,Payroll query,Medium,15.0,40,Yes,4,Walk-in
+TKT-0152,2026-06-09,Q2,Grievance routing,Medium,16.1,40,Yes,4,HRIS
+TKT-0153,2026-06-11,Q2,Benefit query,Low,4.8,40,Yes,4,HRIS
+TKT-0154,2026-06-25,Q2,Attendance correction,Medium,9.9,40,Yes,5,HRIS
+TKT-0155,2026-06-26,Q2,Employee letter,Medium,29.1,40,Yes,4,HRIS
+TKT-0156,2026-06-22,Q2,Employee letter,Low,21.6,40,Yes,4,Walk-in
+TKT-0157,2026-06-10,Q2,Payroll query,Low,23.0,40,Yes,5,Walk-in
+TKT-0158,2026-06-13,Q2,Attendance correction,Low,12.8,40,Yes,4,Walk-in
+TKT-0159,2026-06-26,Q2,Leave correction,Medium,33.4,40,Yes,4,Email
+TKT-0160,2026-06-01,Q2,Benefit query,Low,32.4,40,Yes,5,Email
+TKT-0161,2026-06-15,Q2,Benefit query,Low,26.5,40,Yes,5,Manager referral
+TKT-0162,2026-06-02,Q2,Payroll query,Low,5.6,40,Yes,4,Walk-in
+TKT-0163,2026-06-14,Q2,Employee letter,Low,8.3,40,Yes,5,HRIS
+TKT-0164,2026-06-01,Q2,Employee letter,High,18.7,40,Yes,4,HRIS
+TKT-0165,2026-06-03,Q2,Payroll query,Medium,49.7,40,No,1,HRIS
+TKT-0166,2026-06-03,Q2,Payroll query,Medium,14.5,40,Yes,5,HRIS
+TKT-0167,2026-06-02,Q2,Employee letter,Medium,31.1,40,Yes,4,Walk-in
+TKT-0168,2026-06-17,Q2,HRIS access,Low,15.3,40,Yes,5,HRIS
+TKT-0169,2026-06-23,Q2,Leave correction,High,25.0,40,Yes,5,Email
+TKT-0170,2026-06-21,Q2,Grievance routing,Low,20.7,40,Yes,5,Walk-in
+TKT-0171,2026-06-15,Q2,Employee letter,Low,75.1,40,No,2,Email
+TKT-0172,2026-06-01,Q2,Benefit query,Low,19.4,40,Yes,4,Walk-in
+TKT-0173,2026-06-17,Q2,HRIS access,Low,22.5,40,Yes,4,Walk-in
+TKT-0174,2026-06-09,Q2,Attendance correction,Medium,5.1,40,Yes,5,Manager referral
+TKT-0175,2026-06-17,Q2,HRIS access,Low,11.7,40,Yes,5,HRIS
+TKT-0176,2026-06-21,Q2,Grievance routing,Low,34.4,40,Yes,5,Walk-in
+TKT-0177,2026-06-16,Q2,Employee letter,Low,9.4,40,Yes,4,Walk-in
+TKT-0178,2026-06-10,Q2,Employee letter,Low,4.4,40,Yes,5,Walk-in
+TKT-0179,2026-06-29,Q2,Benefit query,Medium,9.2,40,Yes,5,Email
+TKT-0180,2026-07-26,Q3,Employee letter,Medium,64.0,40,No,2,Manager referral
+TKT-0181,2026-07-16,Q3,Attendance correction,Low,34.0,40,Yes,5,Walk-in
+TKT-0182,2026-07-19,Q3,Attendance correction,Low,17.4,40,Yes,4,Email
+TKT-0183,2026-07-16,Q3,HRIS access,Medium,21.1,40,Yes,4,Manager referral
+TKT-0184,2026-07-12,Q3,Attendance correction,Low,22.5,40,Yes,4,Email
+TKT-0185,2026-07-01,Q3,Payroll query,Low,23.1,40,Yes,5,Email
+TKT-0186,2026-07-04,Q3,Leave correction,High,16.8,40,Yes,5,Email
+TKT-0187,2026-07-19,Q3,Leave correction,High,37.3,40,Yes,4,Email
+TKT-0188,2026-07-06,Q3,Attendance correction,Low,32.4,40,Yes,4,Walk-in
+TKT-0189,2026-07-25,Q3,Benefit query,Medium,55.2,40,No,2,Walk-in
+TKT-0190,2026-07-04,Q3,Grievance routing,Low,15.3,40,Yes,4,HRIS
+TKT-0191,2026-07-13,Q3,HRIS access,High,22.9,40,Yes,5,Walk-in
+TKT-0192,2026-07-18,Q3,Benefit query,Medium,13.4,40,Yes,4,Email
+TKT-0193,2026-07-09,Q3,Leave correction,Medium,17.8,40,Yes,5,HRIS
+TKT-0194,2026-07-20,Q3,Attendance correction,Low,106.5,40,No,1,Manager referral
+TKT-0195,2026-07-12,Q3,Employee letter,Low,32.0,40,Yes,5,Email
+TKT-0196,2026-07-19,Q3,Payroll query,Medium,35.8,40,Yes,4,Manager referral
+TKT-0197,2026-07-16,Q3,Attendance correction,High,33.9,40,Yes,4,Walk-in
+TKT-0198,2026-07-05,Q3,Leave correction,Low,17.9,40,Yes,5,HRIS
+TKT-0199,2026-07-26,Q3,Payroll query,Medium,10.8,40,Yes,4,Walk-in
+TKT-0200,2026-07-20,Q3,Leave correction,Medium,27.1,40,Yes,5,HRIS
+TKT-0201,2026-07-28,Q3,Grievance routing,Low,10.2,40,Yes,5,Walk-in
+TKT-0202,2026-07-18,Q3,Employee letter,Medium,8.9,40,Yes,5,HRIS
+TKT-0203,2026-07-24,Q3,Leave correction,Low,56.5,40,No,3,HRIS
+TKT-0204,2026-07-09,Q3,Benefit query,Medium,96.9,40,No,1,Walk-in
+TKT-0205,2026-07-12,Q3,Leave correction,Medium,8.1,40,Yes,5,Walk-in
+TKT-0206,2026-07-18,Q3,Benefit query,Low,21.9,40,Yes,4,Email
+TKT-0207,2026-07-09,Q3,Leave correction,Low,37.6,40,Yes,4,HRIS
+TKT-0208,2026-07-10,Q3,Leave correction,Medium,27.9,40,Yes,4,Walk-in
+TKT-0209,2026-08-07,Q3,Benefit query,Medium,5.9,40,Yes,4,Email
+TKT-0210,2026-08-12,Q3,Employee letter,Medium,9.2,40,Yes,5,Walk-in
+TKT-0211,2026-08-09,Q3,Benefit query,Medium,32.9,40,Yes,5,HRIS
+TKT-0212,2026-08-07,Q3,Benefit query,Low,18.5,40,Yes,4,Walk-in
+TKT-0213,2026-08-08,Q3,Payroll query,High,16.9,40,Yes,5,Walk-in
+TKT-0214,2026-08-31,Q3,HRIS access,Medium,35.4,40,Yes,4,Walk-in
+TKT-0215,2026-08-01,Q3,Grievance routing,Medium,8.1,40,Yes,4,Walk-in
+TKT-0216,2026-08-16,Q3,Leave correction,Low,43.5,40,No,2,Walk-in
+TKT-0217,2026-08-20,Q3,Attendance correction,Medium,25.2,40,Yes,5,Walk-in
+TKT-0218,2026-08-02,Q3,Payroll query,Medium,35.7,40,Yes,4,HRIS
+TKT-0219,2026-08-17,Q3,Benefit query,Medium,8.8,40,Yes,5,HRIS
+TKT-0220,2026-08-07,Q3,HRIS access,Medium,27.2,40,Yes,4,Manager referral
+TKT-0221,2026-08-05,Q3,HRIS access,High,17.9,40,Yes,4,Walk-in
+TKT-0222,2026-08-31,Q3,Employee letter,Low,11.3,40,Yes,4,HRIS
+TKT-0223,2026-08-30,Q3,HRIS access,Low,34.8,40,Yes,5,Walk-in
+TKT-0224,2026-08-14,Q3,HRIS access,Medium,21.9,40,Yes,4,Manager referral
+TKT-0225,2026-08-09,Q3,Attendance correction,Low,9.8,40,Yes,5,Email
+TKT-0226,2026-08-02,Q3,Benefit query,Low,37.4,40,Yes,5,Walk-in
+TKT-0227,2026-08-30,Q3,Employee letter,Low,29.2,40,Yes,4,Email
+TKT-0228,2026-08-12,Q3,Benefit query,Low,20.0,40,Yes,4,Email
+TKT-0229,2026-08-06,Q3,Grievance routing,Medium,34.4,40,Yes,4,HRIS
+TKT-0230,2026-08-05,Q3,Payroll query,Medium,96.3,40,No,3,HRIS
+TKT-0231,2026-08-09,Q3,Leave correction,Low,15.0,40,Yes,5,Walk-in
+TKT-0232,2026-08-12,Q3,Grievance routing,Low,35.7,40,Yes,4,Manager referral
+TKT-0233,2026-08-29,Q3,Payroll query,Medium,30.2,40,Yes,4,Email
+TKT-0234,2026-08-04,Q3,Employee letter,Low,17.2,40,Yes,5,Walk-in
+TKT-0235,2026-08-11,Q3,Attendance correction,Medium,38.2,40,Yes,4,Manager referral
+TKT-0236,2026-09-11,Q3,Grievance routing,Low,19.2,40,Yes,5,Email
+TKT-0237,2026-09-27,Q3,HRIS access,Medium,36.9,40,Yes,4,HRIS
+TKT-0238,2026-09-07,Q3,Benefit query,Low,25.6,40,Yes,5,Walk-in
+TKT-0239,2026-09-14,Q3,Leave correction,Low,36.0,40,Yes,5,HRIS
+TKT-0240,2026-09-18,Q3,Employee letter,Medium,12.4,40,Yes,4,Manager referral
+TKT-0241,2026-09-03,Q3,Attendance correction,Low,7.1,40,Yes,5,Walk-in
+TKT-0242,2026-09-11,Q3,Grievance routing,Medium,14.3,40,Yes,4,HRIS
+TKT-0243,2026-09-21,Q3,Attendance correction,Low,13.8,40,Yes,4,Walk-in
+TKT-0244,2026-09-23,Q3,Attendance correction,High,30.2,40,Yes,4,Email
+TKT-0245,2026-09-12,Q3,Payroll query,Medium,27.5,40,Yes,5,Email
+TKT-0246,2026-09-30,Q3,Benefit query,High,7.8,40,Yes,5,HRIS
+TKT-0247,2026-09-17,Q3,Leave correction,High,11.7,40,Yes,5,Walk-in
+TKT-0248,2026-09-09,Q3,Leave correction,Medium,5.7,40,Yes,4,HRIS
+TKT-0249,2026-09-09,Q3,Leave correction,High,13.1,40,Yes,5,Walk-in
+TKT-0250,2026-09-21,Q3,HRIS access,High,81.8,40,No,3,Walk-in
+TKT-0251,2026-09-09,Q3,Payroll query,Low,5.4,40,Yes,5,Walk-in
+TKT-0252,2026-09-12,Q3,Employee letter,Medium,11.0,40,Yes,4,Email
+TKT-0253,2026-09-01,Q3,Leave correction,Low,39.6,40,Yes,5,Walk-in
+TKT-0254,2026-09-21,Q3,HRIS access,Medium,10.4,40,Yes,5,Email
+TKT-0255,2026-09-08,Q3,Payroll query,Medium,20.5,40,Yes,5,Email
+TKT-0256,2026-09-30,Q3,Employee letter,Medium,31.7,40,Yes,5,Manager referral
+TKT-0257,2026-09-22,Q3,Employee letter,Medium,7.7,40,Yes,4,Walk-in
+TKT-0258,2026-09-14,Q3,Attendance correction,High,34.9,40,Yes,5,Email
+TKT-0259,2026-10-30,Q4,Leave correction,Low,20.3,40,Yes,4,Email
+TKT-0260,2026-10-03,Q4,Benefit query,Medium,66.4,40,No,2,Email
+TKT-0261,2026-10-04,Q4,Payroll query,Medium,27.4,40,Yes,4,Walk-in
+TKT-0262,2026-10-02,Q4,Benefit query,Medium,9.0,40,Yes,5,Email
+TKT-0263,2026-10-07,Q4,Leave correction,Low,7.5,40,Yes,4,Manager referral
+TKT-0264,2026-10-23,Q4,Attendance correction,Medium,34.4,40,Yes,4,Email
+TKT-0265,2026-10-24,Q4,Grievance routing,Medium,8.8,40,Yes,4,Manager referral
+TKT-0266,2026-10-03,Q4,HRIS access,Medium,39.2,40,Yes,5,HRIS
+TKT-0267,2026-10-21,Q4,Grievance routing,Medium,30.6,40,Yes,5,Walk-in
+TKT-0268,2026-10-19,Q4,Benefit query,Medium,7.2,40,Yes,5,HRIS
+TKT-0269,2026-10-14,Q4,HRIS access,Medium,15.4,40,Yes,4,Walk-in
+TKT-0270,2026-10-02,Q4,Grievance routing,Low,14.8,40,Yes,4,Email
+TKT-0271,2026-10-14,Q4,Benefit query,Low,21.1,40,Yes,4,HRIS
+TKT-0272,2026-10-10,Q4,HRIS access,Medium,12.3,40,Yes,5,HRIS
+TKT-0273,2026-10-24,Q4,Benefit query,High,25.5,40,Yes,5,Walk-in
+TKT-0274,2026-10-23,Q4,Employee letter,High,8.1,40,Yes,4,Manager referral
+TKT-0275,2026-10-29,Q4,Grievance routing,Low,9.9,40,Yes,4,Walk-in
+TKT-0276,2026-10-26,Q4,Grievance routing,Low,21.4,40,Yes,4,Manager referral
+TKT-0277,2026-10-14,Q4,Grievance routing,Medium,38.7,40,Yes,4,HRIS
+TKT-0278,2026-10-04,Q4,Leave correction,Medium,11.3,40,Yes,5,Walk-in
+TKT-0279,2026-10-21,Q4,HRIS access,Medium,32.7,40,Yes,5,Manager referral
+TKT-0280,2026-10-15,Q4,Payroll query,Medium,14.6,40,Yes,4,Manager referral
+TKT-0281,2026-10-12,Q4,Grievance routing,Low,20.4,40,Yes,5,Walk-in
+TKT-0282,2026-10-20,Q4,Benefit query,Medium,54.0,40,No,1,Walk-in
+TKT-0283,2026-10-01,Q4,Grievance routing,Medium,14.0,40,Yes,4,HRIS
+TKT-0284,2026-10-06,Q4,HRIS access,Medium,28.9,40,Yes,4,Walk-in
+TKT-0285,2026-10-16,Q4,Attendance correction,Low,6.3,40,Yes,5,Email
+TKT-0286,2026-10-12,Q4,Employee letter,Low,5.9,40,Yes,4,Manager referral
+TKT-0287,2026-10-25,Q4,HRIS access,High,28.5,40,Yes,4,Walk-in
+TKT-0288,2026-10-13,Q4,Leave correction,Medium,36.1,40,Yes,4,Manager referral
+TKT-0289,2026-10-18,Q4,Leave correction,Low,33.1,40,Yes,5,Manager referral
+TKT-0290,2026-10-29,Q4,HRIS access,Medium,59.5,40,No,3,Email
+TKT-0291,2026-10-04,Q4,Leave correction,Medium,19.5,40,Yes,5,HRIS
+TKT-0292,2026-10-15,Q4,Employee letter,Low,34.9,40,Yes,4,HRIS
+TKT-0293,2026-10-01,Q4,Attendance correction,Medium,86.8,40,No,1,Manager referral
+TKT-0294,2026-10-26,Q4,Benefit query,Low,26.8,40,Yes,5,HRIS
+TKT-0295,2026-10-04,Q4,Employee letter,Medium,30.8,40,Yes,5,Email
+TKT-0296,2026-10-16,Q4,Leave correction,Medium,28.9,40,Yes,4,Manager referral
+TKT-0297,2026-10-09,Q4,Payroll query,High,18.7,40,Yes,4,Email
+TKT-0298,2026-10-09,Q4,HRIS access,High,15.2,40,Yes,5,Walk-in
+TKT-0299,2026-10-02,Q4,Grievance routing,High,27.7,40,Yes,4,Email
+TKT-0300,2026-11-20,Q4,Payroll query,Low,35.3,40,Yes,4,HRIS
+TKT-0301,2026-11-29,Q4,Employee letter,Medium,7.1,40,Yes,4,Email
+TKT-0302,2026-11-12,Q4,HRIS access,Medium,5.2,40,Yes,5,Manager referral
+TKT-0303,2026-11-11,Q4,Attendance correction,Medium,73.8,40,No,2,HRIS
+TKT-0304,2026-11-03,Q4,HRIS access,Medium,7.3,40,Yes,4,Manager referral
+TKT-0305,2026-11-16,Q4,HRIS access,Medium,12.3,40,Yes,5,HRIS
+TKT-0306,2026-11-06,Q4,HRIS access,Low,7.9,40,Yes,4,Manager referral
+TKT-0307,2026-11-17,Q4,Grievance routing,Low,12.2,40,Yes,4,Manager referral
+TKT-0308,2026-11-28,Q4,Leave correction,Medium,15.7,40,Yes,4,Email
+TKT-0309,2026-11-07,Q4,Leave correction,Low,33.6,40,Yes,4,Walk-in
+TKT-0310,2026-11-09,Q4,Attendance correction,Low,36.4,40,Yes,4,Email
+TKT-0311,2026-11-03,Q4,Benefit query,Medium,32.4,40,Yes,5,Email
+TKT-0312,2026-11-24,Q4,Grievance routing,Medium,38.8,40,Yes,4,Manager referral
+TKT-0313,2026-11-15,Q4,Attendance correction,High,31.9,40,Yes,5,Manager referral
+TKT-0314,2026-11-25,Q4,HRIS access,Low,37.0,40,Yes,5,Manager referral
+TKT-0315,2026-11-27,Q4,Leave correction,Medium,31.0,40,Yes,5,Walk-in
+TKT-0316,2026-11-20,Q4,Leave correction,High,16.9,40,Yes,4,Manager referral
+TKT-0317,2026-11-02,Q4,Attendance correction,Medium,36.5,40,Yes,5,Manager referral
+TKT-0318,2026-11-21,Q4,Payroll query,Medium,31.2,40,Yes,5,HRIS
+TKT-0319,2026-11-11,Q4,Payroll query,Low,26.8,40,Yes,4,Walk-in
+TKT-0320,2026-11-06,Q4,Grievance routing,Medium,27.6,40,Yes,5,Manager referral
+TKT-0321,2026-11-15,Q4,Grievance routing,Medium,35.9,40,Yes,4,Walk-in
+TKT-0322,2026-11-20,Q4,HRIS access,Medium,4.2,40,Yes,4,HRIS
+TKT-0323,2026-11-08,Q4,Payroll query,Medium,39.9,40,Yes,4,Walk-in
+TKT-0324,2026-11-25,Q4,Attendance correction,High,12.9,40,Yes,4,Email
+TKT-0325,2026-11-27,Q4,Employee letter,Low,5.6,40,Yes,4,Manager referral
+TKT-0326,2026-11-26,Q4,Employee letter,Low,25.1,40,Yes,4,Walk-in
+TKT-0327,2026-11-01,Q4,Attendance correction,Medium,6.4,40,Yes,5,Walk-in
+TKT-0328,2026-11-26,Q4,Employee letter,High,39.6,40,Yes,4,HRIS
+TKT-0329,2026-11-14,Q4,Grievance routing,Low,36.0,40,Yes,5,Walk-in
+TKT-0330,2026-11-06,Q4,Attendance correction,Low,84.7,40,No,1,HRIS
+TKT-0331,2026-11-11,Q4,Grievance routing,Medium,19.6,40,Yes,5,Email
+TKT-0332,2026-11-04,Q4,Leave correction,Low,21.2,40,Yes,5,Walk-in
+TKT-0333,2026-11-24,Q4,HRIS access,Medium,20.5,40,Yes,5,Email
+TKT-0334,2026-11-13,Q4,Benefit query,Low,18.0,40,Yes,5,Walk-in
+TKT-0335,2026-11-19,Q4,Attendance correction,Low,20.5,40,Yes,5,HRIS
+TKT-0336,2026-12-12,Q4,Grievance routing,Low,33.0,40,Yes,5,Manager referral
+TKT-0337,2026-12-26,Q4,Attendance correction,Low,30.8,40,Yes,4,Walk-in
+TKT-0338,2026-12-26,Q4,Leave correction,High,47.5,40,No,1,Email
+TKT-0339,2026-12-08,Q4,Payroll query,Medium,23.7,40,Yes,4,Manager referral
+TKT-0340,2026-12-10,Q4,Payroll query,Low,9.6,40,Yes,4,HRIS
+TKT-0341,2026-12-05,Q4,HRIS access,Low,19.9,40,Yes,5,Walk-in
+TKT-0342,2026-12-11,Q4,HRIS access,Low,35.6,40,Yes,5,Manager referral
+TKT-0343,2026-12-07,Q4,Benefit query,Low,5.9,40,Yes,5,Email
+TKT-0344,2026-12-30,Q4,Grievance routing,Medium,20.0,40,Yes,4,Email
+TKT-0345,2026-12-14,Q4,Grievance routing,High,25.5,40,Yes,5,HRIS
+TKT-0346,2026-12-29,Q4,Payroll query,Low,31.7,40,Yes,4,Walk-in
+TKT-0347,2026-12-24,Q4,Employee letter,Medium,7.7,40,Yes,4,HRIS
+TKT-0348,2026-12-01,Q4,Leave correction,Medium,16.8,40,Yes,5,Email
+TKT-0349,2026-12-08,Q4,Attendance correction,Low,31.4,40,Yes,5,Walk-in
+TKT-0350,2026-12-25,Q4,Attendance correction,Medium,15.4,40,Yes,4,Walk-in
+TKT-0351,2026-12-14,Q4,Payroll query,Low,24.3,40,Yes,4,HRIS
+TKT-0352,2026-12-11,Q4,Attendance correction,Medium,38.4,40,Yes,4,Manager referral
+TKT-0353,2026-12-24,Q4,Leave correction,Medium,35.3,40,Yes,5,Email
+TKT-0354,2026-12-01,Q4,HRIS access,Medium,12.5,40,Yes,5,HRIS
+TKT-0355,2026-12-14,Q4,HRIS access,Low,31.5,40,Yes,4,HRIS
+TKT-0356,2026-12-19,Q4,Employee letter,Medium,38.3,40,Yes,5,Walk-in
+TKT-0357,2026-12-28,Q4,Attendance correction,Medium,12.9,40,Yes,4,Manager referral
+TKT-0358,2026-12-26,Q4,Payroll query,Low,25.9,40,Yes,5,Manager referral
+TKT-0359,2026-12-19,Q4,Attendance correction,Medium,6.6,40,Yes,5,Walk-in
+TKT-0360,2026-12-30,Q4,Employee letter,Medium,23.3,40,Yes,5,Email
+TKT-0361,2026-12-21,Q4,Leave correction,High,33.4,40,Yes,5,HRIS
+TKT-0362,2026-12-21,Q4,HRIS access,Low,14.3,40,Yes,5,Manager referral
+TKT-0363,2026-12-11,Q4,Leave correction,Medium,10.8,40,Yes,4,Walk-in
+TKT-0364,2026-12-24,Q4,Grievance routing,Low,20.4,40,Yes,5,Email
+TKT-0365,2026-12-14,Q4,Leave correction,Low,37.2,40,Yes,5,Manager referral
+TKT-0366,2026-12-05,Q4,HRIS access,Medium,32.9,40,Yes,4,Email
+TKT-0367,2026-12-11,Q4,Benefit query,Low,106.8,40,No,1,Walk-in
+TKT-0368,2026-12-27,Q4,Attendance correction,Low,24.1,40,Yes,5,HRIS
+TKT-0369,2026-12-08,Q4,HRIS access,Medium,32.1,40,Yes,5,HRIS
+TKT-0370,2026-12-16,Q4,Employee letter,Medium,30.4,40,Yes,4,HRIS
+TKT-0371,2026-12-05,Q4,Benefit query,Medium,27.5,40,Yes,4,Email
+TKT-0372,2026-12-08,Q4,Leave correction,Low,6.2,40,Yes,5,Manager referral
+TKT-0373,2026-12-07,Q4,Grievance routing,Medium,38.2,40,Yes,4,Manager referral
+TKT-0374,2026-12-12,Q4,Attendance correction,Low,31.9,40,Yes,5,Email

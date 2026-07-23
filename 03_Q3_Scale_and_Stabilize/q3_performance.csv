@@ -1,0 +1,104 @@
+﻿Performance_Record_ID,Employee_ID,Quarter,Department,Goal_Achievement_Score,Quality_Score,Behaviour_Score,Overall_Score,Performance_Rating,Manager_Checkin_Completed,Development_Plan_Created
+PF-0009,SG-12716102104,Q3,Human Resources and People,78,70,87,77.0,Meets,No,Yes
+PF-0015,SG-21015092303,Q3,Smartwatch Production,79,80,78,79.2,Meets,Yes,Yes
+PF-0023,SG-21024051808,Q3,Smartwatch Production,73,77,79,75.6,Meets,Yes,Yes
+PF-0028,SG-21003032210,Q3,Smartwatch Production,72,78,83,76.3,Meets,Yes,Yes
+PF-0041,SG-21009042120,Q3,Smartwatch Production,86,89,88,87.4,Exceeds,Yes,No
+PF-0045,SG-21017062021,Q3,Smartwatch Production,83,80,67,78.8,Meets,Yes,Yes
+PF-0053,SG-21002032026,Q3,Smartwatch Production,65,59,81,66.1,Meets,Yes,Yes
+PF-0058,SG-21015012328,Q3,Smartwatch Production,90,88,82,87.7,Exceeds,Yes,No
+PF-0062,SG-21016092329,Q3,Smartwatch Production,73,77,79,75.6,Meets,No,Yes
+PF-0067,SG-21026012031,Q3,Smartwatch Production,86,92,82,87.3,Exceeds,No,Yes
+PF-0076,SG-21021101936,Q3,Smartwatch Production,76,73,80,75.8,Meets,Yes,Yes
+PF-0079,SG-21022042437,Q3,Smartwatch Production,74,76,80,75.9,Meets,Yes,Yes
+PF-0084,SG-21014032139,Q3,Smartwatch Production,70,100,81,82.7,Exceeds,No,No
+PF-0089,SG-21007012041,Q3,Smartwatch Production,68,80,84,75.4,Meets,Yes,Yes
+PF-0095,SG-21002032244,Q3,Smartwatch Production,74,81,82,78.1,Meets,Yes,Yes
+PF-0100,SG-22022072001,Q3,Quality Assurance,75,73,75,74.3,Meets,Yes,Yes
+PF-0103,SG-22027072502,Q3,Quality Assurance,89,100,87,92.5,Exceptional,Yes,Yes
+PF-0107,SG-22023012003,Q3,Quality Assurance,74,79,89,78.8,Meets,Yes,Yes
+PF-0111,SG-22026012504,Q3,Quality Assurance,85,93,85,87.8,Exceeds,Yes,Yes
+PF-0115,SG-22008062305,Q3,Quality Assurance,95,95,72,90.4,Exceptional,Yes,No
+PF-0120,SG-22027062107,Q3,Quality Assurance,64,71,74,68.5,Meets,Yes,Yes
+PF-0124,SG-22004012208,Q3,Quality Assurance,74,71,76,73.4,Meets,Yes,Yes
+PF-0128,SG-22001072309,Q3,Quality Assurance,81,78,71,78.0,Meets,Yes,Yes
+PF-0132,SG-22014022110,Q3,Quality Assurance,76,85,82,80.4,Exceeds,No,No
+PF-0136,SG-23013052101,Q3,Engineering and Maintenance,86,76,80,81.3,Exceeds,Yes,No
+PF-0140,SG-23025082102,Q3,Engineering and Maintenance,76,78,82,77.9,Meets,Yes,Yes
+PF-0144,SG-23026031803,Q3,Engineering and Maintenance,77,59,88,72.9,Meets,Yes,Yes
+PF-0148,SG-23025112404,Q3,Engineering and Maintenance,80,89,82,83.6,Exceeds,Yes,Yes
+PF-0152,SG-23005062505,Q3,Engineering and Maintenance,91,79,71,82.8,Exceeds,Yes,Yes
+PF-0156,SG-23026102106,Q3,Engineering and Maintenance,83,86,96,86.7,Exceeds,Yes,No
+PF-0160,SG-23008032007,Q3,Engineering and Maintenance,86,93,84,88.0,Exceeds,Yes,No
+PF-0164,SG-23015102408,Q3,Engineering and Maintenance,86,89,82,86.2,Exceeds,Yes,No
+PF-0168,SG-24021022401,Q3,Research and Development,88,93,82,88.6,Exceeds,No,Yes
+PF-0172,SG-24010072202,Q3,Research and Development,81,86,83,83.2,Exceeds,Yes,No
+PF-0176,SG-24020071903,Q3,Research and Development,88,76,64,79.0,Meets,Yes,Yes
+PF-0180,SG-24030112504,Q3,Research and Development,89,81,68,82.0,Exceeds,Yes,No
+PF-0184,SG-24021032005,Q3,Research and Development,95,85,96,91.7,Exceptional,Yes,No
+PF-0188,SG-24020022006,Q3,Research and Development,82,75,80,79.2,Meets,Yes,Yes
+PF-0192,SG-24002041907,Q3,Research and Development,64,79,88,74.1,Meets,Yes,Yes
+PF-0199,SG-25013022004,Q3,Supply Chain and Planning,82,96,80,86.5,Exceeds,No,No
+PF-0204,SG-25007032106,Q3,Supply Chain and Planning,91,78,82,84.7,Exceeds,Yes,No
+PF-0210,SG-26005072003,Q3,Procurement,81,93,91,87.2,Exceeds,Yes,No
+PF-0215,SG-27016122001,Q3,Finance and Accounts,74,90,75,79.8,Meets,Yes,Yes
+PF-0222,SG-28028062201,Q3,IT Data and HRIS,73,75,69,72.9,Meets,Yes,Yes
+PF-0226,SG-28012122402,Q3,IT Data and HRIS,65,76,76,71.0,Meets,Yes,Yes
+PF-0230,SG-28005032303,Q3,IT Data and HRIS,72,79,77,75.5,Meets,Yes,Yes
+PF-0234,SG-28027042404,Q3,IT Data and HRIS,59,90,81,74.2,Meets,Yes,Yes
+PF-0238,SG-29026022301,Q3,Sales Distribution and Service,82,80,84,81.7,Exceeds,No,Yes
+PF-0243,SG-29026052403,Q3,Sales Distribution and Service,82,93,98,89.0,Exceeds,Yes,No
+PF-0250,SG-31029061801,Q3,Administration and Security,86,87,100,89.2,Exceeds,Yes,Yes
+PF-0255,SG-12705012605,Q3,Human Resources and People,93,86,89,89.8,Exceeds,Yes,No
+PF-0262,SG-21011052646,Q3,Smartwatch Production,80,82,77,80.1,Exceeds,No,No
+PF-0265,SG-21030042647,Q3,Smartwatch Production,79,91,80,83.4,Exceeds,Yes,Yes
+PF-0268,SG-21025062648,Q3,Smartwatch Production,58,81,89,72.2,Meets,Yes,Yes
+PF-0271,SG-21012052649,Q3,Smartwatch Production,68,70,84,71.9,Meets,Yes,Yes
+PF-0274,SG-21004042650,Q3,Smartwatch Production,76,57,75,69.2,Meets,Yes,Yes
+PF-0277,SG-21001052651,Q3,Smartwatch Production,81,92,89,86.5,Exceeds,Yes,No
+PF-0280,SG-21011062652,Q3,Smartwatch Production,87,92,78,86.9,Exceeds,Yes,No
+PF-0283,SG-21017062653,Q3,Smartwatch Production,82,84,74,81.1,Exceeds,Yes,No
+PF-0286,SG-22027062611,Q3,Quality Assurance,91,80,84,85.8,Exceeds,Yes,No
+PF-0289,SG-22024042612,Q3,Quality Assurance,78,69,92,77.7,Meets,Yes,Yes
+PF-0292,SG-22007052613,Q3,Quality Assurance,75,79,79,77.2,Meets,Yes,Yes
+PF-0295,SG-23020062609,Q3,Engineering and Maintenance,66,58,74,64.8,Needs Improvement,Yes,Yes
+PF-0298,SG-23003042610,Q3,Engineering and Maintenance,69,87,89,79.3,Meets,Yes,Yes
+PF-0301,SG-24005052608,Q3,Research and Development,93,72,84,83.8,Exceeds,Yes,Yes
+PF-0304,SG-24027062609,Q3,Research and Development,71,67,90,73.4,Meets,Yes,Yes
+PF-0307,SG-28021062605,Q3,IT Data and HRIS,78,69,89,77.0,Meets,Yes,Yes
+PF-0310,SG-28019062606,Q3,IT Data and HRIS,76,71,95,78.0,Meets,Yes,Yes
+PF-0313,SG-12727052607,Q3,Human Resources and People,95,85,83,89.1,Exceeds,Yes,Yes
+PF-0316,SG-25010042607,Q3,Supply Chain and Planning,66,70,82,70.6,Meets,No,Yes
+PF-0319,SG-30023052603,Q3,EHS and Regulatory Compliance,54,75,90,68.5,Meets,Yes,Yes
+PF-0321,SG-21028082654,Q3,Smartwatch Production,60,89,82,74.5,Meets,Yes,Yes
+PF-0323,SG-21001092655,Q3,Smartwatch Production,100,68,66,82.0,Exceeds,Yes,No
+PF-0325,SG-21018072656,Q3,Smartwatch Production,86,67,87,79.6,Meets,No,Yes
+PF-0327,SG-21012092657,Q3,Smartwatch Production,66,81,82,74.5,Meets,Yes,Yes
+PF-0329,SG-21012092658,Q3,Smartwatch Production,88,94,88,90.1,Exceptional,No,Yes
+PF-0331,SG-21003092659,Q3,Smartwatch Production,65,74,73,69.8,Meets,Yes,Yes
+PF-0333,SG-21009092660,Q3,Smartwatch Production,76,84,80,79.6,Meets,Yes,Yes
+PF-0335,SG-21024092661,Q3,Smartwatch Production,80,81,77,79.8,Meets,Yes,Yes
+PF-0337,SG-21010082662,Q3,Smartwatch Production,69,69,79,71.0,Meets,Yes,Yes
+PF-0339,SG-21022082663,Q3,Smartwatch Production,89,90,74,86.3,Exceeds,Yes,No
+PF-0341,SG-21015082664,Q3,Smartwatch Production,92,92,92,92.0,Exceptional,Yes,Yes
+PF-0343,SG-21006082665,Q3,Smartwatch Production,75,70,88,75.8,Meets,No,Yes
+PF-0345,SG-21004082666,Q3,Smartwatch Production,74,70,80,73.8,Meets,Yes,Yes
+PF-0347,SG-21024082667,Q3,Smartwatch Production,77,84,77,79.5,Meets,Yes,Yes
+PF-0349,SG-22006072614,Q3,Quality Assurance,68,84,85,77.0,Meets,Yes,Yes
+PF-0351,SG-22016082615,Q3,Quality Assurance,65,64,74,66.5,Meets,Yes,Yes
+PF-0353,SG-22008082616,Q3,Quality Assurance,80,83,70,79.0,Meets,Yes,Yes
+PF-0355,SG-22002092617,Q3,Quality Assurance,71,84,81,77.5,Meets,Yes,Yes
+PF-0357,SG-23030082611,Q3,Engineering and Maintenance,65,79,86,74.1,Meets,Yes,Yes
+PF-0359,SG-23001082612,Q3,Engineering and Maintenance,71,66,86,72.2,Meets,No,Yes
+PF-0361,SG-23013092613,Q3,Engineering and Maintenance,96,77,79,86.0,Exceeds,Yes,No
+PF-0363,SG-24025082610,Q3,Research and Development,82,66,100,80.0,Exceeds,Yes,No
+PF-0365,SG-24027082611,Q3,Research and Development,55,74,72,65.0,Meets,Yes,Yes
+PF-0367,SG-24026092612,Q3,Research and Development,84,67,91,79.5,Meets,No,Yes
+PF-0369,SG-28012072607,Q3,IT Data and HRIS,90,68,87,81.7,Exceeds,Yes,No
+PF-0371,SG-28031082608,Q3,IT Data and HRIS,77,69,76,74.0,Meets,Yes,Yes
+PF-0373,SG-29001082605,Q3,Sales Distribution and Service,67,77,78,72.7,Meets,Yes,Yes
+PF-0375,SG-29008072606,Q3,Sales Distribution and Service,80,60,86,74.2,Meets,Yes,Yes
+PF-0377,SG-25008092608,Q3,Supply Chain and Planning,72,65,80,71.2,Meets,Yes,Yes
+PF-0379,SG-25028072609,Q3,Supply Chain and Planning,82,83,92,84.3,Exceeds,No,No
+PF-0381,SG-12724092608,Q3,Human Resources and People,76,78,85,78.5,Meets,Yes,Yes
+PF-0383,SG-27005082605,Q3,Finance and Accounts,99,84,75,89.0,Exceeds,No,No

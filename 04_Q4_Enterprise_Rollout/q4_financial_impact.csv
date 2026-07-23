@@ -1,0 +1,4 @@
+﻿Month,Quarter,Active_Headcount,Units_Sold,Revenue_BDT_Million,Material_Cost_BDT_Million,Workforce_Cost_BDT_Million,Overhead_BDT_Million,Scrap_Cost_BDT_Million,Warranty_Cost_BDT_Million,HR_Transformation_Cost_BDT_Million,Other_Operating_Cost_BDT_Million,Operating_Profit_BDT_Million,Cumulative_Profit_BDT_Million,Investment_Sale_Risk
+2026-10-01,Q4,107,7494,78.0,43.0,7.69,8.5,0.27,0.45,0.6,3.8,13.69,-51.6,Low
+2026-11-01,Q4,112,8590,94.0,50.0,8.25,9.0,0.24,0.4,0.6,4.0,21.51,-30.09,Low
+2026-12-01,Q4,114,10009,108.0,56.0,8.28,9.5,0.23,0.37,0.6,4.2,28.82,-1.27,Low

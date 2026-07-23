@@ -1,0 +1,22 @@
+{
+  "title": "Sabia Group HRBP Smartwatch Recovery 2026",
+  "id": "samusahr/sabia-group-hrbp-smartwatch-recovery-2026",
+  "licenses": [
+    {
+      "name": "CC0-1.0"
+    }
+  ],
+  "keywords": [
+    "human resources",
+    "hr analytics",
+    "hrbp",
+    "manufacturing",
+    "smartwatch",
+    "bangladesh",
+    "power bi",
+    "workforce planning",
+    "synthetic data"
+  ],
+  "subtitle": "Synthetic Q1-Q4 HRBP transformation data linking workforce, quality, production and profit.",
+  "description": "A synthetic Bangladesh-focused HRBP business recovery dataset for Excel, Python, Power BI and workforce analytics practice."
+}

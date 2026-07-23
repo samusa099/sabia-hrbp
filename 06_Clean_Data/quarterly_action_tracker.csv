@@ -1,0 +1,25 @@
+﻿Quarter,Action_ID,Action,Owner,Status,Planned_End,Evidence_File
+Q1,Q1-A01,Complete business and workforce baseline,Lead HRBP,Completed,2026-03-31,q1_project_summary.csv
+Q1,Q1-A02,Build KPI dictionary and target architecture,People Analytics,Completed,2026-03-31,q1_project_summary.csv
+Q1,Q1-A03,Run four workforce cost scenarios,HRBP + Finance,Completed,2026-03-31,q1_project_summary.csv
+Q1,Q1-A04,Complete role-based restructuring review,Head of HR,Completed,2026-03-31,q1_project_summary.csv
+Q1,Q1-A05,Design 25-person controlled pilot,HRBP + COO,Completed,2026-03-31,q1_project_summary.csv
+Q1,Q1-A06,Obtain conditional pilot approval,CEO Office,Completed,2026-03-31,q1_project_summary.csv
+Q2,Q2-A01,Launch Line A test and control groups,COO + HRBP,Completed,2026-06-30,q2_project_summary.csv
+Q2,Q2-A02,Certify pilot employees in precision assembly and ESD,L&D,Completed,2026-06-30,q2_project_summary.csv
+Q2,Q2-A03,Start HR service ticket SLA,HR Operations,Completed,2026-06-30,q2_project_summary.csv
+Q2,Q2-A04,Deploy HRIS self-service to pilot group,HRIS Analyst,Completed,2026-06-30,q2_project_summary.csv
+Q2,Q2-A05,Review pilot results against success criteria,People Analytics,Completed,2026-06-30,q2_project_summary.csv
+Q2,Q2-A06,Approve scale with corrective actions,Steering Committee,Completed,2026-06-30,q2_project_summary.csv
+Q3,Q3-A01,Expand operating model to Lines A and B,COO,Completed,2026-09-30,q3_project_summary.csv
+Q3,Q3-A02,"Hire critical technicians, QA and engineering roles",Talent Acquisition,Completed,2026-09-30,q3_project_summary.csv
+Q3,Q3-A03,Launch manager performance dashboard,People Analytics,Completed,2026-09-30,q3_project_summary.csv
+Q3,Q3-A04,Start quarterly recognition programme,Head of HR,Completed,2026-09-30,q3_project_summary.csv
+Q3,Q3-A05,Run weekly people-production review,Lead HRBP,Completed,2026-09-30,q3_project_summary.csv
+Q3,Q3-A06,Recommend enterprise rollout,Steering Committee,Completed,2026-09-30,q3_project_summary.csv
+Q4,Q4-A01,Extend model across Sabia Group entities,Acting CHRO,Completed,2026-12-15,q4_project_summary.csv
+Q4,Q4-A02,"Integrate HR, production and financial dashboard",BI Developer,Completed,2026-12-15,q4_project_summary.csv
+Q4,Q4-A03,Complete benefits-realization review,CFO + HRBP,Completed,2026-12-15,q4_project_summary.csv
+Q4,Q4-A04,Approve business-as-usual governance,Board,Completed,2026-12-15,q4_project_summary.csv
+Q4,Q4-A05,Handover recurring KPI calendar,HR Operations,Completed,2026-12-15,q4_project_summary.csv
+Q4,Q4-A06,Close transformation programme,CEO Office,Completed,2026-12-15,q4_project_summary.csv

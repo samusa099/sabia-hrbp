@@ -1,0 +1,9 @@
+﻿File,Row_Count,Use
+01_data_quality_issue_summary.csv,4,Data quality audit summary
+02_employee_cleaning_examples.csv,28,Raw-versus-clean employee examples
+03_quarterly_business_summary.csv,4,Power BI quarterly executive dataset
+04_workforce_bridge.csv,4,Q1–Q4 active headcount
+05_recruitment_summary.csv,3,Quarterly recruitment funnel
+06_training_summary.csv,3,Quarterly learning and certification
+07_department_people_summary.csv,12,Department people and workload risk
+08_powerbi_production_finance_monthly.csv,12,Monthly Power BI reporting view

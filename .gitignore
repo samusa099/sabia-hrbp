@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+
+# Generated Python outputs
+07_Python/generated_clean_output/
+07_Python/eda_outputs/
+
+# SQLite temporary files (keep the main .sqlite database)
+*.sqlite-wal
+*.sqlite-shm
+*.db-wal
+*.db-shm
+
+# Credentials and secrets
+.env
+.env.*
+kaggle.json
+access_token
+.kaggle/
+*.pem
+*.key
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.tmp
+~$*.xlsx
+
+# Archives generated locally
+*.zip
+*.7z
+*.rar
