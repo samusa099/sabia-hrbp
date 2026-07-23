@@ -1,0 +1,26 @@
+﻿Pilot_ID,Employee_ID,Department,Position,Pilot_Role,Pilot_Start,Pilot_End,Training_Completed,Pre_Skill_Score,Post_Skill_Score,Pre_Productivity_Index,Post_Productivity_Index,Retention_Intent_Score
+PIL-001,SG-22027072502,Quality Assurance,Quality Inspector,Core participant,2026-04-15,2026-06-30,Yes,68,72,0.95,1.29,4
+PIL-002,SG-21007012041,Smartwatch Production,Production Manager,Line support,2026-04-15,2026-06-30,Yes,50,92,0.93,1.12,4
+PIL-003,SG-23026102106,Engineering and Maintenance,Maintenance Technician,Core participant,2026-04-15,2026-06-30,No,67,88,0.78,1.27,4
+PIL-004,SG-22026012504,Quality Assurance,Process Quality Engineer,Quality coach,2026-04-15,2026-06-30,Yes,57,82,0.85,1.37,4
+PIL-005,SG-21022042437,Smartwatch Production,Production Supervisor,Data support,2026-04-15,2026-06-30,Yes,55,84,0.96,1.1,5
+PIL-006,SG-23005062505,Engineering and Maintenance,Industrial Engineer,Quality coach,2026-04-15,2026-06-30,Yes,60,91,0.83,1.38,4
+PIL-007,SG-21026012031,Smartwatch Production,Precision Assembly Technician,Line support,2026-04-15,2026-06-30,Yes,63,85,0.89,1.32,3
+PIL-008,SG-23003042610,Engineering and Maintenance,Maintenance Engineer,Core participant,2026-04-15,2026-06-30,Yes,45,73,0.83,1.12,5
+PIL-009,SG-12716102104,Human Resources and People,HR Operations Officer,Quality coach,2026-04-15,2026-06-30,Yes,62,79,0.95,1.16,5
+PIL-010,SG-21002032026,Smartwatch Production,SMT Line Technician,Core participant,2026-04-15,2026-06-30,Yes,63,81,0.79,1.4,5
+PIL-011,SG-21004042650,Smartwatch Production,Assembly Operator,Core participant,2026-04-15,2026-06-30,Yes,65,92,0.91,1.41,5
+PIL-012,SG-21016092329,Smartwatch Production,SMT Line Technician,Data support,2026-04-15,2026-06-30,Yes,48,96,0.86,1.38,3
+PIL-013,SG-21014032139,Smartwatch Production,SMT Line Technician,Core participant,2026-04-15,2026-06-30,Yes,62,87,0.83,1.25,4
+PIL-014,SG-22004012208,Quality Assurance,QA Supervisor,Quality coach,2026-04-15,2026-06-30,No,62,81,0.79,1.34,4
+PIL-015,SG-21024051808,Smartwatch Production,Production Manager,Quality coach,2026-04-15,2026-06-30,Yes,60,80,0.81,1.34,4
+PIL-016,SG-21017062021,Smartwatch Production,Production Manager,Core participant,2026-04-15,2026-06-30,Yes,67,72,0.87,1.32,4
+PIL-017,SG-28005032303,IT Data and HRIS,HRIS Analyst,Quality coach,2026-04-15,2026-06-30,No,65,81,0.79,1.09,5
+PIL-018,SG-21009042120,Smartwatch Production,Production Line Leader,Line support,2026-04-15,2026-06-30,Yes,58,74,0.8,1.16,5
+PIL-019,SG-23013052101,Engineering and Maintenance,Maintenance Engineer,Core participant,2026-04-15,2026-06-30,Yes,64,95,0.79,1.26,5
+PIL-020,SG-28012122402,IT Data and HRIS,HRIS Analyst,Core participant,2026-04-15,2026-06-30,Yes,47,83,0.76,1.23,4
+PIL-021,SG-23025112404,Engineering and Maintenance,Maintenance Technician,Data support,2026-04-15,2026-06-30,Yes,42,94,0.89,1.11,4
+PIL-022,SG-22027062107,Quality Assurance,Process Quality Engineer,Quality coach,2026-04-15,2026-06-30,Yes,67,81,0.76,1.34,3
+PIL-023,SG-23025082102,Engineering and Maintenance,Industrial Engineer,Line support,2026-04-15,2026-06-30,Yes,52,74,0.96,1.21,3
+PIL-024,SG-22008062305,Quality Assurance,QA Supervisor,Quality coach,2026-04-15,2026-06-30,Yes,61,92,0.96,1.17,3
+PIL-025,SG-23008032007,Engineering and Maintenance,Engineering Manager,Quality coach,2026-04-15,2026-06-30,Yes,64,81,0.82,1.1,4

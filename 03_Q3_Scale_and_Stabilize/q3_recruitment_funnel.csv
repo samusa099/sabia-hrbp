@@ -1,0 +1,15 @@
+﻿Requisition_ID,Quarter,Department,Position,Critical_Role,Open_Date,Close_Date,Approved_Headcount,Applications,Screened,Interviewed,Offers_Made,Offers_Accepted,Hires_Joined,Primary_Source,Recruitment_Cost_BDT,Time_to_Fill_Days,Hiring_Manager_Satisfaction,90_Day_Retention_Rate
+REQ-015,Q3,Smartwatch Production,Precision Assembly Technician,No,2026-08-29,2026-09-20,3,54,29,16,10,3,3,University Career Centre,73902,22,4.5,0.87
+REQ-016,Q3,Smartwatch Production,SMT Line Technician,No,2026-07-16,2026-09-07,4,60,33,18,13,4,4,University Career Centre,110136,53,3.7,0.91
+REQ-017,Q3,Smartwatch Production,SMT Line Technician,No,2026-08-24,2026-09-21,3,30,18,9,6,3,3,Walk-in,62454,28,3.7,0.98
+REQ-018,Q3,Smartwatch Production,Production Supervisor,No,2026-09-24,2026-09-30,4,32,18,8,6,4,4,Agency,160136,6,4.7,0.9
+REQ-019,Q3,Quality Assurance,Quality Technician,Yes,2026-07-18,2026-08-29,1,16,8,3,2,1,1,Bdjobs,23139,42,3.8,0.92
+REQ-020,Q3,Quality Assurance,Quality Inspector,Yes,2026-07-12,2026-08-20,3,27,15,8,6,3,3,Employee Referral,48519,39,4.4,0.97
+REQ-021,Q3,Engineering and Maintenance,Maintenance Engineer,Yes,2026-08-13,2026-09-19,1,8,3,1,1,1,1,Agency,34873,37,4.7,0.94
+REQ-022,Q3,Engineering and Maintenance,Engineering Manager,Yes,2026-08-29,2026-09-30,2,36,16,8,4,2,2,LinkedIn,27540,32,4.3,0.91
+REQ-023,Q3,Research and Development,R&D Manager,Yes,2026-09-09,2026-09-30,3,54,25,15,8,3,3,University Career Centre,90498,21,3.7,0.88
+REQ-024,Q3,IT Data and HRIS,IT Manager,Yes,2026-08-02,2026-09-25,2,24,10,6,3,2,2,Employee Referral,59642,54,4.0,0.93
+REQ-025,Q3,Sales Distribution and Service,Service Centre Technician,No,2026-07-06,2026-08-21,2,28,17,7,5,2,2,Employee Referral,68218,46,4.1,0.95
+REQ-026,Q3,Supply Chain and Planning,Inventory Controller,No,2026-09-18,2026-09-30,2,24,12,7,4,2,2,LinkedIn,34586,12,3.5,0.86
+REQ-027,Q3,Human Resources and People,Learning and Development Specialist,No,2026-07-16,2026-08-22,1,12,6,3,2,1,1,Employee Referral,37211,37,3.6,0.96
+REQ-028,Q3,Finance and Accounts,Financial Analyst,No,2026-08-20,2026-09-11,1,14,8,3,1,1,1,University Career Centre,44208,22,4.0,0.88

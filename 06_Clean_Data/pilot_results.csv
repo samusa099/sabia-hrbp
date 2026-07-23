@@ -1,0 +1,9 @@
+﻿Metric,Unit,Baseline_Q1,Pilot_Target,Pilot_Result,Control_Result,Decision
+First Pass Yield,%,64.0,78.0,81.0,69.0,Scale
+Defect Rate,%,18.2,12.0,10.2,15.1,Scale
+Units per Labour Hour,Units,1.04,1.45,1.58,1.21,Scale
+Absence Rate,%,7.1,6.0,5.7,6.6,Scale
+Critical Skill Certification,%,32.0,70.0,84.0,41.0,Scale
+Supervisor Check-in Completion,%,46.0,80.0,92.0,57.0,Scale
+HR Service SLA,%,51.0,75.0,82.0,60.0,Scale
+HRIS Self-Service Adoption,%,12.0,55.0,67.0,21.0,Scale

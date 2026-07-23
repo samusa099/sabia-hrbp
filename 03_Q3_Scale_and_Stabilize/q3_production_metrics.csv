@@ -1,0 +1,7 @@
+﻿Month,Quarter,Production_Line,Planned_Units,Actual_Units,First_Pass_Yield,Defect_Rate,Rework_Rate,Scrap_Units,Customer_Return_Rate,Units_per_Labour_Hour,Production_Headcount,Downtime_Hours,Primary_Constraint
+2026-07-01,Q3,Line A,3088,2860,0.8509,0.084,0.1232,84,0.0302,1.78,10,32.8,Process stability
+2026-07-01,Q3,Line B,2527,2340,0.8443,0.0836,0.1154,68,0.0301,1.77,10,36.8,Process stability
+2026-08-01,Q3,Line A,3682,3410,0.884,0.0698,0.0855,83,0.0251,2.02,10,35.5,Supplier quality
+2026-08-01,Q3,Line B,3013,2790,0.8863,0.0765,0.094,74,0.0276,2.0,10,27.0,Supplier quality
+2026-09-01,Q3,Line A,4276,3960,0.9292,0.0537,0.0769,74,0.0193,2.2,11,23.9,Supplier quality
+2026-09-01,Q3,Line B,3499,3240,0.9182,0.0453,0.0784,51,0.0163,2.16,10,25.6,Supplier quality

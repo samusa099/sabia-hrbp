@@ -1,0 +1,14 @@
+﻿Layer,Pillar_ID,Pillar,Purpose,Primary_Data
+Roof,PS,People Strategy,"Connect workforce decisions with smartwatch quality, cost, speed and growth.","Quarterly scorecard, workforce plan and financial impact"
+Foundation,F1,Workforce Strategy,"Forecast headcount, capability, labour cost and capacity.","Employee master, workforce scenarios and recruitment"
+Foundation,F2,Organization Design,"Define structure, spans, layers, roles and decision rights.","Department, position and restructuring data"
+Foundation,F3,HR Services,Deliver consistent employee services with measurable SLAs.,HR service tickets and employee relations
+Foundation,F4,HR Technology,"Enable HRIS, employee self-service, workflow and analytics.",Technology adoption and data quality
+Practice,P1,Talent Acquisition and Recruitment,Hire scarce precision manufacturing and digital skills.,Recruitment funnel
+Practice,P2,Talent Management,"Identify, develop and retain critical talent.","Performance, training and succession"
+Practice,P3,Legal Regulatory and Compliance,"Maintain labour, EHS and product-compliance readiness.","Audit, training and ER records"
+Practice,P4,Performance Management,Translate business targets into team and individual KPIs.,Performance scorecard and production
+Practice,P5,Rewards and Recognition,"Reward quality, skill certification, productivity and improvement.",Recognition records
+Practice,P6,Career Development,"Build technician, supervisor and specialist career paths.",Learning records and internal moves
+Practice,P7,Employee Relations,"Resolve grievance, discipline and welfare matters fairly.",Employee relations cases
+Practice,P8,Employee Exits,"Manage exits, knowledge transfer and attrition insight.",Layoff and exit records

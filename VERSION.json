@@ -1,0 +1,21 @@
+{
+  "project": "Sabia Group HRBP-Led Smartwatch Business Recovery 2026",
+  "version": "1.1-db-enhanced",
+  "generated_on": "2026-07-22",
+  "baseline_headcount": 100,
+  "q1_layoffs": 48,
+  "year_end_active_headcount": 114,
+  "synthetic_data": true,
+  "primary_tools": [
+    "Excel",
+    "Power BI",
+    "Python",
+    "Looker Studio optional",
+    "Kaggle"
+  ],
+  "database": "SQLite",
+  "database_tables": 33,
+  "database_views": 15,
+  "database_integrity_check": "ok",
+  "database_folder": "13_Database_SQL"
+}

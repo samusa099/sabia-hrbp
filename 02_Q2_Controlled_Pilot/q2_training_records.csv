@@ -1,0 +1,36 @@
+﻿Training_Record_ID,Employee_ID,Quarter,Department,Course_Name,Training_Category,Training_Date,Training_Hours,Assessment_Score,Completion_Status,Certified,Training_Cost_BDT,Provider
+TR-0003,SG-24010072202,Q2,Research and Development,Precision Assembly Certification,Technical,2026-05-26,16,71,Completed,No,2510,Sabia Academy
+TR-0007,SG-22023012003,Q2,Quality Assurance,Lean Manufacturing Basics,Operational Excellence,2026-05-24,12,65,Completed,No,4794,External Consultant
+TR-0008,SG-29026052403,Q2,Sales Distribution and Service,Quality at Source,Quality,2026-06-02,8,51,Failed,No,4428,Internal SME
+TR-0012,SG-23013052101,Q2,Engineering and Maintenance,HRIS Employee Self Service,Digital,2026-06-08,4,72,Completed,No,1933,Sabia Academy
+TR-0016,SG-24030112504,Q2,Research and Development,Quality at Source,Quality,2026-04-01,8,69,Completed,No,4232,External Consultant
+TR-0019,SG-22008062305,Q2,Quality Assurance,Bangladesh Labour Law Awareness,Compliance,2026-04-02,6,69,Completed,No,1215,Sabia Academy
+TR-0031,SG-21009042120,Q2,Smartwatch Production,HRIS Employee Self Service,Digital,2026-04-14,4,85,Completed,No,1764,Internal SME
+TR-0032,SG-28012122402,Q2,IT Data and HRIS,Precision Assembly Certification,Technical,2026-04-12,16,91,Completed,Yes,4384,Internal SME
+TR-0038,SG-23025082102,Q2,Engineering and Maintenance,Bangladesh Labour Law Awareness,Compliance,2026-05-17,6,90,Completed,Yes,1781,Sabia Academy
+TR-0055,SG-24021022401,Q2,Research and Development,Quality at Source,Quality,2026-06-08,8,65,Completed,No,1548,Internal SME
+TR-0060,SG-22004012208,Q2,Quality Assurance,Quality at Source,Quality,2026-04-01,8,73,Completed,No,3497,Internal SME
+TR-0070,SG-27016122001,Q2,Finance and Accounts,HRIS Employee Self Service,Digital,2026-05-05,4,80,Completed,No,2143,Internal SME
+TR-0075,SG-29026022301,Q2,Sales Distribution and Service,Quality at Source,Quality,2026-04-26,8,75,Completed,Yes,3610,External Consultant
+TR-0077,SG-28005032303,Q2,IT Data and HRIS,Bangladesh Labour Law Awareness,Compliance,2026-04-30,6,84,Completed,Yes,1438,Sabia Academy
+TR-0079,SG-21015092303,Q2,Smartwatch Production,ESD Safety and Handling,Compliance,2026-04-16,8,62,Completed,No,2891,BUET Industry Partner
+TR-0088,SG-24002041907,Q2,Research and Development,Lean Manufacturing Basics,Operational Excellence,2026-05-24,12,67,Completed,No,1885,External Consultant
+TR-0089,SG-24002041907,Q2,Research and Development,Supervisor Essentials,Leadership,2026-05-05,12,72,Completed,No,4112,Internal SME
+TR-0091,SG-28028062201,Q2,IT Data and HRIS,HRIS Employee Self Service,Digital,2026-04-19,4,86,Completed,No,2677,BUET Industry Partner
+TR-0092,SG-28028062201,Q2,IT Data and HRIS,ESD Safety and Handling,Compliance,2026-05-14,8,73,Completed,No,3909,BUET Industry Partner
+TR-0101,SG-25007032106,Q2,Supply Chain and Planning,Lean Manufacturing Basics,Operational Excellence,2026-06-28,12,76,Completed,No,1769,External Consultant
+TR-0102,SG-25007032106,Q2,Supply Chain and Planning,Problem Solving and Root Cause Analysis,Quality,2026-06-17,10,71,Completed,No,2705,BUET Industry Partner
+TR-0103,SG-25007032106,Q2,Supply Chain and Planning,ESD Safety and Handling,Compliance,2026-06-25,8,85,Completed,Yes,4468,BUET Industry Partner
+TR-0106,SG-26005072003,Q2,Procurement,Supervisor Essentials,Leadership,2026-04-27,12,58,In Progress,No,3023,Internal SME
+TR-0114,SG-23026102106,Q2,Engineering and Maintenance,Lean Manufacturing Basics,Operational Excellence,2026-04-12,12,88,Completed,No,1631,External Consultant
+TR-0116,SG-21015012328,Q2,Smartwatch Production,HRIS Employee Self Service,Digital,2026-06-08,4,89,Completed,No,1254,External Consultant
+TR-0124,SG-12705012605,Q2,Human Resources and People,Quality at Source,Quality,2026-04-26,8,91,Completed,Yes,3529,External Consultant
+TR-0125,SG-12705012605,Q2,Human Resources and People,ESD Safety and Handling,Compliance,2026-05-14,8,72,Completed,No,3236,BUET Industry Partner
+TR-0139,SG-22027062107,Q2,Quality Assurance,ESD Safety and Handling,Compliance,2026-04-27,8,62,Completed,No,3757,Sabia Academy
+TR-0142,SG-23008032007,Q2,Engineering and Maintenance,Precision Assembly Certification,Technical,2026-05-30,16,75,Completed,Yes,3754,Internal SME
+TR-0145,SG-21017062021,Q2,Smartwatch Production,Problem Solving and Root Cause Analysis,Quality,2026-05-05,10,52,In Progress,No,3820,External Consultant
+TR-0147,SG-25013022004,Q2,Supply Chain and Planning,Embedded Systems Fundamentals,Technical,2026-06-09,20,68,Completed,No,3282,Sabia Academy
+TR-0181,SG-30023052603,Q2,EHS and Regulatory Compliance,ESD Safety and Handling,Compliance,2026-06-29,8,79,Completed,Yes,3402,BUET Industry Partner
+TR-0185,SG-21002032244,Q2,Smartwatch Production,ESD Safety and Handling,Compliance,2026-06-13,8,81,Completed,Yes,3216,External Consultant
+TR-0186,SG-21003032210,Q2,Smartwatch Production,Bangladesh Labour Law Awareness,Compliance,2026-05-13,6,88,Completed,Yes,2109,Sabia Academy
+TR-0194,SG-22027072502,Q2,Quality Assurance,ESD Safety and Handling,Compliance,2026-06-19,8,75,Completed,Yes,1705,External Consultant

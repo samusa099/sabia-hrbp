@@ -1,0 +1,5 @@
+﻿Dataset,Issue_Type,Issue_Count
+Employee,MISSING_DISTRICT,17
+Employee,MISSING_SKILL_LEVEL,12
+Employee,DUPLICATE_KEY,1
+Training,MISSING_ASSESSMENT,7

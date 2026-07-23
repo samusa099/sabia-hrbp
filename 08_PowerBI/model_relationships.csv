@@ -1,0 +1,9 @@
+﻿From_Table,From_Column,To_Table,To_Column,Cardinality,Cross_Filter
+Employee_Master,Employee_ID,Training_Records,Employee_ID,1:*,Single
+Employee_Master,Employee_ID,Performance_Quarterly,Employee_ID,1:*,Single
+Employee_Master,Employee_ID,Layoff_and_Restructuring,Employee_ID,1:*,Single
+Employee_Master,Employee_ID,Other_Employee_Exits,Employee_ID,1:*,Single
+Department,Department,Employee_Master,Department,1:*,Single
+Date,Date,Financial_Impact_Monthly,Month,1:*,Single
+Date,Date,Production_Monthly,Month,1:*,Single
+Date,Date,Attendance_Monthly,Month,1:*,Single

@@ -1,0 +1,8 @@
+﻿Risk_ID,Risk,Category,Likelihood,Impact,Risk_Score,Mitigation,Owner,Status
+R-01,Loss of critical knowledge during restructuring,People,Medium,High,12,"Critical-role review, knowledge transfer and rehire pool",Lead HRBP,Controlled
+R-02,Remaining employees experience burnout after headcount reduction,People,High,High,16,"Workload cap, overtime dashboard, supervisor check-ins and phased hiring",COO + HRBP,Monitoring
+R-03,Pilot results are not statistically representative,Analytics,Medium,Medium,9,Use test-control comparison and predefined success criteria,People Analytics,Controlled
+R-04,Poor source data undermines decisions,Data,High,High,16,"Data dictionary, validation rules and data-quality log",HRIS Analyst,Improving
+R-05,Scarce embedded and precision skills remain unavailable,Talent,High,High,16,"University pipeline, referral, certification and targeted sourcing",Talent Acquisition,Improving
+R-06,Employees perceive workforce reset as unfair,ER and Compliance,Medium,High,12,"Documented criteria, legal review, communication and appeal route",Head of HR,Controlled
+R-07,Supplier quality limits production improvement,Operations,Medium,High,12,Vendor scorecard and incoming quality inspection,Supply Chain,Monitoring

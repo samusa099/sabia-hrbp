@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this synthetic HR analytics project, please cite it as below."
+title: "Sabia Group HRBP Smartwatch Business Recovery 2026"
+type: dataset
+authors:
+  - family-names: "Musa"
+    given-names: "Siam Ahmad"
+year: 2026
+license: CC0-1.0
+repository-code: "https://github.com/samusa099/sabia-hrbp"
+keywords:
+  - HR analytics
+  - HRBP
+  - manufacturing
+  - Power BI
+  - Python
+  - SQL
+  - Bangladesh
+abstract: "A synthetic Q1-Q4 HRBP-led business recovery project linking workforce, production quality, HR technology, and profitability."

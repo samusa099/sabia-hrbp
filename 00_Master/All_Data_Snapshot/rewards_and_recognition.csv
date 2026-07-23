@@ -1,0 +1,76 @@
+﻿Recognition_ID,Quarter,Employee_ID,Department,Recognition_Type,Award_Value_BDT,Business_Impact
+REC-001,Q1,SG-21025062648,Smartwatch Production,Safety Contribution,1500,Downtime reduction
+REC-002,Q1,SG-28027042404,IT Data and HRIS,Skill Certification,1000,Improved safety
+REC-003,Q1,SG-22027072502,Quality Assurance,Productivity Improvement,2000,Downtime reduction
+REC-004,Q1,SG-23025112404,Engineering and Maintenance,Skill Certification,1500,Improved safety
+REC-005,Q1,SG-22016082615,Quality Assurance,Safety Contribution,1500,Defect reduction
+REC-006,Q2,SG-29008072606,Sales Distribution and Service,Safety Contribution,5000,Higher output
+REC-007,Q2,SG-21004122674,Smartwatch Production,Customer Impact,1000,Higher output
+REC-008,Q2,SG-21010082662,Smartwatch Production,Innovation Idea,1000,Better service
+REC-009,Q2,SG-25007032106,Supply Chain and Planning,Productivity Improvement,2000,Defect reduction
+REC-010,Q2,SG-23004112615,Engineering and Maintenance,Skill Certification,1000,Defect reduction
+REC-011,Q2,SG-24027062609,Research and Development,Skill Certification,1500,Improved safety
+REC-012,Q2,SG-12716102104,Human Resources and People,Innovation Idea,1500,Defect reduction
+REC-013,Q2,SG-23025112404,Engineering and Maintenance,Innovation Idea,1000,Defect reduction
+REC-014,Q2,SG-23020062609,Engineering and Maintenance,Quality Champion,5000,Improved safety
+REC-015,Q2,SG-21024092661,Smartwatch Production,Productivity Improvement,3000,Higher output
+REC-016,Q2,SG-22027072502,Quality Assurance,Skill Certification,1500,Downtime reduction
+REC-017,Q2,SG-21007012041,Smartwatch Production,Safety Contribution,1500,Higher output
+REC-018,Q3,SG-21002032244,Smartwatch Production,Safety Contribution,5000,Better service
+REC-019,Q3,SG-21011062652,Smartwatch Production,Quality Champion,2000,Better service
+REC-020,Q3,SG-23001102614,Engineering and Maintenance,Customer Impact,5000,Downtime reduction
+REC-021,Q3,SG-31029061801,Administration and Security,Skill Certification,5000,Defect reduction
+REC-022,Q3,SG-21011102668,Smartwatch Production,Productivity Improvement,5000,Better service
+REC-023,Q3,SG-21028082654,Smartwatch Production,Quality Champion,3000,Higher output
+REC-024,Q3,SG-21024092661,Smartwatch Production,Productivity Improvement,5000,Downtime reduction
+REC-025,Q3,SG-22016082615,Quality Assurance,Quality Champion,1500,Downtime reduction
+REC-026,Q3,SG-21010082662,Smartwatch Production,Customer Impact,1500,Better service
+REC-027,Q3,SG-22024042612,Quality Assurance,Quality Champion,2000,Defect reduction
+REC-028,Q3,SG-22002092617,Quality Assurance,Productivity Improvement,1500,Downtime reduction
+REC-029,Q3,SG-21026012031,Smartwatch Production,Skill Certification,2000,Faster onboarding
+REC-030,Q3,SG-23003042610,Engineering and Maintenance,Safety Contribution,2000,Higher output
+REC-031,Q3,SG-21018072656,Smartwatch Production,Innovation Idea,2000,Downtime reduction
+REC-032,Q3,SG-29031102607,Sales Distribution and Service,Innovation Idea,3000,Faster onboarding
+REC-033,Q3,SG-28012072607,IT Data and HRIS,Quality Champion,3000,Downtime reduction
+REC-034,Q3,SG-21001092655,Smartwatch Production,Quality Champion,5000,Better service
+REC-035,Q3,SG-21011122670,Smartwatch Production,Skill Certification,5000,Better service
+REC-036,Q3,SG-21021102669,Smartwatch Production,Skill Certification,3000,Downtime reduction
+REC-037,Q3,SG-12705012605,Human Resources and People,Productivity Improvement,1500,Defect reduction
+REC-038,Q3,SG-24027062609,Research and Development,Customer Impact,2000,Higher output
+REC-039,Q3,SG-28005032303,IT Data and HRIS,Quality Champion,1500,Higher output
+REC-040,Q3,SG-25010042607,Supply Chain and Planning,Innovation Idea,1500,Faster onboarding
+REC-041,Q3,SG-23001082612,Engineering and Maintenance,Customer Impact,3000,Improved safety
+REC-042,Q4,SG-21009092660,Smartwatch Production,Productivity Improvement,1000,Better service
+REC-043,Q4,SG-21015092303,Smartwatch Production,Safety Contribution,1000,Improved safety
+REC-044,Q4,SG-21025062648,Smartwatch Production,Innovation Idea,1500,Improved safety
+REC-045,Q4,SG-21016092329,Smartwatch Production,Quality Champion,2000,Improved safety
+REC-046,Q4,SG-21014032139,Smartwatch Production,Innovation Idea,1500,Downtime reduction
+REC-047,Q4,SG-29031102607,Sales Distribution and Service,Innovation Idea,3000,Defect reduction
+REC-048,Q4,SG-21009042120,Smartwatch Production,Customer Impact,1500,Downtime reduction
+REC-049,Q4,SG-22014022110,Quality Assurance,Customer Impact,3000,Defect reduction
+REC-050,Q4,SG-24027062609,Research and Development,Productivity Improvement,1500,Higher output
+REC-051,Q4,SG-23001082612,Engineering and Maintenance,Safety Contribution,5000,Defect reduction
+REC-052,Q4,SG-21024092661,Smartwatch Production,Innovation Idea,5000,Higher output
+REC-053,Q4,SG-21015012328,Smartwatch Production,Quality Champion,1500,Faster onboarding
+REC-054,Q4,SG-21020112675,Smartwatch Production,Quality Champion,1000,Downtime reduction
+REC-055,Q4,SG-22027062611,Quality Assurance,Customer Impact,5000,Improved safety
+REC-056,Q4,SG-21003092659,Smartwatch Production,Skill Certification,5000,Faster onboarding
+REC-057,Q4,SG-21022082663,Smartwatch Production,Innovation Idea,2000,Downtime reduction
+REC-058,Q4,SG-22008082616,Quality Assurance,Productivity Improvement,2000,Faster onboarding
+REC-059,Q4,SG-24010072202,Research and Development,Customer Impact,1500,Faster onboarding
+REC-060,Q4,SG-27016122001,Finance and Accounts,Productivity Improvement,3000,Faster onboarding
+REC-061,Q4,SG-25007032106,Supply Chain and Planning,Customer Impact,2000,Better service
+REC-062,Q4,SG-23026031803,Engineering and Maintenance,Productivity Improvement,1000,Defect reduction
+REC-063,Q4,SG-23013052101,Engineering and Maintenance,Quality Champion,5000,Higher output
+REC-064,Q4,SG-28005032303,IT Data and HRIS,Innovation Idea,1000,Defect reduction
+REC-065,Q4,SG-21018072656,Smartwatch Production,Productivity Improvement,5000,Faster onboarding
+REC-066,Q4,SG-23030082611,Engineering and Maintenance,Quality Champion,5000,Defect reduction
+REC-067,Q4,SG-22007052613,Quality Assurance,Customer Impact,3000,Faster onboarding
+REC-068,Q4,SG-21006082665,Smartwatch Production,Safety Contribution,2000,Downtime reduction
+REC-069,Q4,SG-21007102673,Smartwatch Production,Quality Champion,1500,Better service
+REC-070,Q4,SG-25008092608,Supply Chain and Planning,Skill Certification,2000,Improved safety
+REC-071,Q4,SG-21010082662,Smartwatch Production,Customer Impact,2000,Better service
+REC-072,Q4,SG-22029112619,Quality Assurance,Safety Contribution,3000,Improved safety
+REC-073,Q4,SG-21026012031,Smartwatch Production,Productivity Improvement,1500,Higher output
+REC-074,Q4,SG-21025102671,Smartwatch Production,Safety Contribution,1000,Higher output
+REC-075,Q4,SG-25013022004,Supply Chain and Planning,Safety Contribution,1500,Improved safety

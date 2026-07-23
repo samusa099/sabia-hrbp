@@ -1,0 +1,5 @@
+﻿Scenario,Headcount_End_2026,Annual_Revenue_BDT_M,Annual_Operating_Profit_BDT_M,Defect_Rate_Q4,Business_Sale_Risk,Recommendation
+A - Continue without intervention,96,335,-86,0.145,Critical,Reject
+B - Cost-only layoff,55,285,-38,0.112,High,Reject
+C - HRBP pilot then scale,114,591,-1.27,0.024,Low,Selected
+D - Immediate large-scale hiring,165,540,-14,0.055,Moderate,Reject

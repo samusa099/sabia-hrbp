@@ -1,0 +1,13 @@
+﻿Department_Code,Department,Function_Group,Default_Facility
+127,Human Resources and People,Corporate,FAC-HQ
+210,Smartwatch Production,Operations,FAC-GZ
+220,Quality Assurance,Operations,FAC-GZ
+230,Engineering and Maintenance,Operations,FAC-GZ
+240,Research and Development,Product,FAC-HQ
+250,Supply Chain and Planning,Operations,FAC-GZ
+260,Procurement,Corporate,FAC-HQ
+270,Finance and Accounts,Corporate,FAC-HQ
+280,IT Data and HRIS,Corporate,FAC-HQ
+290,Sales Distribution and Service,Commercial,FAC-CT
+300,EHS and Regulatory Compliance,Governance,FAC-GZ
+310,Administration and Security,Corporate,FAC-GZ

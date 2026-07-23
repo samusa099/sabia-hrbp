@@ -1,0 +1,38 @@
+﻿Requisition_ID,Quarter,Department,Position,Critical_Role,Open_Date,Close_Date,Approved_Headcount,Applications,Screened,Interviewed,Offers_Made,Offers_Accepted,Hires_Joined,Primary_Source,Recruitment_Cost_BDT,Time_to_Fill_Days,Hiring_Manager_Satisfaction,90_Day_Retention_Rate
+REQ-002,Q2,Smartwatch Production,SMT Line Technician,No,2026-04-27,2026-06-19,2,30,18,8,6,2,2,LinkedIn,79922,53,4.1,0.95
+REQ-003,Q2,Smartwatch Production,Precision Assembly Technician,No,2026-06-17,2026-06-30,2,28,15,8,5,2,2,Agency,83614,13,4.3,0.95
+REQ-004,Q2,Smartwatch Production,Production Manager,No,2026-05-25,2026-06-30,2,24,11,7,4,2,2,LinkedIn,61584,36,4.0,0.96
+REQ-005,Q2,Smartwatch Production,Assembly Operator,No,2026-05-18,2026-06-18,1,9,4,1,1,1,1,University Career Centre,33204,31,4.1,0.98
+REQ-006,Q2,Smartwatch Production,Production Supervisor,No,2026-04-12,2026-06-01,1,16,10,6,4,1,1,Walk-in,29798,50,4.3,0.94
+REQ-007,Q2,Quality Assurance,Quality Technician,Yes,2026-04-28,2026-06-10,3,33,16,10,5,3,3,Bdjobs,122355,43,4.1,0.88
+REQ-008,Q2,Engineering and Maintenance,Automation Technician,Yes,2026-05-14,2026-06-30,2,28,17,7,5,2,2,Walk-in,65240,47,4.0,0.9
+REQ-009,Q2,Research and Development,IoT Engineer,Yes,2026-04-26,2026-06-05,2,30,18,11,7,2,2,LinkedIn,56636,40,4.0,0.88
+REQ-010,Q2,IT Data and HRIS,HRIS Analyst,Yes,2026-06-08,2026-06-30,1,10,6,3,2,1,1,LinkedIn,18700,22,3.7,0.86
+REQ-011,Q2,IT Data and HRIS,Data Analyst,Yes,2026-06-14,2026-06-30,1,15,7,3,2,1,1,Agency,13207,16,3.8,0.87
+REQ-012,Q2,Human Resources and People,People Analytics Analyst,No,2026-06-12,2026-06-30,1,15,7,3,2,1,1,Bdjobs,30946,18,4.6,0.93
+REQ-013,Q2,Supply Chain and Planning,Inventory Controller,No,2026-05-22,2026-06-19,1,16,10,4,2,1,1,Bdjobs,39985,28,3.7,0.88
+REQ-014,Q2,EHS and Regulatory Compliance,Compliance Executive,No,2026-06-18,2026-06-30,1,9,5,2,1,1,1,Employee Referral,16546,12,4.1,0.94
+REQ-015,Q3,Smartwatch Production,Precision Assembly Technician,No,2026-08-29,2026-09-20,3,54,29,16,10,3,3,University Career Centre,73902,22,4.5,0.87
+REQ-016,Q3,Smartwatch Production,SMT Line Technician,No,2026-07-16,2026-09-07,4,60,33,18,13,4,4,University Career Centre,110136,53,3.7,0.91
+REQ-017,Q3,Smartwatch Production,SMT Line Technician,No,2026-08-24,2026-09-21,3,30,18,9,6,3,3,Walk-in,62454,28,3.7,0.98
+REQ-018,Q3,Smartwatch Production,Production Supervisor,No,2026-09-24,2026-09-30,4,32,18,8,6,4,4,Agency,160136,6,4.7,0.9
+REQ-019,Q3,Quality Assurance,Quality Technician,Yes,2026-07-18,2026-08-29,1,16,8,3,2,1,1,Bdjobs,23139,42,3.8,0.92
+REQ-020,Q3,Quality Assurance,Quality Inspector,Yes,2026-07-12,2026-08-20,3,27,15,8,6,3,3,Employee Referral,48519,39,4.4,0.97
+REQ-021,Q3,Engineering and Maintenance,Maintenance Engineer,Yes,2026-08-13,2026-09-19,1,8,3,1,1,1,1,Agency,34873,37,4.7,0.94
+REQ-022,Q3,Engineering and Maintenance,Engineering Manager,Yes,2026-08-29,2026-09-30,2,36,16,8,4,2,2,LinkedIn,27540,32,4.3,0.91
+REQ-023,Q3,Research and Development,R&D Manager,Yes,2026-09-09,2026-09-30,3,54,25,15,8,3,3,University Career Centre,90498,21,3.7,0.88
+REQ-024,Q3,IT Data and HRIS,IT Manager,Yes,2026-08-02,2026-09-25,2,24,10,6,3,2,2,Employee Referral,59642,54,4.0,0.93
+REQ-025,Q3,Sales Distribution and Service,Service Centre Technician,No,2026-07-06,2026-08-21,2,28,17,7,5,2,2,Employee Referral,68218,46,4.1,0.95
+REQ-026,Q3,Supply Chain and Planning,Inventory Controller,No,2026-09-18,2026-09-30,2,24,12,7,4,2,2,LinkedIn,34586,12,3.5,0.86
+REQ-027,Q3,Human Resources and People,Learning and Development Specialist,No,2026-07-16,2026-08-22,1,12,6,3,2,1,1,Employee Referral,37211,37,3.6,0.96
+REQ-028,Q3,Finance and Accounts,Financial Analyst,No,2026-08-20,2026-09-11,1,14,8,3,1,1,1,University Career Centre,44208,22,4.0,0.88
+REQ-029,Q4,Smartwatch Production,Assembly Operator,No,2026-11-11,2026-12-11,5,40,21,9,5,5,5,Employee Referral,66185,30,4.0,0.88
+REQ-030,Q4,Smartwatch Production,Production Manager,No,2026-12-15,2026-12-15,1,16,8,4,2,1,1,Employee Referral,41082,0,4.0,0.94
+REQ-031,Q4,Smartwatch Production,Assembly Operator,No,2026-11-03,2026-12-15,2,16,10,4,2,2,2,LinkedIn,41602,42,3.7,0.89
+REQ-032,Q4,Quality Assurance,QA Supervisor,Yes,2026-10-04,2026-10-27,2,30,16,10,7,2,2,Employee Referral,85516,23,3.9,0.93
+REQ-033,Q4,Engineering and Maintenance,Engineering Manager,Yes,2026-11-21,2026-12-15,2,32,19,11,8,2,2,LinkedIn,87288,24,4.8,0.97
+REQ-034,Q4,Research and Development,R&D Manager,Yes,2026-11-14,2026-12-09,2,26,16,9,5,2,2,Bdjobs,44308,25,4.7,0.98
+REQ-035,Q4,Sales Distribution and Service,Territory Sales Officer,No,2026-12-10,2026-12-15,1,9,4,1,1,1,1,University Career Centre,33533,5,4.0,0.94
+REQ-036,Q4,Sales Distribution and Service,Warranty Analyst,No,2026-11-22,2026-12-15,1,14,6,3,2,1,1,Walk-in,37357,23,3.8,0.92
+REQ-037,Q4,Human Resources and People,People Analytics Analyst,No,2026-11-18,2026-12-15,1,10,5,2,1,1,1,Walk-in,13396,27,4.3,0.95
+REQ-038,Q4,IT Data and HRIS,BI Developer,Yes,2026-11-26,2026-12-15,1,14,8,5,3,1,1,Bdjobs,43570,19,4.7,0.96

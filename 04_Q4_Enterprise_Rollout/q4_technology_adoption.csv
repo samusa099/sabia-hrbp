@@ -1,0 +1,4 @@
+﻿Month,Quarter,Active_Headcount,HRIS_Registered_Users,Monthly_Active_Users,Self_Service_Transactions,Paper_Transactions,HRIS_Adoption_Rate,Data_Completeness_Rate,Average_HR_Service_Cost_BDT
+2026-10-01,Q4,107,98,94,242,46,0.92,0.97,350
+2026-11-01,Q4,112,106,103,277,33,0.95,0.98,330
+2026-12-01,Q4,114,111,107,298,29,0.97,0.985,315
