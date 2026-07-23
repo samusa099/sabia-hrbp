@@ -1,230 +1,671 @@
-# Sabia Group HRBP Smartwatch Recovery 2026
+<p align="center">
+  <img src="assets/mokhles-hr-analytics-cover.png" alt="Mokhles Group HR Analytics Demo 2025" width="100%">
+</p>
 
-![Sabia HRBP Recovery cover](assets/sabia-hrbp-cover.png)
+<h1 align="center">Mokhles Group HR Analytics Demo 2025</h1>
 
 <p align="center">
-  <a href="https://github.com/samusa099/sabia-hrbp/actions/workflows/validate-project.yml"><img src="https://github.com/samusa099/sabia-hrbp/actions/workflows/validate-project.yml/badge.svg" alt="Live"></a>
-  <img src="https://img.shields.io/badge/Project-Live-2ea44f?style=flat-square&logo=github" alt="Project Live">
-  <img src="https://img.shields.io/badge/Portfolio-HRBP%20%2B%20Data%20Analytics-0A66C2?style=flat-square" alt="HRBP and Data Analytics Portfolio">
-  <img src="https://img.shields.io/badge/Data-Synthetic%20Practice-orange?style=flat-square&logo=databricks" alt="Synthetic Practice Data">
-  <img src="https://img.shields.io/badge/Location-Bangladesh-006A4E?style=flat-square" alt="Bangladesh">
+  A realistic synthetic HR analytics and cross-platform Business Intelligence portfolio designed around a Bangladesh business environment.
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.11-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.11">
-  <img src="https://img.shields.io/badge/SQL-Analytics-336791?style=flat-square&logo=postgresql&logoColor=white" alt="SQL Analytics">
-  <img src="https://img.shields.io/badge/SQLite-Database-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite Database">
-  <img src="https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?style=flat-square&logo=powerbi&logoColor=black" alt="Power BI Dashboard">
-  <img src="https://img.shields.io/badge/Excel-Analytics-217346?style=flat-square&logo=microsoftexcel&logoColor=white" alt="Excel Analytics">
-  <img src="https://img.shields.io/badge/Kaggle-Ready-20BEFF?style=flat-square&logo=kaggle&logoColor=white" alt="Kaggle Ready">
+  <img alt="Data Type" src="https://img.shields.io/badge/data-synthetic%20%7C%20tabular-625BEB">
+  <img alt="Country" src="https://img.shields.io/badge/context-Bangladesh-1E8E5A">
+  <img alt="Period" src="https://img.shields.io/badge/coverage-FY2025-F36B21">
+  <img alt="Python" src="https://img.shields.io/badge/Python-3.11%2B-3776AB">
+  <img alt="Power BI" src="https://img.shields.io/badge/Power%20BI-ready-F2C811">
+  <img alt="Excel" src="https://img.shields.io/badge/Excel-Power%20Query%20%7C%20Power%20Pivot-217346">
+  <img alt="Looker Studio" src="https://img.shields.io/badge/Looker%20Studio-ready-4285F4">
+  <img alt="License" src="https://img.shields.io/badge/data%20license-CC%20BY%204.0-lightgrey">
 </p>
 
-## Portfolio overview
-
-**Sabia Group HRBP Smartwatch Recovery 2026** is a synthetic HR Business Partner and data analytics portfolio project created by **Musa ( Musa)**.
-
-The project simulates a Bangladesh-based smartwatch manufacturing company facing workforce, quality, productivity and financial challenges. It demonstrates how HRBP decisions can be connected with production and financial outcomes through Excel, Power BI, Python, SQL and SQLite.
-
-> **Project philosophy:** Business improvement through systems, not system building alone.
-
-## Project status
-
-- Repository structure: complete
-- Synthetic practice data: complete
-- Excel analytics package: complete
-- Python cleaning and validation workflow: complete
-- SQL and SQLite database layer: complete
-- Power BI documentation and DAX guidance: complete
-- Kaggle dataset and notebook assets: complete
-- GitHub Actions validation: live
-- Missing or invalid employee join dates: filtered during cleaning and reported through validation controls
-
-## Executive case
-
-Sabia Group invested heavily in a **Made-in-Bangladesh smartwatch operation** but moved into production before validating an MVP or prototype. The simulated business then experienced:
-
-- high defect and rework rates;
-- low first-pass yield;
-- excessive overtime;
-- employee skill gaps;
-- duplicated or mismatched roles;
-- fragmented HR and production data;
-- sustained operating losses;
-- increased risk of a distressed business sale.
-
-A newly appointed **Lead HR Business Partner**, also acting as **Head of HR / Acting CHRO**, was asked to diagnose the business with data and design a responsible recovery path.
-
-## Q1–Q4 transformation story
-
-- **Starting workforce:** 100 employees
-- **Q1 — Plan and reset:** feasibility analysis, workforce diagnosis, KPI design and a documented 48-role reset scenario
-- **Q2 — Controlled pilot:** 25 employees on Line A with HR, QA, Engineering and IT support
-- **Q3 — Scale and stabilize:** Lines A and B, critical-skill hiring and manager dashboards
-- **Q4 — Full rollout:** group-wide HR operating model, benefits review and governance handover
-- **End-of-year active workforce:** 114 employees
-- **Final product quality:** 97.1% first-pass yield and 2.4% defect rate
-- **Business outcome:** movement from critical sale risk toward a profitable operating model
-
-## What this project demonstrates
-
-### HRBP and workforce strategy
-
-- people strategy;
-- workforce planning and restructuring scenarios;
-- organization design;
-- critical-skill protection;
-- talent acquisition and recruitment;
-- training and certification;
-- performance management;
-- rewards and recognition;
-- employee relations;
-- HR services and HR technology;
-- legal, regulatory and ethical considerations;
-- employee exits and knowledge-transfer planning.
-
-### Data and analytics practice
-
-- Excel formulas, tables, charts and KPI scorecards;
-- Power Query data preparation;
-- Power BI star-schema modelling, DAX and executive storytelling;
-- Python data cleaning, validation and exploratory analysis;
-- SQL cleaning views, audit queries and reporting views;
-- SQLite database practice using DB Browser, DBeaver or SQLiteStudio;
-- production, quality, workforce and financial linkage;
-- Kaggle dataset and notebook publishing.
-
-## Data-cleaning workflow
-
-The deliberately messy employee data contains realistic quality issues such as inconsistent text values, mixed date formats, missing fields and duplicate employee IDs.
-
-The Python workflow:
-
-1. standardizes names, gender values and department labels;
-2. parses join and exit dates using `errors="coerce"`;
-3. converts invalid join dates to missing values;
-4. removes duplicate employee IDs;
-5. filters records that do not contain a valid required `Join_Date`;
-6. validates primary keys and required fields;
-7. writes clean outputs and a data-quality report.
-
-Run the workflow with:
-
-```bash
-python -m pip install -r 07_Python/requirements.txt
-python 07_Python/clean_and_validate.py
-```
-
-Generated outputs are written to:
-
-```text
-07_Python/generated_clean_output/
-```
-
-## Database and SQL extension
-
-The repository includes a ready-to-open SQLite database:
-
-```text
-13_Database_SQL/Sabia_Group_HRBP_Analytics.sqlite
-```
-
-It contains:
-
-- raw staging tables;
-- clean analytical tables;
-- SQL-based cleaning views;
-- data-quality audit objects;
-- HRBP analytics queries;
-- `vw_bi_` reporting views for BI tools.
-
-Rebuild the database with:
-
-```bash
-python 13_Database_SQL/00_build_database.py
-```
-
-Recommended tools:
-
-- DB Browser for SQLite
-- DBeaver
-- SQLiteStudio
-- Python `sqlite3`
-- Power BI or Excel through ODBC
-
-## Folder map
-
-| Folder | Purpose |
-|---|---|
-| `00_Master` | Master Excel analytics workbook |
-| `01_Q1...` to `04_Q4...` | Quarter-specific evidence and analysis |
-| `05_Raw_Data` | Deliberately messy practice data |
-| `06_Clean_Data` | Analysis-ready datasets |
-| `07_Python` | Cleaning, validation and EDA scripts |
-| `08_PowerBI` | Model, DAX and dashboard guidance |
-| `09_Looker_Studio` | Optional connector and calculated-field guidance |
-| `10_Kaggle` | Dataset metadata, notebook and publishing assets |
-| `11_Documentation` | Business case, methodology and ethics |
-| `12_Reference` | Design and project references |
-| `13_Database_SQL` | SQLite database, SQL scripts, audits and BI views |
-| `wiki` | GitHub Wiki-compatible project documentation |
-
-## Project Wiki
-
-- [Home](wiki/Home.md)
-- [Project Overview](wiki/Project-Overview.md)
-- [Q1–Q4 Transformation Story](wiki/Transformation-Journey.md)
-- [Data Architecture and Dictionary](wiki/Data-Architecture.md)
-- [SQL and Database Lab](wiki/SQL-and-Database.md)
-- [Power BI and BI Tools](wiki/Power-BI-and-BI-Tools.md)
-- [Python Data Cleaning](wiki/Python-Data-Cleaning.md)
-- [Kaggle Publishing](wiki/Kaggle-Publishing.md)
-- [Ethics and Limitations](wiki/Ethics-and-Limitations.md)
-
-## Suggested analysis questions
-
-1. How did workforce actions affect first-pass yield and defect rates?
-2. Did training and certification support production recovery?
-3. Which departments experienced the highest overtime and absence pressure?
-4. Did the pilot group outperform the control group?
-5. How did defect reduction relate to operating profit?
-6. Which HR interventions created the strongest simulated business impact?
-7. What data-quality issues must be resolved before management reporting?
-
-## Ethics and limitations
-
-All people, entities, events, production results and financial values in this repository are **fictional and synthetically generated for practice, education and portfolio demonstration**.
-
-This project:
-
-- does not contain real employee or confidential company data;
-- is not an audit of a real organization;
-- does not establish causal relationships;
-- must not be used to make real employment decisions;
-- does not replace legal, labour-law, privacy or ethical review.
-
-Protected characteristics such as gender, age, religion, disability, pregnancy, ethnicity or health status should never be used as unfair employment-decision criteria.
-
-## Author
-
-**Musa —  Musa**  
-HRBP | HR & Data Analytics Practitioner  
-Bangladesh
-
-Focus areas:
-
-- HR Business Partnering;
-- workforce strategy;
-- people analytics;
-- business recovery;
-- Excel, Power BI, Python and SQL;
-- practical data-driven transformation.
-
-## Additional documentation
-
-- [`13_Database_SQL/README_DATABASE_SQL.md`](13_Database_SQL/README_DATABASE_SQL.md)
-- [`08_PowerBI/POWER_BI_AND_OTHER_BI_USAGE_GUIDE.md`](08_PowerBI/POWER_BI_AND_OTHER_BI_USAGE_GUIDE.md)
-- [`11_Documentation/`](11_Documentation/)
+<p align="center">
+  <a href="https://github.com/samusa099/mokhles-group-hr-analytics-bd-fy2025">GitHub Repository</a>
+  ·
+  <a href="https://www.kaggle.com/datasets/samusahr/mokhles-group-hr-analytics-portfolio-bd-fy2025">Kaggle Dataset</a>
+</p>
 
 ---
 
-**Practice data. Real analytical thinking. Business-focused HRBP portfolio.**
+## Release v2.3.0
+
+Release **v2.3.0** adds a complete structured analytics workspace for:
+
+- Power BI Desktop
+- Excel Power Query, Power Pivot, PivotTables and PivotCharts
+- Looker Studio
+- Tableau
+- Qlik Sense
+- Metabase
+- Python and Jupyter
+
+It also introduces employee-level and department-level consolidated analytical datasets, data-quality profiling, Power Query M scripts, DAX measures, an Excel analytics starter workbook, platform-specific implementation guides and a separate Kaggle publishing transport.
+
+---
+
+## Overview
+
+This repository contains a complete HR analytics portfolio for **Mokhles Group**, a fictional Bangladesh-based organisation.
+
+The records are fully synthetic, but the structure, terminology, employee profiles, locations, compensation values and HR transactions were designed to resemble realistic organisational data.
+
+The project combines:
+
+- 13 authoritative analysis-ready CSV tables
+- 1 consolidated Excel master workbook
+- 12 specialised Excel HR reports
+- 15 BI-ready dimension and fact tables
+- 2 consolidated analysis-ready datasets
+- Data-quality profiling and validation outputs
+- A Jupyter Notebook
+- Power BI semantic-model assets
+- Excel analytics templates
+- Looker Studio upload-ready datasets
+- Tableau, Qlik Sense and Metabase implementation guides
+- Complete file-level metadata
+- Complete CSV column descriptions
+- Automated validation and GitHub workflows
+
+> **Privacy and ethics:** No real employee, applicant, salary, performance, health or confidential organisational data is included.
+
+---
+
+## Project highlights
+
+| Area | Volume |
+|---|---:|
+| Employees represented during FY2025 | 516 |
+| Year-end headcount | 456 |
+| Hires | 96 |
+| Employee separations | 60 |
+| Leave transactions | 1,043 |
+| Training participation records | 1,011 |
+| Recruitment requisitions | 110 |
+| Performance evaluation records | 456 |
+| Health and safety records | 120 |
+| Original analytical CSV tables | 13 |
+| BI-ready CSV tables | 15 |
+| Analysis-ready consolidated tables | 2 |
+| Excel workbooks | 14 |
+| Looker Studio-ready CSV files | 17 |
+| Structured metadata resources | 138 |
+| Documented CSV fields | 803 |
+
+---
+
+## Analytics coverage
+
+- Headcount and workforce structure
+- Monthly and annual HR KPIs
+- Recruitment funnel and time-to-fill
+- Employee turnover and retention
+- Leave and absence
+- Diversity and inclusion
+- Learning and development
+- Compensation and total reward
+- Performance and talent readiness
+- Health, safety and corrective actions
+- Employee 360 analysis
+- Department 360 analysis
+- Data-quality profiling
+- Executive and board-level HR reporting
+- Cross-platform dashboard preparation
+
+---
+
+## Repository structure
+
+```text
+mokhles-group-hr-analytics-bd-fy2025/
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   └── workflows/
+├── assets/
+├── bi_assets/
+│   ├── power_bi/
+│   └── semantic_model/
+├── data/
+│   ├── csv/
+│   ├── bi_ready_csv/
+│   ├── analysis_ready/
+│   ├── data_quality/
+│   └── excel/
+│       ├── master/
+│       └── reports/
+├── docs/
+│   ├── bi/
+│   └── platforms/
+│       ├── power_bi_assets/
+│       ├── excel_analytics/
+│       ├── looker_studio/
+│       ├── tableau/
+│       ├── qlik/
+│       └── metabase/
+├── examples/
+├── metadata/
+├── notebooks/
+├── scripts/
+├── src/
+│   └── mokhles_hr_analytics/
+├── wiki/
+├── CITATION.cff
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── LICENSE
+├── LICENSE-CODE
+├── README.md
+└── requirements.txt
+```
+
+---
+
+## Structured Kaggle analytics workspace
+
+The downloadable structured workspace is organised as:
+
+```text
+Mokhles_Group_HR_Analytics_FINAL_Kaggle_Upload_v2_3_0/
+├── 00_START_HERE/
+├── 01_SOURCE_DATA/
+│   ├── csv_original/
+│   ├── excel_master/
+│   └── excel_reports/
+├── 02_CLEAN_DATA/
+│   ├── bi_ready_csv/
+│   ├── analysis_ready/
+│   └── data_quality/
+├── 03_POWER_BI/
+│   ├── theme/
+│   ├── semantic_model/
+│   ├── power_query_m/
+│   └── dax/
+├── 04_EXCEL_ANALYTICS/
+├── 05_LOOKER_STUDIO/
+├── 06_TABLEAU/
+├── 07_QLIK/
+├── 08_METABASE/
+├── 09_NOTEBOOKS/
+├── 10_DOCUMENTATION/
+├── 11_KAGGLE_METADATA/
+└── 12_SCRIPTS/
+```
+
+The structured workspace is intended for data cleaning, analysis, modeling and dashboard development.
+
+The separate Kaggle publish package is used only for Kaggle CLI transport and metadata publishing.
+
+---
+
+## Analysis-ready CSV tables
+
+| No. | Table |
+|---:|---|
+| 01 | Employee Master |
+| 02 | Monthly HR KPI |
+| 03 | Department Annual Summary |
+| 04 | Quarterly Board KPI |
+| 05 | Recruitment Master |
+| 06 | Employee Separations |
+| 07 | Leave Transactions |
+| 08 | Diversity and Inclusion Master |
+| 09 | Training and Development Master |
+| 10 | Compensation and Benefits Master |
+| 11 | Performance Evaluation Master |
+| 12 | Health and Safety Master |
+| 13 | Data Dictionary |
+
+---
+
+## BI-ready analytical layer
+
+The Python generator creates the following tables:
+
+```text
+data/bi_ready_csv/
+├── 00_dim_date.csv
+├── 00_dim_department.csv
+├── 00_dim_location.csv
+├── 01_dim_employee_fy2025.csv
+├── 02_fact_monthly_hr_kpi_fy2025.csv
+├── 03_fact_department_annual_summary_fy2025.csv
+├── 04_fact_quarterly_board_kpi_fy2025.csv
+├── 05_fact_recruitment_fy2025.csv
+├── 06_fact_employee_separations_fy2025.csv
+├── 07_fact_leave_transactions_fy2025.csv
+├── 08_dim_diversity_inclusion_fy2025.csv
+├── 09_fact_training_development_fy2025.csv
+├── 10_fact_compensation_benefits_fy2025.csv
+├── 11_fact_performance_evaluation_fy2025.csv
+└── 12_fact_health_safety_fy2025.csv
+```
+
+Generate or refresh the layer with:
+
+```powershell
+py scripts\build_bi_ready_layer.py
+```
+
+Expected result:
+
+```text
+BI-ready layer created: 15 CSV files
+```
+
+---
+
+## Consolidated analysis-ready tables
+
+### Employee 360
+
+```text
+data/analysis_ready/employee_360_fy2025.csv
+```
+
+One row per employee, combining:
+
+- Workforce profile
+- Diversity attributes
+- Compensation
+- Performance
+- Leave
+- Training
+- Separation information
+
+### Department 360
+
+```text
+data/analysis_ready/department_360_summary_fy2025.csv
+```
+
+One row per department, combining:
+
+- Opening and closing headcount
+- Hires and exits
+- Turnover
+- Female representation
+- Compensation
+- Performance
+- Training
+- Leave
+- Promotion readiness
+
+---
+
+## Data-quality layer
+
+```text
+data/data_quality/
+├── table_quality_summary.csv
+├── column_profile.csv
+└── validation_rules.csv
+```
+
+The quality layer covers:
+
+- Row and column counts
+- Blank-cell rates
+- Duplicate-row checks
+- Primary-key and composite-key checks
+- UTF-8 readability
+- Column data-type inference
+- Distinct-value counts
+- Minimum and maximum values
+- Sample values
+- Recommended remediation actions
+
+---
+
+## Power BI
+
+Power BI assets include:
+
+- JSON theme
+- Relationship map
+- Field-name mapping
+- KPI catalogue
+- Dashboard blueprint
+- 15 Power Query M scripts
+- DAX starter-measure library
+- ProjectRoot parameter guide
+
+Recommended workflow:
+
+1. Run the BI-ready layer generator.
+2. Open Power BI Desktop.
+3. Create the `ProjectRoot` text parameter.
+4. Load the M queries.
+5. Verify data types.
+6. Create relationships from the relationship map.
+7. Mark `00_dim_date[date]` as the date table.
+8. Import the Power BI theme.
+9. Add DAX measures.
+10. Build report pages from the dashboard blueprint.
+
+Key assets:
+
+```text
+docs/platforms/power_bi_assets/
+├── power_query_m/
+├── dax/
+├── semantic_model/
+└── theme/
+```
+
+---
+
+## Excel analytics
+
+The Excel analytics starter workbook is:
+
+```text
+docs/platforms/excel_analytics/Mokhles_Group_Excel_Analytics_Starter_v2_3_0.xlsx
+```
+
+It includes:
+
+- Start Here
+- Platform Matrix
+- Table Inventory
+- Data Quality Summary
+- Column Profile
+- Cleaning Checklist
+- Relationship Map
+- KPI Catalog
+- Pivot Blueprint
+- ProjectRoot parameter
+
+Recommended Excel workflow:
+
+1. Select **Data → Get Data → From File → From Folder**.
+2. Point Power Query to one specific data folder.
+3. Select **Transform Data**.
+4. Filter by folder path and extension.
+5. Combine only files with the same schema.
+6. Load cleaned tables to the Data Model.
+7. Create relationships.
+8. Build PivotTables and PivotCharts.
+9. Refresh when source files change.
+
+---
+
+## Looker Studio
+
+Looker Studio assets include:
+
+```text
+docs/platforms/looker_studio/
+├── upload_ready_csv/
+├── data_source_map.csv
+├── calculated_fields.md
+└── README_LOOKER_STUDIO.md
+```
+
+Recommended starting files:
+
+```text
+employee_360_fy2025.csv
+department_360_summary_fy2025.csv
+02_fact_monthly_hr_kpi_fy2025.csv
+```
+
+Different schemas should be uploaded as separate Looker Studio data sources.
+
+---
+
+## Tableau
+
+Tableau assets include:
+
+- Relationship-based modeling guide
+- Shared relationship map
+- Dimension and fact-table recommendations
+- Grain-preservation guidance
+
+Recommended source:
+
+```text
+data/bi_ready_csv/
+```
+
+Use logical relationships rather than flattening all fact tables into one physical join.
+
+---
+
+## Qlik Sense
+
+Qlik assets include:
+
+```text
+docs/platforms/qlik/
+├── README_QLIK.md
+└── Mokhles_HR_Load_Script.qvs
+```
+
+The load script imports the BI-ready tables through a folder connection.
+
+Review shared field names before loading to avoid unintended synthetic keys.
+
+---
+
+## Metabase
+
+Metabase assets include:
+
+- CSV upload guidance
+- Recommended starting tables
+- Data-type review guidance
+- Maintained database workflow recommendations
+
+Recommended starting files:
+
+```text
+employee_360_fy2025.csv
+department_360_summary_fy2025.csv
+02_fact_monthly_hr_kpi_fy2025.csv
+```
+
+---
+
+## Quick start
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/samusa099/mokhles-group-hr-analytics-bd-fy2025.git
+cd mokhles-group-hr-analytics-bd-fy2025
+```
+
+### 2. Create a virtual environment
+
+#### Windows PowerShell
+
+```powershell
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+py -m pip install -r requirements.txt
+py -m pip install -e .
+```
+
+#### macOS or Linux
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+python -m pip install -e .
+```
+
+### 3. Run repository validation
+
+```bash
+python scripts/validate_repository.py
+```
+
+### 4. Generate the BI-ready layer
+
+```bash
+python scripts/build_bi_ready_layer.py
+```
+
+### 5. Build analysis-ready tables
+
+```bash
+python scripts/build_analysis_ready.py
+```
+
+### 6. Profile the data
+
+```bash
+python scripts/profile_data.py
+```
+
+### 7. Launch the notebook
+
+```bash
+jupyter lab notebooks/Mokhles_HR_Analytics_EDA.ipynb
+```
+
+---
+
+## Python example
+
+```python
+from mokhles_hr_analytics import load_csv_table
+
+employees = load_csv_table("01_Employee_Master_FY2025.csv")
+
+print(employees.head())
+print(employees["Department"].value_counts())
+```
+
+---
+
+## Excel portfolio
+
+The `data/excel/` directory includes:
+
+- One consolidated master workbook
+- Twelve specialised HR analytics reports
+- Executive dashboards
+- Filterable Excel tables
+- KPI definitions
+- Bangladesh-based BDT compensation values
+
+The structured analytics workspace also adds a dedicated Excel analytics starter workbook.
+
+---
+
+## Kaggle dataset
+
+The published dataset is available on Kaggle:
+
+**Mokhles Group HR Analytics Portfolio BD FY2025**
+
+https://www.kaggle.com/datasets/samusahr/mokhles-group-hr-analytics-portfolio-bd-fy2025
+
+Kaggle-specific metadata includes:
+
+- Dataset title and subtitle
+- Full dataset description
+- File-level descriptions
+- CSV schemas
+- Column descriptions
+- Tags
+- Cover image
+- Source statement
+- Licence
+- Update frequency
+- Structured workspace download
+
+---
+
+## Data dictionary
+
+The complete field-level data dictionary is available at:
+
+```text
+data/csv/13_Data_Dictionary_FY2025.csv
+```
+
+Every published CSV field also has a native description in:
+
+```text
+metadata/kaggle-dataset-metadata.json
+```
+
+The structured workspace contains a human-readable backup at:
+
+```text
+10_DOCUMENTATION/COLUMN_DESCRIPTIONS_COMPLETE.md
+```
+
+---
+
+## Validation and quality controls
+
+The repository includes validation scripts and GitHub Actions workflows that check:
+
+- Required files and directories
+- CSV header uniqueness
+- CSV row and column counts
+- Kaggle schema-to-CSV column alignment
+- Non-empty file descriptions
+- Non-empty field descriptions
+- Tags and source statement
+- Cover image configuration
+- JSON and notebook validity
+- Excel workbook ZIP integrity
+- Duplicate resource paths
+- Power BI layer completeness
+- Structured-workspace integrity
+
+---
+
+## Suggested research and portfolio extensions
+
+- Employee-turnover prediction
+- Recruitment-source optimisation
+- Compensation-band modelling
+- Workforce forecasting
+- Talent segmentation
+- Department risk scoring
+- Executive Power BI dashboard
+- SQL-based HR data mart
+- Diversity representation analysis
+- Performance and promotion-readiness modeling
+- Training ROI analysis
+- Absence-risk analysis
+- HR data warehouse design
+- Automated BI refresh pipeline
+
+---
+
+## Author
+
+**Siam Ahmad Musa**  
+Human Resources professional and people analytics practitioner from Bangladesh.
+
+---
+
+## Citation
+
+Please cite this project using the metadata in `CITATION.cff`.
+
+Suggested citation:
+
+> Musa, S. A. (2026). *Mokhles Group HR Analytics Demo 2025: A Realistic Synthetic HR Dataset and Cross-Platform Analytics Portfolio from Bangladesh* (Version 2.3.0).
+
+---
+
+## Licences
+
+- **Dataset and documentation:** CC BY 4.0 — see `LICENSE`
+- **Python code and notebook utilities:** MIT — see `LICENSE-CODE`
+
+---
+
+## Disclaimer
+
+Mokhles Group is used as a fictional company name.
+
+All records are synthetic and must not be presented as real organisational or employee information.
