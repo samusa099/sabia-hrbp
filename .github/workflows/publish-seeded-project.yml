@@ -22,10 +22,13 @@ jobs:
       - name: Verify prepared payload
         shell: bash
         run: |
-          test -d .seed
-          test -f .seed/seed_023_024.txt
-          test -f .seed/seed_011.txt
-          test -f .seed/seed_012.txt
+          for file in \
+            seed_000.txt seed_001_002.txt seed_003_004.txt seed_005_006.txt \
+            seed_007_008.txt seed_009_010.txt seed_011.txt seed_012.txt \
+            seed_013.txt seed_014.txt seed_015_016.txt seed_017_018.txt \
+            seed_019_020.txt seed_021.txt seed_022.txt seed_023_024.txt; do
+            test -f ".seed/$file"
+          done
 
       - name: Reassemble prepared project archive
         shell: bash
@@ -43,17 +46,16 @@ jobs:
               'seed_009_010.txt',
               'seed_011.txt',
               'seed_012.txt',
-              'seed_013_014.txt',
+              'seed_013.txt',
+              'seed_014.txt',
               'seed_015_016.txt',
               'seed_017_018.txt',
               'seed_019_020.txt',
-              'seed_021_022.txt',
+              'seed_021.txt',
+              'seed_022.txt',
               'seed_023_024.txt',
           ]
           seed_dir = Path('.seed')
-          missing = [name for name in order if not (seed_dir / name).exists()]
-          if missing:
-              raise SystemExit(f'Missing payload segments: {missing}')
           encoded = ''.join((seed_dir / name).read_text(encoding='utf-8').strip() for name in order)
           archive = base64.b64decode(encoded, validate=True)
           Path('sabia-project.tar.gz').write_bytes(archive)
@@ -73,11 +75,49 @@ jobs:
       - name: Validate project
         run: python scripts/validate_project.py
 
+      - name: Create permanent validation workflow
+        shell: bash
+        run: |
+          mkdir -p .github/workflows
+          cat > .github/workflows/validate-project.yml <<'YAML'
+          name: Validate project
+
+          on:
+            push:
+              branches: [main]
+            pull_request:
+            workflow_dispatch:
+
+          permissions:
+            contents: read
+
+          jobs:
+            validate:
+              runs-on: ubuntu-latest
+              steps:
+                - name: Checkout
+                  uses: actions/checkout@v4
+                - name: Set up Python
+                  uses: actions/setup-python@v5
+                  with:
+                    python-version: '3.11'
+                - name: Install dependencies
+                  run: python -m pip install --upgrade pip && python -m pip install -r 07_Python/requirements.txt
+                - name: Clean and validate raw data
+                  run: python 07_Python/clean_and_validate.py
+                - name: Rebuild SQLite database
+                  run: python 13_Database_SQL/00_build_database.py
+                - name: Generate workbook artifacts
+                  run: python scripts/generate_binary_artifacts.py
+                - name: Validate repository
+                  run: python scripts/validate_project.py
+          YAML
+
       - name: Commit complete portfolio project to PR branch
         shell: bash
         run: |
           rm -rf .seed .bootstrap .payload sabia-project.tar.gz
-          rm -f .github/workflows/publish-seeded-project.yml
+          rm -f .publish-trigger .github/workflows/publish-seeded-project.yml
           git config user.name 'Musa Portfolio Bot'
           git config user.email 'siam.ahmad.musa574@gmail.com'
           git add -A
