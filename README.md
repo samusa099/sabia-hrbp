@@ -1,47 +1,49 @@
-<div align="center">
+<p align="center">
+  <img src="assets/sabia-hrbp-cover.png" alt="Sabia Group HRBP Smartwatch Recovery 2026" width="100%">
+</p>
 
-# Sabia Group HRBP Smartwatch Recovery 2026
+<h1 align="center">Sabia Group HRBP Smartwatch Recovery 2026</h1>
 
-### A synthetic HRBP, workforce, manufacturing and business-recovery analytics portfolio by **Musa**
+<p align="center">
+  <strong>A portfolio-grade, fully synthetic HRBP and business-recovery analytics ecosystem built for Bangladesh.</strong><br>
+  From workforce diagnosis and production-quality recovery to board-ready insights across Power BI, Excel, Python, SQL, SQLite and Kaggle.
+</p>
 
-<img src="assets/sabia-hrbp-cover.png" alt="Sabia HRBP Recovery cover" width="100%">
+<p align="center">
+  <a href="https://www.kaggle.com/datasets/samusahr/sabia-hrbp-analytics"><img alt="Kaggle" src="https://img.shields.io/badge/Kaggle-Live%20Dataset-20BEFF?logo=kaggle&logoColor=white"></a>
+  <img alt="Data Type" src="https://img.shields.io/badge/Data-Synthetic%20%7C%20Tabular-625BEB">
+  <img alt="Context" src="https://img.shields.io/badge/Context-Bangladesh-1E8E5A">
+  <img alt="Coverage" src="https://img.shields.io/badge/Coverage-Q1%E2%80%93Q4%202026-F36B21">
+  <img alt="Domain" src="https://img.shields.io/badge/Domain-HRBP%20%7C%20Manufacturing-0A66C2">
+  <img alt="Status" src="https://img.shields.io/badge/Project-Live-2EA44F">
+</p>
 
-<br>
+<p align="center">
+  <a href="https://github.com/samusa099/sabia-hrbp/actions/workflows/validate-project.yml"><img alt="Validation" src="https://github.com/samusa099/sabia-hrbp/actions/workflows/validate-project.yml/badge.svg"></a>
+  <img alt="Power BI" src="https://img.shields.io/badge/Power%20BI-Ready-F2C811?logo=powerbi&logoColor=black">
+  <img alt="Excel" src="https://img.shields.io/badge/Excel-Power%20Query%20%7C%20Power%20Pivot-217346?logo=microsoftexcel&logoColor=white">
+  <img alt="Python" src="https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white">
+  <img alt="SQL" src="https://img.shields.io/badge/SQL-Analytics-336791?logo=postgresql&logoColor=white">
+  <img alt="SQLite" src="https://img.shields.io/badge/SQLite-Ready-003B57?logo=sqlite&logoColor=white">
+  <img alt="License" src="https://img.shields.io/badge/License-MIT-lightgrey">
+</p>
 
-<a href="https://github.com/samusa099/sabia-hrbp/actions/workflows/validate-project.yml"><img src="https://github.com/samusa099/sabia-hrbp/actions/workflows/validate-project.yml/badge.svg" alt="Live validation"></a>
-<img src="https://img.shields.io/badge/data-synthetic%20%7C%20tabular-625BEB" alt="Synthetic tabular data">
-<img src="https://img.shields.io/badge/context-Bangladesh-1E8E5A" alt="Bangladesh context">
-<img src="https://img.shields.io/badge/coverage-Q1%E2%80%93Q4%202026-F36B21" alt="Q1 to Q4 2026 coverage">
-<img src="https://img.shields.io/badge/domain-HRBP%20%7C%20Manufacturing-0A66C2" alt="HRBP and manufacturing">
-<img src="https://img.shields.io/badge/status-live-2EA44F" alt="Project live">
+<p align="center">
+  <a href="https://github.com/samusa099/sabia-hrbp"><strong>GitHub Repository</strong></a>
+  ·
+  <a href="https://www.kaggle.com/datasets/samusahr/sabia-hrbp-analytics"><strong>Kaggle Dataset</strong></a>
+</p>
 
-<br>
+<p align="center">
+  <a href="#portfolio-overview">Executive Overview</a> ·
+  <a href="#project-status">Portfolio at a Glance</a> ·
+  <a href="#q1q4-transformation-journey">Transformation</a> ·
+  <a href="#analytics-capabilities">Analytics Architecture</a> ·
+  <a href="#data-cleaning-and-validation-workflow">Quick Start</a> ·
+  <a href="#ethics-and-limitations">Data Ethics</a>
+</p>
 
-<img src="https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white" alt="Python 3.11 plus">
-<img src="https://img.shields.io/badge/SQL-analytics-336791?logo=postgresql&logoColor=white" alt="SQL analytics">
-<img src="https://img.shields.io/badge/SQLite-ready-003B57?logo=sqlite&logoColor=white" alt="SQLite ready">
-<img src="https://img.shields.io/badge/Power%20BI-ready-F2C811?logo=powerbi&logoColor=black" alt="Power BI ready">
-<img src="https://img.shields.io/badge/Excel-Power%20Query%20%7C%20Power%20Pivot-217346?logo=microsoftexcel&logoColor=white" alt="Excel Power Query and Power Pivot">
-<img src="https://img.shields.io/badge/Kaggle-published-20BEFF?logo=kaggle&logoColor=white" alt="Kaggle published">
-<img src="https://img.shields.io/badge/license-MIT-lightgrey" alt="MIT License">
-
-<br><br>
-
-<a href="https://github.com/samusa099/sabia-hrbp"><strong>GitHub Repository</strong></a>
-&nbsp;·&nbsp;
-<a href="https://www.kaggle.com/datasets/samusahr/sabia-hrbp-analytics"><strong>Kaggle Dataset</strong></a>
-
-<br><br>
-
-**Business improvement through systems, not system building alone.**
-
-</div>
-
----
-
-## Quick navigation
-
-[Overview](#portfolio-overview) · [Business case](#executive-business-case) · [Transformation](#q1q4-transformation-journey) · [Analytics](#analytics-capabilities) · [Workflow](#data-cleaning-and-validation-workflow) · [Database](#database-and-sql-layer) · [Repository map](#repository-map) · [Wiki](#project-wiki) · [Ethics](#ethics-and-limitations) · [Author](#author)
+<p align="center"><strong>Business improvement through systems, not system building alone.</strong></p>
 
 ---
 
