@@ -30,7 +30,7 @@
 
 <p align="center">
   <a href="https://github.com/samusa099/sabia-hrbp"><strong>GitHub Repository</strong></a>
-  ·
+  &nbsp;·&nbsp;
   <a href="https://www.kaggle.com/datasets/samusahr/sabia-hrbp-analytics"><strong>Kaggle Dataset</strong></a>
 </p>
 
@@ -47,18 +47,38 @@
 
 ## ✨ Executive overview
 
+<table>
+<tr>
+<td width="68%" valign="top">
+
 **Sabia Group HRBP Smartwatch Recovery 2026** is a synthetic HR Business Partner and data analytics portfolio project created by **Musa**.
 
 The project simulates a Bangladesh-based smartwatch manufacturing company facing workforce, quality, productivity and financial challenges. It demonstrates how an HRBP can connect people decisions with operational and financial outcomes through an integrated analytics workflow.
 
 > **Business improvement through systems, not system building alone.**
 
+</td>
+<td width="32%" valign="top">
+
+### Portfolio identity
+
+- **Author:** Musa
+- **Context:** Bangladesh
+- **Domain:** HRBP + Manufacturing
+- **Coverage:** Q1–Q4 2026
+- **Data:** Synthetic practice data
+- **Status:** Live and validated
+
+</td>
+</tr>
+</table>
+
 <table>
 <tr>
-<td width="25%" align="center"><strong>100</strong><br>Starting workforce</td>
-<td width="25%" align="center"><strong>114</strong><br>Year-end active workforce</td>
-<td width="25%" align="center"><strong>97.1%</strong><br>Final first-pass yield</td>
-<td width="25%" align="center"><strong>2.4%</strong><br>Final defect rate</td>
+<td width="25%" align="center"><h3>100</h3><sub>Starting workforce</sub></td>
+<td width="25%" align="center"><h3>114</h3><sub>Year-end active workforce</sub></td>
+<td width="25%" align="center"><h3>97.1%</h3><sub>Final first-pass yield</sub></td>
+<td width="25%" align="center"><h3>2.4%</h3><sub>Final defect rate</sub></td>
 </tr>
 </table>
 
@@ -77,28 +97,47 @@ The project simulates a Bangladesh-based smartwatch manufacturing company facing
 
 ## 📊 Portfolio at a glance
 
-| Business or project area | Coverage |
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### Business profile
+
+| Area | Coverage |
 |---|---|
 | Business scenario | Smartwatch manufacturing recovery |
 | Geography | Bangladesh |
 | Time horizon | Q1–Q4 2026 |
+| Controlled pilot | 25 employees on Line A |
+| Publishing channels | GitHub and Kaggle |
+| Validation status | GitHub Actions live |
+
+</td>
+<td width="50%" valign="top">
+
+### Outcome profile
+
+| Measure | Result |
+|---|---:|
 | Starting workforce | 100 employees |
 | Year-end active workforce | 114 employees |
-| Controlled pilot | 25 employees on Line A |
 | Final first-pass yield | 97.1% |
 | Final defect rate | 2.4% |
-| Core analytics tools | Excel, Power BI, Python, SQL and SQLite |
-| Publishing channels | GitHub and Kaggle |
+| Core analytics tools | Excel, Power BI, Python, SQL, SQLite |
 | Data status | Fully synthetic practice data |
-| Validation status | GitHub Actions live |
+
+</td>
+</tr>
+</table>
 
 ### Analytics coverage
 
 <table>
 <tr>
-<td width="33%">
+<td width="33%" valign="top">
 
-**Workforce**
+### 👥 Workforce
+
 - Headcount and organization structure
 - Workforce reset scenarios
 - Critical-skill mapping
@@ -106,9 +145,10 @@ The project simulates a Bangladesh-based smartwatch manufacturing company facing
 - Employee exits and knowledge transfer
 
 </td>
-<td width="33%">
+<td width="33%" valign="top">
 
-**Talent and HR operations**
+### 🎯 Talent and HR operations
+
 - Recruitment funnel
 - Time-to-fill and cost
 - Training and certification
@@ -116,9 +156,10 @@ The project simulates a Bangladesh-based smartwatch manufacturing company facing
 - HR services and technology adoption
 
 </td>
-<td width="33%">
+<td width="33%" valign="top">
 
-**Business recovery**
+### 📈 Business recovery
+
 - Production output
 - First-pass yield
 - Defect, rework and scrap
@@ -223,29 +264,42 @@ sabia-hrbp/
 
 ## 🔄 Data-cleaning and validation workflow
 
+<table>
+<tr>
+<td width="58%" valign="top">
+
 The deliberately messy employee, training and production files contain realistic quality issues such as inconsistent labels, mixed date formats, missing values, duplicate employee IDs and numeric fields stored as text.
 
-The cleaning workflow:
+### Cleaning sequence
 
-1. standardizes names, gender values and department labels;
-2. parses join, exit, training and production dates;
-3. converts invalid values into controlled missing values;
-4. cleans BDT salary and cost fields;
-5. removes duplicate primary keys;
-6. filters records without a valid required `Join_Date`;
-7. validates uniqueness and required fields;
-8. writes cleaned outputs and a data-quality report.
+1. Standardize names, gender values and department labels.
+2. Parse join, exit, training and production dates.
+3. Convert invalid values into controlled missing values.
+4. Clean BDT salary and cost fields.
+5. Remove duplicate primary keys.
+6. Filter records without a valid required `Join_Date`.
+7. Validate uniqueness and required fields.
+8. Write cleaned outputs and a data-quality report.
+
+</td>
+<td width="42%" valign="top">
+
+### Run the workflow
 
 ```bash
 python -m pip install -r 07_Python/requirements.txt
 python 07_Python/clean_and_validate.py
 ```
 
-Expected output directory:
+### Expected output
 
 ```text
 07_Python/generated_clean_output/
 ```
+
+</td>
+</tr>
+</table>
 
 <details>
 <summary><strong>View generated outputs</strong></summary>
@@ -264,7 +318,11 @@ Expected output directory:
 
 ## 🗄️ Database and SQL layer
 
-The repository includes a ready-to-open SQLite database:
+<table>
+<tr>
+<td width="55%" valign="top">
+
+### Ready database
 
 ```text
 13_Database_SQL/Sabia_Group_HRBP_Analytics.sqlite
@@ -280,19 +338,24 @@ The database contains:
 - Q1–Q4 business queries;
 - `vw_bi_` reporting views for BI tools.
 
-Rebuild the database:
+</td>
+<td width="45%" valign="top">
+
+### Rebuild and query
 
 ```bash
 python 13_Database_SQL/00_build_database.py
 ```
-
-Recommended first query:
 
 ```sql
 SELECT *
 FROM vw_bi_quarterly_business_summary
 ORDER BY Quarter;
 ```
+
+</td>
+</tr>
+</table>
 
 <details>
 <summary><strong>View SQL resources</strong></summary>
@@ -318,7 +381,7 @@ ORDER BY Quarter;
 
 <table>
 <tr>
-<td width="50%">
+<td width="50%" valign="top">
 
 ### 🟨 Power BI
 
@@ -331,7 +394,7 @@ ORDER BY Quarter;
 **Start here:** `08_PowerBI/`
 
 </td>
-<td width="50%">
+<td width="50%" valign="top">
 
 ### 🟩 Excel
 
@@ -346,7 +409,7 @@ ORDER BY Quarter;
 </td>
 </tr>
 <tr>
-<td width="50%">
+<td width="50%" valign="top">
 
 ### 🟦 Python and Jupyter
 
@@ -359,7 +422,7 @@ ORDER BY Quarter;
 **Start here:** `07_Python/`
 
 </td>
-<td width="50%">
+<td width="50%" valign="top">
 
 ### 🟪 SQL, SQLite and BI tools
 
@@ -379,42 +442,45 @@ ORDER BY Quarter;
 
 ## 🚀 Quick start
 
-### Clone the repository
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### Clone and prepare
 
 ```bash
 git clone https://github.com/samusa099/sabia-hrbp.git
 cd sabia-hrbp
-```
-
-### Install the Python environment
-
-```bash
 python -m pip install -r 07_Python/requirements.txt
 ```
 
-### Run the cleaning workflow
+### Run analytics
 
 ```bash
 python 07_Python/clean_and_validate.py
-```
-
-### Run exploratory analysis
-
-```bash
 python 07_Python/eda_hrbp_recovery.py
 ```
 
-### Query the SQLite database
+</td>
+<td width="50%" valign="top">
+
+### Query and rebuild
 
 ```bash
 python 07_Python/query_sqlite_database.py
-```
-
-### Rebuild the database
-
-```bash
 python 13_Database_SQL/00_build_database.py
 ```
+
+### Open the data
+
+- Excel: `00_Master/`
+- Power BI guidance: `08_PowerBI/`
+- SQLite: `13_Database_SQL/`
+- Kaggle assets: `10_Kaggle/`
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -429,10 +495,14 @@ python 13_Database_SQL/00_build_database.py
 
 ### Simulated recovery outcome
 
-- quality improved to **97.1% first-pass yield**;
-- defect rate reduced to **2.4%**;
-- active workforce reached **114 employees**;
-- the business moved away from critical sale risk toward a profitable operating model.
+<table>
+<tr>
+<td width="25%" align="center">✅<br><strong>97.1%</strong><br><sub>First-pass yield</sub></td>
+<td width="25%" align="center">📉<br><strong>2.4%</strong><br><sub>Defect rate</sub></td>
+<td width="25%" align="center">👥<br><strong>114</strong><br><sub>Active workforce</sub></td>
+<td width="25%" align="center">📈<br><strong>Profitable model</strong><br><sub>Business direction</sub></td>
+</tr>
+</table>
 
 ---
 
@@ -470,6 +540,10 @@ python 13_Database_SQL/00_build_database.py
 
 ## 🛡️ Data ethics
 
+<table>
+<tr>
+<td width="66%" valign="top">
+
 All people, entities, events, production results and financial values in this repository are **fictional and synthetically generated for practice, education and portfolio demonstration**.
 
 This project:
@@ -480,7 +554,16 @@ This project:
 - must not be used to make real employment decisions;
 - does not replace legal, labour-law, privacy or ethical review.
 
+</td>
+<td width="34%" valign="top">
+
+### Responsible-use reminder
+
 Protected characteristics such as gender, age, religion, disability, pregnancy, ethnicity or health status should never be used as unfair employment-decision criteria.
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -500,10 +583,12 @@ Workforce Strategy · People Analytics · Business Recovery · Excel · Power BI
 
 ## 🔗 Additional documentation
 
-- [`13_Database_SQL/README_DATABASE_SQL.md`](13_Database_SQL/README_DATABASE_SQL.md)
-- [`08_PowerBI/POWER_BI_AND_OTHER_BI_USAGE_GUIDE.md`](08_PowerBI/POWER_BI_AND_OTHER_BI_USAGE_GUIDE.md)
-- [`11_Documentation/`](11_Documentation/)
-- [Live Kaggle Dataset](https://www.kaggle.com/datasets/samusahr/sabia-hrbp-analytics)
+<p align="center">
+  <a href="13_Database_SQL/README_DATABASE_SQL.md">SQL & Database Guide</a> ·
+  <a href="08_PowerBI/POWER_BI_AND_OTHER_BI_USAGE_GUIDE.md">Power BI Guide</a> ·
+  <a href="11_Documentation/">Project Documentation</a> ·
+  <a href="https://www.kaggle.com/datasets/samusahr/sabia-hrbp-analytics">Live Kaggle Dataset</a>
+</p>
 
 ---
 
