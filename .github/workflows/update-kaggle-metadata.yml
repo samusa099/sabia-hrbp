@@ -1,0 +1,36 @@
+name: Generate Kaggle Column Metadata
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "06_Clean_Data/**"
+      - "10_Kaggle/generate_kaggle_metadata.py"
+      - ".github/workflows/update-kaggle-metadata.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  generate-metadata:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate Kaggle metadata
+        run: python 10_Kaggle/generate_kaggle_metadata.py
+
+      - name: Commit generated metadata
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 10_Kaggle/dataset-metadata.json
+          git diff --cached --quiet || git commit -m "Generate complete Kaggle column metadata"
+          git push
