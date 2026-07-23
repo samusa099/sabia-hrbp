@@ -1,22 +1,1549 @@
 {
-  "title": "Sabia Group HRBP Smartwatch Recovery 2026",
-  "id": "samusahr/sabia-group-hrbp-smartwatch-recovery-2026",
+  "id": "samusahr/sabia-hrbp-analytics",
+  "title": "Sabia Group HRBP Recovery Practice Dataset",
+  "subtitle": "Synthetic HRBP data for workforce, manufacturing, and business recovery analytics",
+  "description": "A Bangladesh-focused synthetic HR Business Partner and manufacturing recovery dataset created by Musa for Excel, Power BI, Python, SQL, SQLite, data-cleaning, and portfolio practice.",
   "licenses": [
     {
-      "name": "CC0-1.0"
+      "name": "CC-BY-4.0"
     }
   ],
-  "keywords": [
-    "human resources",
-    "hr analytics",
-    "hrbp",
-    "manufacturing",
-    "smartwatch",
-    "bangladesh",
-    "power bi",
-    "workforce planning",
-    "synthetic data"
-  ],
-  "subtitle": "Synthetic Q1-Q4 HRBP transformation data linking workforce, quality, production and profit.",
-  "description": "A synthetic Bangladesh-focused HRBP business recovery dataset for Excel, Python, Power BI and workforce analytics practice."
+  "resources": [
+    {
+      "path": "attendance_monthly.csv",
+      "description": "Synthetic practice table for attendance monthly analysis in the Sabia Group HRBP recovery portfolio.",
+      "schema": {
+        "fields": [
+          {
+            "name": "Month",
+            "description": "Reporting month, generally stored in YYYY-MM or date format.",
+            "type": "datetime"
+          },
+          {
+            "name": "Quarter",
+            "description": "Business quarter represented as Q1, Q2, Q3, or Q4.",
+            "type": "string"
+          },
+          {
+            "name": "Department",
+            "description": "Organizational department where the employee is assigned.",
+            "type": "string"
+          },
+          {
+            "name": "Active_Headcount",
+            "description": "Number of active employees in the reporting period.",
+            "type": "integer"
+          },
+          {
+            "name": "Scheduled_Work_Days",
+            "description": "Scheduled Work Days field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "integer"
+          },
+          {
+            "name": "Absent_Days",
+            "description": "Absent Days field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "numeric"
+          },
+          {
+            "name": "Absence_Rate",
+            "description": "Employee absence rate for the reporting period.",
+            "type": "numeric"
+          },
+          {
+            "name": "Average_Overtime_Hours_per_Employee",
+            "description": "Average overtime hours recorded per employee.",
+            "type": "numeric"
+          },
+          {
+            "name": "Late_Incidents",
+            "description": "Number of recorded lateness incidents.",
+            "type": "integer"
+          },
+          {
+            "name": "Safety_Incidents",
+            "description": "Number of recorded workplace safety incidents.",
+            "type": "integer"
+          }
+        ]
+      }
+    },
+    {
+      "path": "company_entities.csv",
+      "description": "Synthetic practice table for company entities analysis in the Sabia Group HRBP recovery portfolio.",
+      "schema": {
+        "fields": [
+          {
+            "name": "Entity_ID",
+            "description": "Unique identifier for the entity record.",
+            "type": "id"
+          },
+          {
+            "name": "Legal_Entity",
+            "description": "Legal Entity field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Business_Type",
+            "description": "Business Type categorical value used to classify the record.",
+            "type": "string"
+          },
+          {
+            "name": "Primary_Location",
+            "description": "Primary Location text label associated with the record.",
+            "type": "string"
+          },
+          {
+            "name": "Role_in_Group",
+            "description": "Role in Group categorical value used to classify the record.",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "data_dictionary.csv",
+      "description": "Synthetic practice table for data dictionary analysis in the Sabia Group HRBP recovery portfolio.",
+      "schema": {
+        "fields": [
+          {
+            "name": "Table",
+            "description": "Table field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Grain",
+            "description": "Grain field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Primary_Key",
+            "description": "Primary Key field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Purpose",
+            "description": "Purpose field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "PowerBI_Role",
+            "description": "PowerBI Role field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "departments.csv",
+      "description": "Synthetic practice table for departments analysis in the Sabia Group HRBP recovery portfolio.",
+      "schema": {
+        "fields": [
+          {
+            "name": "Department_Code",
+            "description": "Short code used to identify the department.",
+            "type": "integer"
+          },
+          {
+            "name": "Department",
+            "description": "Organizational department where the employee is assigned.",
+            "type": "string"
+          },
+          {
+            "name": "Function_Group",
+            "description": "Function Group categorical value used to classify the record.",
+            "type": "string"
+          },
+          {
+            "name": "Default_Facility",
+            "description": "Default Facility text label associated with the record.",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "employee_master.csv",
+      "description": "Synthetic practice table for employee master analysis in the Sabia Group HRBP recovery portfolio.",
+      "schema": {
+        "fields": [
+          {
+            "name": "Employee_ID",
+            "description": "Unique synthetic identifier assigned to each employee.",
+            "type": "id"
+          },
+          {
+            "name": "Employee_Name",
+            "description": "Synthetic full name of the employee.",
+            "type": "string"
+          },
+          {
+            "name": "Gender",
+            "description": "Reported gender category used in the synthetic workforce profile.",
+            "type": "string"
+          },
+          {
+            "name": "Age",
+            "description": "Age field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "integer"
+          },
+          {
+            "name": "District",
+            "description": "District text label associated with the record.",
+            "type": "string"
+          },
+          {
+            "name": "Entity_ID",
+            "description": "Unique identifier for the entity record.",
+            "type": "id"
+          },
+          {
+            "name": "Legal_Entity",
+            "description": "Legal Entity field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Facility_ID",
+            "description": "Unique identifier for the facility record.",
+            "type": "id"
+          },
+          {
+            "name": "Department_Code",
+            "description": "Short code used to identify the department.",
+            "type": "integer"
+          },
+          {
+            "name": "Department",
+            "description": "Organizational department where the employee is assigned.",
+            "type": "string"
+          },
+          {
+            "name": "Position",
+            "description": "Position field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Grade",
+            "description": "Grade field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Employment_Type",
+            "description": "Employment arrangement, such as permanent, contractual, or temporary.",
+            "type": "string"
+          },
+          {
+            "name": "Shift",
+            "description": "Shift field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Join_Date",
+            "description": "Employee joining date in YYYY-MM-DD format.",
+            "type": "datetime"
+          },
+          {
+            "name": "Exit_Date",
+            "description": "Employee exit date in YYYY-MM-DD format, where applicable.",
+            "type": "datetime"
+          },
+          {
+            "name": "Employee_Status",
+            "description": "Current simulated employment status of the employee.",
+            "type": "string"
+          },
+          {
+            "name": "Critical_Skill",
+            "description": "Indicates whether the employee holds a business-critical skill.",
+            "type": "string"
+          },
+          {
+            "name": "Skill_Category",
+            "description": "Skill Category categorical value used to classify the record.",
+            "type": "string"
+          },
+          {
+            "name": "Skill_Level",
+            "description": "Skill Level categorical value used to classify the record.",
+            "type": "string"
+          },
+          {
+            "name": "Base_Salary_BDT",
+            "description": "Base Salary BDT recorded as a financial value; currency is BDT unless otherwise stated.",
+            "type": "integer"
+          },
+          {
+            "name": "Allowance_BDT",
+            "description": "Allowance BDT recorded as a financial value; currency is BDT unless otherwise stated.",
+            "type": "integer"
+          },
+          {
+            "name": "Total_Monthly_Cost_BDT",
+            "description": "Total estimated monthly employee cost expressed in Bangladeshi taka.",
+            "type": "integer"
+          },
+          {
+            "name": "Hire_Cohort",
+            "description": "Hire Cohort field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Synthetic_Data_Flag",
+            "description": "Synthetic Data Flag field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "employee_relations_cases.csv",
+      "description": "Synthetic practice table for employee relations cases analysis in the Sabia Group HRBP recovery portfolio.",
+      "schema": {
+        "fields": [
+          {
+            "name": "Case_ID",
+            "description": "Unique identifier for the case record.",
+            "type": "id"
+          },
+          {
+            "name": "Opened_Date",
+            "description": "Opened Date recorded as a calendar date; use the source file format shown in the data.",
+            "type": "datetime"
+          },
+          {
+            "name": "Quarter",
+            "description": "Business quarter represented as Q1, Q2, Q3, or Q4.",
+            "type": "string"
+          },
+          {
+            "name": "Case_Type",
+            "description": "Case Type categorical value used to classify the record.",
+            "type": "string"
+          },
+          {
+            "name": "Severity",
+            "description": "Severity field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Closure_Date",
+            "description": "Closure Date recorded as a calendar date; use the source file format shown in the data.",
+            "type": "datetime"
+          },
+          {
+            "name": "Closure_Days",
+            "description": "Closure Days field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "integer"
+          },
+          {
+            "name": "SLA_Target_Days",
+            "description": "SLA Target Days field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "integer"
+          },
+          {
+            "name": "Closed_Within_SLA",
+            "description": "Closed Within SLA field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Outcome",
+            "description": "Outcome field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Policy_Followed",
+            "description": "Policy Followed field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "facilities.csv",
+      "description": "Synthetic practice table for facilities analysis in the Sabia Group HRBP recovery portfolio.",
+      "schema": {
+        "fields": [
+          {
+            "name": "Facility_ID",
+            "description": "Unique identifier for the facility record.",
+            "type": "id"
+          },
+          {
+            "name": "Facility",
+            "description": "Facility text label associated with the record.",
+            "type": "string"
+          },
+          {
+            "name": "District",
+            "description": "District text label associated with the record.",
+            "type": "string"
+          },
+          {
+            "name": "Entity_ID",
+            "description": "Unique identifier for the entity record.",
+            "type": "id"
+          }
+        ]
+      }
+    },
+    {
+      "path": "feasibility_findings.csv",
+      "description": "Synthetic practice table for feasibility findings analysis in the Sabia Group HRBP recovery portfolio.",
+      "schema": {
+        "fields": [
+          {
+            "name": "Workstream",
+            "description": "Workstream field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Current_State",
+            "description": "Current State field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Feasibility_Finding",
+            "description": "Feasibility Finding field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Required_Action",
+            "description": "Required Action field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Feasibility_Rating",
+            "description": "Feasibility Rating numeric analytical score or rating.",
+            "type": "string"
+          },
+          {
+            "name": "Q1_Owner",
+            "description": "Q1 Owner field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "financial_impact_monthly.csv",
+      "description": "Synthetic practice table for financial impact monthly analysis in the Sabia Group HRBP recovery portfolio.",
+      "schema": {
+        "fields": [
+          {
+            "name": "Month",
+            "description": "Reporting month, generally stored in YYYY-MM or date format.",
+            "type": "datetime"
+          },
+          {
+            "name": "Quarter",
+            "description": "Business quarter represented as Q1, Q2, Q3, or Q4.",
+            "type": "string"
+          },
+          {
+            "name": "Active_Headcount",
+            "description": "Number of active employees in the reporting period.",
+            "type": "integer"
+          },
+          {
+            "name": "Units_Sold",
+            "description": "Units Sold recorded as a numeric count.",
+            "type": "integer"
+          },
+          {
+            "name": "Revenue_BDT_Million",
+            "description": "Revenue expressed in millions of Bangladeshi taka.",
+            "type": "numeric"
+          },
+          {
+            "name": "Material_Cost_BDT_Million",
+            "description": "Material Cost BDT Million recorded as a financial value; currency is BDT unless otherwise stated.",
+            "type": "numeric"
+          },
+          {
+            "name": "Workforce_Cost_BDT_Million",
+            "description": "Workforce Cost BDT Million recorded as a financial value; currency is BDT unless otherwise stated.",
+            "type": "numeric"
+          },
+          {
+            "name": "Overhead_BDT_Million",
+            "description": "Overhead BDT Million recorded as a financial value; currency is BDT unless otherwise stated.",
+            "type": "numeric"
+          },
+          {
+            "name": "Scrap_Cost_BDT_Million",
+            "description": "Scrap Cost BDT Million recorded as a financial value; currency is BDT unless otherwise stated.",
+            "type": "numeric"
+          },
+          {
+            "name": "Warranty_Cost_BDT_Million",
+            "description": "Warranty Cost BDT Million recorded as a financial value; currency is BDT unless otherwise stated.",
+            "type": "numeric"
+          },
+          {
+            "name": "HR_Transformation_Cost_BDT_Million",
+            "description": "HR Transformation Cost BDT Million recorded as a financial value; currency is BDT unless otherwise stated.",
+            "type": "numeric"
+          },
+          {
+            "name": "Other_Operating_Cost_BDT_Million",
+            "description": "Other Operating Cost BDT Million recorded as a financial value; currency is BDT unless otherwise stated.",
+            "type": "numeric"
+          },
+          {
+            "name": "Operating_Profit_BDT_Million",
+            "description": "Operating profit expressed in millions of Bangladeshi taka.",
+            "type": "numeric"
+          },
+          {
+            "name": "Cumulative_Profit_BDT_Million",
+            "description": "Cumulative operating profit expressed in millions of Bangladeshi taka.",
+            "type": "numeric"
+          },
+          {
+            "name": "Investment_Sale_Risk",
+            "description": "Investment Sale Risk field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "hr_pillar_scores.csv",
+      "description": "Synthetic practice table for hr pillar scores analysis in the Sabia Group HRBP recovery portfolio.",
+      "schema": {
+        "fields": [
+          {
+            "name": "Pillar",
+            "description": "Pillar field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Q1",
+            "description": "Q1 field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "integer"
+          },
+          {
+            "name": "Q2",
+            "description": "Q2 field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "integer"
+          },
+          {
+            "name": "Q3",
+            "description": "Q3 field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "integer"
+          },
+          {
+            "name": "Q4",
+            "description": "Q4 field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "integer"
+          },
+          {
+            "name": "Improvement_Q1_to_Q4",
+            "description": "Improvement Q1 to Q4 field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "integer"
+          }
+        ]
+      }
+    },
+    {
+      "path": "hr_pillars.csv",
+      "description": "Synthetic practice table for hr pillars analysis in the Sabia Group HRBP recovery portfolio.",
+      "schema": {
+        "fields": [
+          {
+            "name": "Layer",
+            "description": "Layer field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Pillar_ID",
+            "description": "Unique identifier for the pillar record.",
+            "type": "id"
+          },
+          {
+            "name": "Pillar",
+            "description": "Pillar field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Purpose",
+            "description": "Purpose field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Primary_Data",
+            "description": "Primary Data field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "hr_service_tickets.csv",
+      "description": "Synthetic practice table for hr service tickets analysis in the Sabia Group HRBP recovery portfolio.",
+      "schema": {
+        "fields": [
+          {
+            "name": "Ticket_ID",
+            "description": "Unique identifier for the ticket record.",
+            "type": "id"
+          },
+          {
+            "name": "Created_Date",
+            "description": "Created Date recorded as a calendar date; use the source file format shown in the data.",
+            "type": "datetime"
+          },
+          {
+            "name": "Quarter",
+            "description": "Business quarter represented as Q1, Q2, Q3, or Q4.",
+            "type": "string"
+          },
+          {
+            "name": "Ticket_Type",
+            "description": "Ticket Type categorical value used to classify the record.",
+            "type": "string"
+          },
+          {
+            "name": "Priority",
+            "description": "Priority categorical value used to classify the record.",
+            "type": "string"
+          },
+          {
+            "name": "Resolution_Hours",
+            "description": "Resolution Hours measured in hours.",
+            "type": "numeric"
+          },
+          {
+            "name": "SLA_Target_Hours",
+            "description": "SLA Target Hours measured in hours.",
+            "type": "integer"
+          },
+          {
+            "name": "SLA_Met",
+            "description": "SLA Met field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Employee_Satisfaction",
+            "description": "Employee Satisfaction field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "integer"
+          },
+          {
+            "name": "Channel",
+            "description": "Channel field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "layoff_and_restructuring.csv",
+      "description": "Synthetic practice table for layoff and restructuring analysis in the Sabia Group HRBP recovery portfolio.",
+      "schema": {
+        "fields": [
+          {
+            "name": "Restructuring_ID",
+            "description": "Unique identifier for the restructuring record.",
+            "type": "id"
+          },
+          {
+            "name": "Employee_ID",
+            "description": "Unique synthetic identifier assigned to each employee.",
+            "type": "id"
+          },
+          {
+            "name": "Department",
+            "description": "Organizational department where the employee is assigned.",
+            "type": "string"
+          },
+          {
+            "name": "Position",
+            "description": "Position field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Decision_Date",
+            "description": "Decision Date recorded as a calendar date; use the source file format shown in the data.",
+            "type": "datetime"
+          },
+          {
+            "name": "Effective_Date",
+            "description": "Effective Date recorded as a calendar date; use the source file format shown in the data.",
+            "type": "datetime"
+          },
+          {
+            "name": "Business_Reason",
+            "description": "Business Reason field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Selection_Criteria",
+            "description": "Selection Criteria field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Protected_Attribute_Used",
+            "description": "Protected Attribute Used field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Separation_Benefit_BDT",
+            "description": "Separation Benefit BDT recorded as a financial value; currency is BDT unless otherwise stated.",
+            "type": "integer"
+          },
+          {
+            "name": "Estimated_Annual_Cost_Saving_BDT",
+            "description": "Estimated Annual Cost Saving BDT recorded as a financial value; currency is BDT unless otherwise stated.",
+            "type": "integer"
+          },
+          {
+            "name": "Critical_Knowledge_Risk",
+            "description": "Critical Knowledge Risk field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Knowledge_Transfer_Completed",
+            "description": "Knowledge Transfer Completed field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Rehire_Eligible",
+            "description": "Rehire Eligible field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Ethical_Review_Status",
+            "description": "Ethical Review Status categorical value used to classify the record.",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "other_employee_exits.csv",
+      "description": "Synthetic practice table for other employee exits analysis in the Sabia Group HRBP recovery portfolio.",
+      "schema": {
+        "fields": [
+          {
+            "name": "Exit_ID",
+            "description": "Unique identifier for the exit record.",
+            "type": "id"
+          },
+          {
+            "name": "Employee_ID",
+            "description": "Unique synthetic identifier assigned to each employee.",
+            "type": "id"
+          },
+          {
+            "name": "Exit_Date",
+            "description": "Employee exit date in YYYY-MM-DD format, where applicable.",
+            "type": "datetime"
+          },
+          {
+            "name": "Exit_Quarter",
+            "description": "Exit Quarter field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Department",
+            "description": "Organizational department where the employee is assigned.",
+            "type": "string"
+          },
+          {
+            "name": "Position",
+            "description": "Position field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Tenure_Months",
+            "description": "Tenure Months field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "integer"
+          },
+          {
+            "name": "Exit_Reason",
+            "description": "Exit Reason field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Regrettable_Exit",
+            "description": "Regrettable Exit field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Exit_Interview_Completed",
+            "description": "Exit Interview Completed field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Knowledge_Transfer_Completed",
+            "description": "Knowledge Transfer Completed field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "performance_quarterly.csv",
+      "description": "Synthetic practice table for performance quarterly analysis in the Sabia Group HRBP recovery portfolio.",
+      "schema": {
+        "fields": [
+          {
+            "name": "Performance_Record_ID",
+            "description": "Unique identifier for the performance record record.",
+            "type": "id"
+          },
+          {
+            "name": "Employee_ID",
+            "description": "Unique synthetic identifier assigned to each employee.",
+            "type": "id"
+          },
+          {
+            "name": "Quarter",
+            "description": "Business quarter represented as Q1, Q2, Q3, or Q4.",
+            "type": "string"
+          },
+          {
+            "name": "Department",
+            "description": "Organizational department where the employee is assigned.",
+            "type": "string"
+          },
+          {
+            "name": "Goal_Achievement_Score",
+            "description": "Goal Achievement Score numeric analytical score or rating.",
+            "type": "integer"
+          },
+          {
+            "name": "Quality_Score",
+            "description": "Quality Score numeric analytical score or rating.",
+            "type": "integer"
+          },
+          {
+            "name": "Behaviour_Score",
+            "description": "Behaviour Score numeric analytical score or rating.",
+            "type": "integer"
+          },
+          {
+            "name": "Overall_Score",
+            "description": "Overall Score numeric analytical score or rating.",
+            "type": "numeric"
+          },
+          {
+            "name": "Performance_Rating",
+            "description": "Performance Rating numeric analytical score or rating.",
+            "type": "string"
+          },
+          {
+            "name": "Manager_Checkin_Completed",
+            "description": "Manager Checkin Completed field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Development_Plan_Created",
+            "description": "Development Plan Created field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "pilot_participants.csv",
+      "description": "Synthetic practice table for pilot participants analysis in the Sabia Group HRBP recovery portfolio.",
+      "schema": {
+        "fields": [
+          {
+            "name": "Pilot_ID",
+            "description": "Unique identifier for the pilot record.",
+            "type": "id"
+          },
+          {
+            "name": "Employee_ID",
+            "description": "Unique synthetic identifier assigned to each employee.",
+            "type": "id"
+          },
+          {
+            "name": "Department",
+            "description": "Organizational department where the employee is assigned.",
+            "type": "string"
+          },
+          {
+            "name": "Position",
+            "description": "Position field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Pilot_Role",
+            "description": "Pilot Role field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Pilot_Start",
+            "description": "Pilot Start field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Pilot_End",
+            "description": "Pilot End field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Training_Completed",
+            "description": "Training Completed field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Pre_Skill_Score",
+            "description": "Pre Skill Score numeric analytical score or rating.",
+            "type": "integer"
+          },
+          {
+            "name": "Post_Skill_Score",
+            "description": "Post Skill Score numeric analytical score or rating.",
+            "type": "integer"
+          },
+          {
+            "name": "Pre_Productivity_Index",
+            "description": "Pre Productivity Index numeric analytical score or rating.",
+            "type": "numeric"
+          },
+          {
+            "name": "Post_Productivity_Index",
+            "description": "Post Productivity Index numeric analytical score or rating.",
+            "type": "numeric"
+          },
+          {
+            "name": "Retention_Intent_Score",
+            "description": "Retention Intent Score numeric analytical score or rating.",
+            "type": "integer"
+          }
+        ]
+      }
+    },
+    {
+      "path": "pilot_results.csv",
+      "description": "Synthetic practice table for pilot results analysis in the Sabia Group HRBP recovery portfolio.",
+      "schema": {
+        "fields": [
+          {
+            "name": "Metric",
+            "description": "Name of the KPI or analytical measure.",
+            "type": "string"
+          },
+          {
+            "name": "Unit",
+            "description": "Unit of measurement used for the metric.",
+            "type": "string"
+          },
+          {
+            "name": "Baseline_Q1",
+            "description": "Baseline Q1 field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "numeric"
+          },
+          {
+            "name": "Pilot_Target",
+            "description": "Pilot Target field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "numeric"
+          },
+          {
+            "name": "Pilot_Result",
+            "description": "Pilot Result field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "numeric"
+          },
+          {
+            "name": "Control_Result",
+            "description": "Control Result field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "numeric"
+          },
+          {
+            "name": "Decision",
+            "description": "Decision field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "production_monthly.csv",
+      "description": "Synthetic practice table for production monthly analysis in the Sabia Group HRBP recovery portfolio.",
+      "schema": {
+        "fields": [
+          {
+            "name": "Month",
+            "description": "Reporting month, generally stored in YYYY-MM or date format.",
+            "type": "datetime"
+          },
+          {
+            "name": "Quarter",
+            "description": "Business quarter represented as Q1, Q2, Q3, or Q4.",
+            "type": "string"
+          },
+          {
+            "name": "Production_Line",
+            "description": "Production Line field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Planned_Units",
+            "description": "Number of production units planned for the reporting period.",
+            "type": "integer"
+          },
+          {
+            "name": "Actual_Units",
+            "description": "Number of production units actually completed.",
+            "type": "integer"
+          },
+          {
+            "name": "First_Pass_Yield",
+            "description": "Share of units passing quality inspection without rework.",
+            "type": "numeric"
+          },
+          {
+            "name": "Defect_Rate",
+            "description": "Share of produced units identified as defective.",
+            "type": "numeric"
+          },
+          {
+            "name": "Rework_Rate",
+            "description": "Share of produced units requiring rework.",
+            "type": "numeric"
+          },
+          {
+            "name": "Scrap_Units",
+            "description": "Scrap Units recorded as a numeric count.",
+            "type": "integer"
+          },
+          {
+            "name": "Customer_Return_Rate",
+            "description": "Customer Return Rate expressed as a rate or percentage.",
+            "type": "numeric"
+          },
+          {
+            "name": "Units_per_Labour_Hour",
+            "description": "Production output per labour hour.",
+            "type": "numeric"
+          },
+          {
+            "name": "Production_Headcount",
+            "description": "Production Headcount recorded as a numeric count.",
+            "type": "integer"
+          },
+          {
+            "name": "Downtime_Hours",
+            "description": "Total production downtime recorded in hours.",
+            "type": "numeric"
+          },
+          {
+            "name": "Primary_Constraint",
+            "description": "Primary Constraint field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "quarterly_action_tracker.csv",
+      "description": "Synthetic practice table for quarterly action tracker analysis in the Sabia Group HRBP recovery portfolio.",
+      "schema": {
+        "fields": [
+          {
+            "name": "Quarter",
+            "description": "Business quarter represented as Q1, Q2, Q3, or Q4.",
+            "type": "string"
+          },
+          {
+            "name": "Action_ID",
+            "description": "Unique identifier for the action record.",
+            "type": "id"
+          },
+          {
+            "name": "Action",
+            "description": "Action field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Owner",
+            "description": "Owner field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Status",
+            "description": "Current status of the record, action, case, or metric.",
+            "type": "string"
+          },
+          {
+            "name": "Planned_End",
+            "description": "Planned End field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Evidence_File",
+            "description": "Evidence File field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "quarterly_roadmap.csv",
+      "description": "Synthetic practice table for quarterly roadmap analysis in the Sabia Group HRBP recovery portfolio.",
+      "schema": {
+        "fields": [
+          {
+            "name": "Quarter",
+            "description": "Business quarter represented as Q1, Q2, Q3, or Q4.",
+            "type": "string"
+          },
+          {
+            "name": "Phase",
+            "description": "Phase field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Business_Context",
+            "description": "Business Context field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Scope",
+            "description": "Scope field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Key_Actions",
+            "description": "Key Actions field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Approval_Gate",
+            "description": "Approval Gate field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Decision",
+            "description": "Decision field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "quarterly_scorecard.csv",
+      "description": "Synthetic practice table for quarterly scorecard analysis in the Sabia Group HRBP recovery portfolio.",
+      "schema": {
+        "fields": [
+          {
+            "name": "Metric",
+            "description": "Name of the KPI or analytical measure.",
+            "type": "string"
+          },
+          {
+            "name": "Unit",
+            "description": "Unit of measurement used for the metric.",
+            "type": "string"
+          },
+          {
+            "name": "Q1",
+            "description": "Q1 field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "numeric"
+          },
+          {
+            "name": "Q2",
+            "description": "Q2 field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "numeric"
+          },
+          {
+            "name": "Q3",
+            "description": "Q3 field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "numeric"
+          },
+          {
+            "name": "Q4",
+            "description": "Q4 field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "numeric"
+          },
+          {
+            "name": "Annual_Target",
+            "description": "Annual Target field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Q4_Status",
+            "description": "Q4 Status categorical value used to classify the record.",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "recruitment_funnel.csv",
+      "description": "Synthetic practice table for recruitment funnel analysis in the Sabia Group HRBP recovery portfolio.",
+      "schema": {
+        "fields": [
+          {
+            "name": "Requisition_ID",
+            "description": "Unique identifier for the requisition record.",
+            "type": "id"
+          },
+          {
+            "name": "Quarter",
+            "description": "Business quarter represented as Q1, Q2, Q3, or Q4.",
+            "type": "string"
+          },
+          {
+            "name": "Department",
+            "description": "Organizational department where the employee is assigned.",
+            "type": "string"
+          },
+          {
+            "name": "Position",
+            "description": "Position field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Critical_Role",
+            "description": "Critical Role field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Open_Date",
+            "description": "Open Date recorded as a calendar date; use the source file format shown in the data.",
+            "type": "datetime"
+          },
+          {
+            "name": "Close_Date",
+            "description": "Close Date recorded as a calendar date; use the source file format shown in the data.",
+            "type": "datetime"
+          },
+          {
+            "name": "Approved_Headcount",
+            "description": "Approved Headcount recorded as a numeric count.",
+            "type": "integer"
+          },
+          {
+            "name": "Applications",
+            "description": "Number of job applications received.",
+            "type": "integer"
+          },
+          {
+            "name": "Screened",
+            "description": "Screened field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "integer"
+          },
+          {
+            "name": "Interviewed",
+            "description": "Interviewed field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "integer"
+          },
+          {
+            "name": "Offers_Made",
+            "description": "Offers Made field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "integer"
+          },
+          {
+            "name": "Offers_Accepted",
+            "description": "Number of employment offers accepted.",
+            "type": "integer"
+          },
+          {
+            "name": "Hires_Joined",
+            "description": "Number of selected candidates who joined.",
+            "type": "integer"
+          },
+          {
+            "name": "Primary_Source",
+            "description": "Primary Source field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Recruitment_Cost_BDT",
+            "description": "Recruitment cost expressed in Bangladeshi taka.",
+            "type": "integer"
+          },
+          {
+            "name": "Time_to_Fill_Days",
+            "description": "Average number of days required to fill a position.",
+            "type": "integer"
+          },
+          {
+            "name": "Hiring_Manager_Satisfaction",
+            "description": "Hiring Manager Satisfaction field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "numeric"
+          },
+          {
+            "name": "90_Day_Retention_Rate",
+            "description": "Share of new hires retained for at least 90 days.",
+            "type": "numeric"
+          }
+        ]
+      }
+    },
+    {
+      "path": "rewards_and_recognition.csv",
+      "description": "Synthetic practice table for rewards and recognition analysis in the Sabia Group HRBP recovery portfolio.",
+      "schema": {
+        "fields": [
+          {
+            "name": "Recognition_ID",
+            "description": "Unique identifier for the recognition record.",
+            "type": "id"
+          },
+          {
+            "name": "Quarter",
+            "description": "Business quarter represented as Q1, Q2, Q3, or Q4.",
+            "type": "string"
+          },
+          {
+            "name": "Employee_ID",
+            "description": "Unique synthetic identifier assigned to each employee.",
+            "type": "id"
+          },
+          {
+            "name": "Department",
+            "description": "Organizational department where the employee is assigned.",
+            "type": "string"
+          },
+          {
+            "name": "Recognition_Type",
+            "description": "Recognition Type categorical value used to classify the record.",
+            "type": "string"
+          },
+          {
+            "name": "Award_Value_BDT",
+            "description": "Award Value BDT recorded as a financial value; currency is BDT unless otherwise stated.",
+            "type": "integer"
+          },
+          {
+            "name": "Business_Impact",
+            "description": "Business Impact field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "risk_register.csv",
+      "description": "Synthetic practice table for risk register analysis in the Sabia Group HRBP recovery portfolio.",
+      "schema": {
+        "fields": [
+          {
+            "name": "Risk_ID",
+            "description": "Unique identifier for the risk record.",
+            "type": "id"
+          },
+          {
+            "name": "Risk",
+            "description": "Risk field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Category",
+            "description": "Category categorical value used to classify the record.",
+            "type": "string"
+          },
+          {
+            "name": "Likelihood",
+            "description": "Likelihood field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Impact",
+            "description": "Impact field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Risk_Score",
+            "description": "Risk Score numeric analytical score or rating.",
+            "type": "integer"
+          },
+          {
+            "name": "Mitigation",
+            "description": "Mitigation field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Owner",
+            "description": "Owner field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Status",
+            "description": "Current status of the record, action, case, or metric.",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "technology_adoption.csv",
+      "description": "Synthetic practice table for technology adoption analysis in the Sabia Group HRBP recovery portfolio.",
+      "schema": {
+        "fields": [
+          {
+            "name": "Month",
+            "description": "Reporting month, generally stored in YYYY-MM or date format.",
+            "type": "datetime"
+          },
+          {
+            "name": "Quarter",
+            "description": "Business quarter represented as Q1, Q2, Q3, or Q4.",
+            "type": "string"
+          },
+          {
+            "name": "Active_Headcount",
+            "description": "Number of active employees in the reporting period.",
+            "type": "integer"
+          },
+          {
+            "name": "HRIS_Registered_Users",
+            "description": "HRIS Registered Users field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "integer"
+          },
+          {
+            "name": "Monthly_Active_Users",
+            "description": "Monthly Active Users field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "integer"
+          },
+          {
+            "name": "Self_Service_Transactions",
+            "description": "Self Service Transactions field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "integer"
+          },
+          {
+            "name": "Paper_Transactions",
+            "description": "Paper Transactions field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "integer"
+          },
+          {
+            "name": "HRIS_Adoption_Rate",
+            "description": "HRIS Adoption Rate expressed as a rate or percentage.",
+            "type": "numeric"
+          },
+          {
+            "name": "Data_Completeness_Rate",
+            "description": "Data Completeness Rate expressed as a rate or percentage.",
+            "type": "numeric"
+          },
+          {
+            "name": "Average_HR_Service_Cost_BDT",
+            "description": "Average HR Service Cost BDT recorded as a financial value; currency is BDT unless otherwise stated.",
+            "type": "integer"
+          }
+        ]
+      }
+    },
+    {
+      "path": "training_records.csv",
+      "description": "Synthetic practice table for training records analysis in the Sabia Group HRBP recovery portfolio.",
+      "schema": {
+        "fields": [
+          {
+            "name": "Training_Record_ID",
+            "description": "Unique identifier for the training record record.",
+            "type": "id"
+          },
+          {
+            "name": "Employee_ID",
+            "description": "Unique synthetic identifier assigned to each employee.",
+            "type": "id"
+          },
+          {
+            "name": "Quarter",
+            "description": "Business quarter represented as Q1, Q2, Q3, or Q4.",
+            "type": "string"
+          },
+          {
+            "name": "Department",
+            "description": "Organizational department where the employee is assigned.",
+            "type": "string"
+          },
+          {
+            "name": "Course_Name",
+            "description": "Course Name text label associated with the record.",
+            "type": "string"
+          },
+          {
+            "name": "Training_Category",
+            "description": "Training Category categorical value used to classify the record.",
+            "type": "string"
+          },
+          {
+            "name": "Training_Date",
+            "description": "Training Date recorded as a calendar date; use the source file format shown in the data.",
+            "type": "datetime"
+          },
+          {
+            "name": "Training_Hours",
+            "description": "Number of training hours completed.",
+            "type": "integer"
+          },
+          {
+            "name": "Assessment_Score",
+            "description": "Training or competency assessment score.",
+            "type": "integer"
+          },
+          {
+            "name": "Completion_Status",
+            "description": "Training completion status.",
+            "type": "string"
+          },
+          {
+            "name": "Certified",
+            "description": "Indicates whether certification was achieved.",
+            "type": "string"
+          },
+          {
+            "name": "Training_Cost_BDT",
+            "description": "Training cost expressed in Bangladeshi taka.",
+            "type": "integer"
+          },
+          {
+            "name": "Provider",
+            "description": "Provider field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "workforce_scenarios.csv",
+      "description": "Synthetic practice table for workforce scenarios analysis in the Sabia Group HRBP recovery portfolio.",
+      "schema": {
+        "fields": [
+          {
+            "name": "Scenario",
+            "description": "Scenario field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Headcount_End_2026",
+            "description": "Headcount End 2026 recorded as a numeric count.",
+            "type": "integer"
+          },
+          {
+            "name": "Annual_Revenue_BDT_M",
+            "description": "Annual Revenue BDT M recorded as a financial value; currency is BDT unless otherwise stated.",
+            "type": "integer"
+          },
+          {
+            "name": "Annual_Operating_Profit_BDT_M",
+            "description": "Annual Operating Profit BDT M recorded as a financial value; currency is BDT unless otherwise stated.",
+            "type": "numeric"
+          },
+          {
+            "name": "Defect_Rate_Q4",
+            "description": "Defect Rate Q4 expressed as a rate or percentage.",
+            "type": "numeric"
+          },
+          {
+            "name": "Business_Sale_Risk",
+            "description": "Business Sale Risk field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          },
+          {
+            "name": "Recommendation",
+            "description": "Recommendation field used in the Sabia Group HRBP synthetic analytics project.",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ]
 }
