@@ -21,7 +21,7 @@
 
 ## Portfolio overview
 
-**Sabia Group HRBP Smartwatch Recovery 2026** is a synthetic HR Business Partner and data analytics portfolio project created by **Musa (Siam Ahmad Musa)**.
+**Sabia Group HRBP Smartwatch Recovery 2026** is a synthetic HR Business Partner and data analytics portfolio project created by **Musa ( Musa)**.
 
 The project simulates a Bangladesh-based smartwatch manufacturing company facing workforce, quality, productivity and financial challenges. It demonstrates how HRBP decisions can be connected with production and financial outcomes through Excel, Power BI, Python, SQL and SQLite.
 
@@ -206,7 +206,7 @@ Protected characteristics such as gender, age, religion, disability, pregnancy, 
 
 ## Author
 
-**Musa — Siam Ahmad Musa**  
+**Musa —  Musa**  
 HRBP | HR & Data Analytics Practitioner  
 Bangladesh
 
