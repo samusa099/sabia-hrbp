@@ -31,11 +31,13 @@ jobs:
           done
 
       - name: Reassemble and extract prepared project
+        id: payload
+        continue-on-error: true
         shell: bash
         run: |
           python - <<'PY'
           from pathlib import Path
-          import base64
+          import base64, hashlib
 
           order = [
               'seed_000.txt', 'seed_001_002.txt', 'seed_003_004.txt',
@@ -48,26 +50,57 @@ jobs:
           encoded = ''.join((seed_dir / name).read_text(encoding='utf-8').strip() for name in order)
           archive = base64.b64decode(encoded, validate=True)
           Path('sabia-project.tar.gz').write_bytes(archive)
-          print('encoded_length=', len(encoded))
-          print('archive_length=', len(archive))
+          lines = [
+              '# Payload diagnostic',
+              f'encoded_length: {len(encoded)}',
+              f'archive_length: {len(archive)}',
+              f'archive_sha256: {hashlib.sha256(archive).hexdigest()}',
+          ]
+          for name in order:
+              data = (seed_dir / name).read_bytes()
+              lines.append(f'{name}: bytes={len(data)} sha256={hashlib.sha256(data).hexdigest()}')
+          Path('payload-diagnostic.txt').write_text('\n'.join(lines) + '\n', encoding='utf-8')
           PY
-          sha256sum sabia-project.tar.gz
-          gzip -t sabia-project.tar.gz
-          tar -xzf sabia-project.tar.gz
+          if gzip -t sabia-project.tar.gz; then
+            echo 'gzip_status: valid' >> payload-diagnostic.txt
+            tar -xzf sabia-project.tar.gz
+          else
+            echo 'gzip_status: invalid' >> payload-diagnostic.txt
+            exit 1
+          fi
+
+      - name: Report payload diagnostic
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          if [ -f payload-diagnostic.txt ] && [ -n "${{ github.event.pull_request.number }}" ]; then
+            gh pr comment "${{ github.event.pull_request.number }}" --body-file payload-diagnostic.txt
+          fi
+
+      - name: Stop if payload is invalid
+        if: steps.payload.outcome == 'failure'
+        run: exit 1
 
       - name: Install project dependencies
+        if: steps.payload.outcome == 'success'
         run: python -m pip install --upgrade pip && python -m pip install -r 07_Python/requirements.txt
 
       - name: Build SQLite database
+        if: steps.payload.outcome == 'success'
         run: python 13_Database_SQL/00_build_database.py
 
       - name: Generate Excel workbooks and previews
+        if: steps.payload.outcome == 'success'
         run: python scripts/generate_binary_artifacts.py
 
       - name: Validate project
+        if: steps.payload.outcome == 'success'
         run: python scripts/validate_project.py
 
       - name: Create permanent validation workflow
+        if: steps.payload.outcome == 'success'
         shell: bash
         run: |
           mkdir -p .github/workflows
@@ -96,9 +129,10 @@ jobs:
           YAML
 
       - name: Commit complete portfolio project to PR branch
+        if: steps.payload.outcome == 'success'
         shell: bash
         run: |
-          rm -rf .seed .bootstrap .payload sabia-project.tar.gz expected-seed-sha256.txt
+          rm -rf .seed .bootstrap .payload sabia-project.tar.gz payload-diagnostic.txt
           rm -f .publish-trigger .github/workflows/publish-seeded-project.yml
           git config user.name 'Musa Portfolio Bot'
           git config user.email 'siam.ahmad.musa574@gmail.com'
