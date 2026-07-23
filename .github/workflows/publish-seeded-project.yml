@@ -1,0 +1,75 @@
+name: Publish prepared Sabia HRBP project
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    if: ${{ hashFiles('.seed/*') != '' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Reassemble prepared project archive
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import base64
+
+          order = [
+              'seed_000.txt',
+              'seed_001_002.txt',
+              'seed_003_004.txt',
+              'seed_005_006.txt',
+              'seed_007_008.txt',
+              'seed_009_010.txt',
+              'seed_011_012.txt',
+              'seed_013_014.txt',
+              'seed_015_016.txt',
+              'seed_017_018.txt',
+              'seed_019_020.txt',
+              'seed_021_022.txt',
+              'seed_023_024.txt',
+          ]
+          seed_dir = Path('.seed')
+          missing = [name for name in order if not (seed_dir / name).exists()]
+          if missing:
+              raise SystemExit(f'Missing payload segments: {missing}')
+          encoded = ''.join((seed_dir / name).read_text(encoding='utf-8').strip() for name in order)
+          archive = base64.b64decode(encoded, validate=True)
+          Path('sabia-project.tar.gz').write_bytes(archive)
+          PY
+          echo '54974f272af47ab663975269477cd66e53e47448d34c62c47699f73b62dd0b9b  sabia-project.tar.gz' | sha256sum --check
+          tar -xzf sabia-project.tar.gz
+
+      - name: Install project dependencies
+        run: python -m pip install --upgrade pip && python -m pip install -r 07_Python/requirements.txt
+
+      - name: Build SQLite database
+        run: python 13_Database_SQL/00_build_database.py
+
+      - name: Generate Excel workbooks and previews
+        run: python scripts/generate_binary_artifacts.py
+
+      - name: Validate project
+        run: python scripts/validate_project.py
+
+      - name: Commit complete portfolio project
+        shell: bash
+        run: |
+          rm -rf .seed .bootstrap .payload sabia-project.tar.gz
+          rm -f .github/workflows/publish-seeded-project.yml
+          git config user.name 'Musa Portfolio Bot'
+          git config user.email 'siam.ahmad.musa574@gmail.com'
+          git add -A
+          git commit -m 'Publish complete Sabia HRBP analytics portfolio project'
+          git push origin main
