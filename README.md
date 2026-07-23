@@ -1,5 +1,6 @@
 <p align="center">
-  <img src="assets/sabia-hrbp-cover.png" alt="Sabia Group HRBP Smartwatch Recovery 2026" width="100%">
+  <img width="1672" height="941" alt="aifaceswap-60eaec7587f5c48324cf4824d08cd3b5" src="https://github.com/user-attachments/assets/f4b85747-bb69-45d6-b22f-bebe611aef72" />
+
 </p>
 
 <h1 align="center">Sabia Group HRBP Smartwatch Recovery 2026</h1>
