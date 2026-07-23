@@ -1,8 +1,23 @@
 # Sabia Group HRBP Smartwatch Recovery 2026
 
-[![Validate project](https://github.com/samusa099/sabia-hrbp/actions/workflows/validate-project.yml/badge.svg)](https://github.com/samusa099/sabia-hrbp/actions/workflows/validate-project.yml)
-
 ![Sabia HRBP Recovery cover](assets/sabia-hrbp-cover.png)
+
+<p align="center">
+  <a href="https://github.com/samusa099/sabia-hrbp/actions/workflows/validate-project.yml"><img src="https://github.com/samusa099/sabia-hrbp/actions/workflows/validate-project.yml/badge.svg" alt="Live"></a>
+  <img src="https://img.shields.io/badge/Project-Live-2ea44f?style=flat-square&logo=github" alt="Project Live">
+  <img src="https://img.shields.io/badge/Portfolio-HRBP%20%2B%20Data%20Analytics-0A66C2?style=flat-square" alt="HRBP and Data Analytics Portfolio">
+  <img src="https://img.shields.io/badge/Data-Synthetic%20Practice-orange?style=flat-square&logo=databricks" alt="Synthetic Practice Data">
+  <img src="https://img.shields.io/badge/Location-Bangladesh-006A4E?style=flat-square" alt="Bangladesh">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.11-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.11">
+  <img src="https://img.shields.io/badge/SQL-Analytics-336791?style=flat-square&logo=postgresql&logoColor=white" alt="SQL Analytics">
+  <img src="https://img.shields.io/badge/SQLite-Database-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite Database">
+  <img src="https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?style=flat-square&logo=powerbi&logoColor=black" alt="Power BI Dashboard">
+  <img src="https://img.shields.io/badge/Excel-Analytics-217346?style=flat-square&logo=microsoftexcel&logoColor=white" alt="Excel Analytics">
+  <img src="https://img.shields.io/badge/Kaggle-Ready-20BEFF?style=flat-square&logo=kaggle&logoColor=white" alt="Kaggle Ready">
+</p>
 
 ## Portfolio overview
 
@@ -21,7 +36,7 @@ The project simulates a Bangladesh-based smartwatch manufacturing company facing
 - SQL and SQLite database layer: complete
 - Power BI documentation and DAX guidance: complete
 - Kaggle dataset and notebook assets: complete
-- GitHub Actions validation: enabled
+- GitHub Actions validation: live
 - Missing or invalid employee join dates: filtered during cleaning and reported through validation controls
 
 ## Executive case
