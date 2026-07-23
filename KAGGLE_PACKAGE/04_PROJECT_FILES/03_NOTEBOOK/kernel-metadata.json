@@ -1,0 +1,16 @@
+{
+  "id": "samusahr/sabia-group-hrbp-smartwatch-recovery-analysis",
+  "title": "Sabia Group HRBP Smartwatch Recovery Analysis",
+  "code_file": "Sabia_Group_HRBP_Recovery_EDA.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_internet": false,
+  "dataset_sources": [
+    "samusahr/sabia-group-hrbp-smartwatch-recovery-2026"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

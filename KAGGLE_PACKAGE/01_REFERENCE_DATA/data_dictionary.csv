@@ -1,0 +1,14 @@
+﻿Table,Grain,Primary_Key,Purpose,PowerBI_Role
+Employee_Master,One row per employee,Employee_ID,"Workforce, cost, demographic, skill and status analysis",Dimension
+Layoff_and_Restructuring,One row per role/employee affected,Restructuring_ID,"Workforce reset, savings, risk and ethical control",Fact
+Recruitment_Funnel,One row per requisition,Requisition_ID,"Hiring speed, funnel conversion, cost and quality",Fact
+Training_Records,One row per employee-course event,Training_Record_ID,"Learning, certification, hours and cost",Fact
+Performance_Quarterly,One row per employee-quarter,Performance_Record_ID,"Goal, quality, behaviour and review completion",Fact
+Attendance_Monthly,One row per department-month,Month + Department,"Absence, overtime, lateness and safety",Fact
+Production_Monthly,One row per line-month,Month + Production_Line,"Output, yield, defect, rework and productivity",Fact
+Financial_Impact_Monthly,One row per month,Month,"Revenue, cost, profit and sale-risk recovery",Fact
+HR_Service_Tickets,One row per HR ticket,Ticket_ID,"SLA, cost and employee satisfaction",Fact
+Employee_Relations_Cases,One row per ER case,Case_ID,"Case volume, severity and closure SLA",Fact
+Technology_Adoption,One row per month,Month,"HRIS adoption, transactions and data quality",Fact
+Quarterly_Scorecard,One row per KPI,Metric,Q1-Q4 executive transformation outcomes,Summary
+HR_Pillar_Scores,One row per HR pillar,Pillar,Pillar maturity progression,Summary

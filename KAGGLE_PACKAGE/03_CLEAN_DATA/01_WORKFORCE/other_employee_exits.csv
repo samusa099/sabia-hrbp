@@ -1,0 +1,9 @@
+﻿Exit_ID,Employee_ID,Exit_Date,Exit_Quarter,Department,Position,Tenure_Months,Exit_Reason,Regrettable_Exit,Exit_Interview_Completed,Knowledge_Transfer_Completed
+EX-001,SG-21010121834,2026-05-10,Q2,Smartwatch Production,Assembly Operator,89,Better opportunity,No,Yes,Yes
+EX-002,SG-22022072001,2026-09-10,Q3,Quality Assurance,Quality Inspector,74,Higher study,No,No,No
+EX-003,SG-21021101936,2026-07-31,Q3,Smartwatch Production,Precision Assembly Technician,81,Performance separation,No,Yes,Yes
+EX-004,SG-24020071903,2026-10-07,Q4,Research and Development,Product Test Engineer,87,Higher study,No,Yes,Yes
+EX-005,SG-22006072614,2026-10-08,Q4,Quality Assurance,Quality Inspector,3,Higher study,No,Yes,Yes
+EX-006,SG-23026031803,2026-04-30,Q2,Engineering and Maintenance,Automation Technician,97,Relocation,No,Yes,No
+EX-007,SG-29026052403,2026-09-04,Q3,Sales Distribution and Service,Distribution Executive,27,Better opportunity,No,Yes,Yes
+EX-008,SG-28012122402,2026-12-12,Q4,IT Data and HRIS,HRIS Analyst,24,Higher study,No,Yes,No
