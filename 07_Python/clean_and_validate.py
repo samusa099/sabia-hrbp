@@ -51,6 +51,7 @@ emp["District"] = emp["District"].replace({"": None}).fillna("Unknown")
 emp["Skill_Level"] = emp["Skill_Level"].replace({"": None}).fillna("Not Assessed")
 emp = emp.drop_duplicates(subset=["Employee_ID"], keep="first")
 assert emp["Employee_ID"].is_unique
+emp = emp[emp["Join_Date"].notna()]
 assert emp["Join_Date"].notna().all()
 emp.to_csv(OUT / "employee_master_cleaned.csv", index=False)
 
