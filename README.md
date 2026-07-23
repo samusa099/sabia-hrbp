@@ -9,19 +9,27 @@
 <br>
 
 <a href="https://github.com/samusa099/sabia-hrbp/actions/workflows/validate-project.yml"><img src="https://github.com/samusa099/sabia-hrbp/actions/workflows/validate-project.yml/badge.svg" alt="Live validation"></a>
-<img src="https://img.shields.io/badge/Project-Live-2ea44f?style=for-the-badge&logo=github" alt="Project live">
-<img src="https://img.shields.io/badge/Portfolio-HRBP%20%2B%20Data%20Analytics-0A66C2?style=for-the-badge" alt="HRBP and data analytics portfolio">
-<img src="https://img.shields.io/badge/Data-Synthetic%20Practice-F59E0B?style=for-the-badge&logo=databricks&logoColor=white" alt="Synthetic practice data">
+<img src="https://img.shields.io/badge/data-synthetic%20%7C%20tabular-625BEB" alt="Synthetic tabular data">
+<img src="https://img.shields.io/badge/context-Bangladesh-1E8E5A" alt="Bangladesh context">
+<img src="https://img.shields.io/badge/coverage-Q1%E2%80%93Q4%202026-F36B21" alt="Q1 to Q4 2026 coverage">
+<img src="https://img.shields.io/badge/domain-HRBP%20%7C%20Manufacturing-0A66C2" alt="HRBP and manufacturing">
+<img src="https://img.shields.io/badge/status-live-2EA44F" alt="Project live">
 
 <br>
 
-<img src="https://img.shields.io/badge/Python-3.11-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python 3.11">
-<img src="https://img.shields.io/badge/SQL-Analytics-336791?style=flat-square&logo=postgresql&logoColor=white" alt="SQL analytics">
-<img src="https://img.shields.io/badge/SQLite-Database-003B57?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite database">
-<img src="https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?style=flat-square&logo=powerbi&logoColor=black" alt="Power BI dashboard">
-<img src="https://img.shields.io/badge/Excel-Analytics-217346?style=flat-square&logo=microsoftexcel&logoColor=white" alt="Excel analytics">
-<img src="https://img.shields.io/badge/Kaggle-Ready-20BEFF?style=flat-square&logo=kaggle&logoColor=white" alt="Kaggle ready">
-<img src="https://img.shields.io/badge/Location-Bangladesh-006A4E?style=flat-square" alt="Bangladesh">
+<img src="https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white" alt="Python 3.11 plus">
+<img src="https://img.shields.io/badge/SQL-analytics-336791?logo=postgresql&logoColor=white" alt="SQL analytics">
+<img src="https://img.shields.io/badge/SQLite-ready-003B57?logo=sqlite&logoColor=white" alt="SQLite ready">
+<img src="https://img.shields.io/badge/Power%20BI-ready-F2C811?logo=powerbi&logoColor=black" alt="Power BI ready">
+<img src="https://img.shields.io/badge/Excel-Power%20Query%20%7C%20Power%20Pivot-217346?logo=microsoftexcel&logoColor=white" alt="Excel Power Query and Power Pivot">
+<img src="https://img.shields.io/badge/Kaggle-published-20BEFF?logo=kaggle&logoColor=white" alt="Kaggle published">
+<img src="https://img.shields.io/badge/license-MIT-lightgrey" alt="MIT License">
+
+<br><br>
+
+<a href="https://github.com/samusa099/sabia-hrbp"><strong>GitHub Repository</strong></a>
+&nbsp;·&nbsp;
+<a href="https://www.kaggle.com/datasets/samusahr/sabia-hrbp-analytics"><strong>Kaggle Dataset</strong></a>
 
 <br><br>
 
@@ -33,7 +41,7 @@
 
 ## Quick navigation
 
-[Overview](#portfolio-overview) · [Business case](#executive-business-case) · [Transformation](#q1q4-transformation-journey) · [Analytics](#analytics-capabilities) · [Workflow](#data-cleaning-and-validation-workflow) · [Database](#database-and-sql-layer) · [Folder map](#repository-map) · [Wiki](#project-wiki) · [Ethics](#ethics-and-limitations) · [Author](#author)
+[Overview](#portfolio-overview) · [Business case](#executive-business-case) · [Transformation](#q1q4-transformation-journey) · [Analytics](#analytics-capabilities) · [Workflow](#data-cleaning-and-validation-workflow) · [Database](#database-and-sql-layer) · [Repository map](#repository-map) · [Wiki](#project-wiki) · [Ethics](#ethics-and-limitations) · [Author](#author)
 
 ---
 
@@ -76,7 +84,7 @@ This is not only a dashboard or data-cleaning exercise. It is a complete busines
 | Python cleaning and validation | ✅ Complete |
 | SQL and SQLite layer | ✅ Complete |
 | Power BI model and DAX guidance | ✅ Complete |
-| Kaggle dataset and notebook assets | ✅ Complete |
+| Kaggle dataset and notebook assets | ✅ Published |
 | GitHub Actions validation | ✅ Live |
 | Required join-date validation | ✅ Controlled and reported |
 
