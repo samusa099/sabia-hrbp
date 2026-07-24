@@ -196,10 +196,39 @@ flowchart TB
 
 ## 🗂️ Repository structure
 
-<details open>
-<summary><strong>View project structure</strong></summary>
+```mermaid
+flowchart TB
+    ROOT["sabia-hrbp/"]
 
-<br>
+    ROOT --> AUTO[".github/workflows<br/>CI validation"]
+    ROOT --> ASSETS["assets/<br/>Cover and visuals"]
+    ROOT --> MASTER["00_Master/<br/>Excel master model"]
+
+    ROOT --> PHASES["Q1–Q4 transformation phases"]
+    PHASES --> Q1["01_Q1_Plan_and_Reset/"]
+    PHASES --> Q2["02_Q2_Controlled_Pilot/"]
+    PHASES --> Q3["03_Q3_Scale_and_Stabilize/"]
+    PHASES --> Q4["04_Q4_Full_Rollout/"]
+
+    ROOT --> DATA["Data layers"]
+    DATA --> RAW["05_Raw_Data/<br/>Messy practice data"]
+    DATA --> CLEAN["06_Clean_Data/<br/>Analysis-ready data"]
+
+    ROOT --> ANALYTICS["Analytics tools"]
+    ANALYTICS --> PY["07_Python/"]
+    ANALYTICS --> PBI["08_PowerBI/"]
+    ANALYTICS --> LOOKER["09_Looker_Studio/"]
+    ANALYTICS --> KAGGLE["10_Kaggle/"]
+    ANALYTICS --> SQL["13_Database_SQL/"]
+
+    ROOT --> DOCS["Documentation"]
+    DOCS --> PROJECTDOCS["11_Documentation/"]
+    DOCS --> WIKI["wiki/"]
+    DOCS --> GOV["CONTRIBUTING · CODE_OF_CONDUCT · SECURITY"]
+```
+
+<details>
+<summary><strong>View repository directory guide</strong></summary>
 
 | Area | Path | Purpose |
 |---|---|---|
