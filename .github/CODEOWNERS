@@ -1,0 +1,15 @@
+# Default ownership for repository changes
+* @samusa099
+
+# Security-sensitive configuration
+/.github/ @samusa099
+/SECURITY.md @samusa099
+
+# Analytics code and data pipelines
+/07_Python/ @samusa099
+/13_Database_SQL/ @samusa099
+/scripts/ @samusa099
+
+# BI and release assets
+/08_PowerBI/ @samusa099
+/RELEASE_NOTES.md @samusa099
