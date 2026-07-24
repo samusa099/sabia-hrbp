@@ -6,9 +6,17 @@ on:
   pull_request:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   validate:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -17,9 +25,13 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: 07_Python/requirements.txt
 
       - name: Install Python requirements
-        run: python -m pip install -r 07_Python/requirements.txt
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r 07_Python/requirements.txt
 
       - name: Run raw-data cleaning workflow
         run: python 07_Python/clean_and_validate.py
