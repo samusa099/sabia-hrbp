@@ -37,6 +37,12 @@
   <a href="#-data-ethics">Ethics</a>
 </p>
 
+<p align="center">
+  <strong>📌 Pinned documents:</strong>
+  <a href="CODE_OF_CONDUCT.md">Code of Conduct</a> ·
+  <a href="DATASET_USAGE_GUIDE.md">Dataset Usage Guide</a>
+</p>
+
 ---
 
 ## ✨ Overview
@@ -240,6 +246,7 @@ All people, entities, events, production results and financial values are **fict
 </p>
 
 <p align="center">
+  <a href="CODE_OF_CONDUCT.md">Code of Conduct</a> ·
   <a href="DATASET_USAGE_GUIDE.md">Dataset Usage Guide</a> ·
   <a href="13_Database_SQL/README_DATABASE_SQL.md">SQL & Database Guide</a> ·
   <a href="08_PowerBI/POWER_BI_AND_OTHER_BI_USAGE_GUIDE.md">Power BI Guide</a> ·
