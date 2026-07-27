@@ -96,25 +96,15 @@ The complete calculation formulas, workflows, use cases and platform instruction
 ## 🧱 Analytics architecture
 
 ```mermaid
-flowchart TB
-    A["Synthetic HR, production and financial files"]
-    B["Cleaning and validation<br/>Excel · Python · SQL"]
-    C["Clean analytical tables and audits"]
-    D["SQLite database"]
-    E["Excel master model"]
-    F["Power BI dashboards"]
-    G["SQL analysis"]
-    H["Python EDA"]
-    I["Kaggle publishing"]
-
-    A --> B --> C
-    C --> D
-    C --> E
-    D --> F
-    D --> G
-    D --> H
+%%{init: {"flowchart": {"nodeSpacing": 18, "rankSpacing": 24, "curve": "linear"}}}%%
+flowchart LR
+    A["Synthetic HR, production<br/>and financial files"] --> B["Cleaning and validation<br/>Excel · Python · SQL"] --> C["Clean analytical<br/>tables and audits"]
+    C --> D["Excel master model"]
+    C --> E["SQLite database"]
+    D --> F["Power BI dashboards"]
     E --> F
-    H --> I
+    E --> G["SQL analysis"]
+    E --> H["Python EDA"] --> I["Kaggle publishing"]
 ```
 
 ---
