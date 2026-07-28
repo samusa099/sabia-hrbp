@@ -1,0 +1,82 @@
+name: Portfolio Security
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@f548e57e544e1ff5a4c46bf1e1b8685f8e4a348a
+        with: {fetch-depth: 0, persist-credentials: false}
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with: {python-version: '3.12'}
+      - name: Gitleaks
+        run: |
+          set -euo pipefail
+          go install github.com/gitleaks/gitleaks/v8@v8.28.0
+          "$(go env GOPATH)/bin/gitleaks" git --redact --verbose
+      - name: Dependency audit
+        run: |
+          set -euo pipefail
+          python -m pip install --disable-pip-version-check pip-audit==2.9.0
+          [ ! -f requirements.txt ] || pip-audit -r requirements.txt
+          [ ! -f pyproject.toml ] || pip-audit .
+          [ ! -f package-lock.json ] || npm audit --audit-level=high
+      - name: Validate repository data files
+        run: |
+          python - <<'PY'
+          import csv,json,pathlib,sys,tarfile,zipfile
+          root=pathlib.Path('.').resolve(); errors=[]; prefixes=('=','+','-','@','\t','\r')
+          for p in pathlib.Path('.').rglob('*'):
+            if '.git' in p.parts: continue
+            try: p.resolve().relative_to(root)
+            except Exception: errors.append(f'Path escapes repository: {p}')
+            if p.is_symlink():
+              try: p.resolve().relative_to(root)
+              except Exception: errors.append(f'Unsafe symlink: {p}')
+            if not p.is_file(): continue
+            s=p.suffix.lower()
+            if s in {'.zip','.xlsx','.xlsm'}:
+              try:
+                with zipfile.ZipFile(p) as z:
+                  names=z.namelist()
+                  if s in {'.xlsx','.xlsm'} and not {'[Content_Types].xml','xl/workbook.xml'}.issubset(names): errors.append(f'Invalid XLSX: {p}')
+                  for n in names:
+                    q=pathlib.PurePosixPath(n)
+                    if q.is_absolute() or '..' in q.parts: errors.append(f'Archive traversal: {p} -> {n}')
+              except Exception as e: errors.append(f'Unreadable archive {p}: {e}')
+            if s=='.ipynb':
+              try:
+                nb=json.loads(p.read_text(encoding='utf-8'))
+                for i,c in enumerate(nb.get('cells',[]),1):
+                  if c.get('cell_type')=='code' and (c.get('execution_count') is not None or c.get('outputs')): errors.append(f'Notebook not cleared: {p} cell {i}')
+                  src=''.join(c.get('source',[])).lower()
+                  if any(x in src for x in ('api_key=','password=','secret=','token=')): errors.append(f'Possible notebook credential: {p} cell {i}')
+              except Exception as e: errors.append(f'Invalid notebook {p}: {e}')
+            if s=='.csv':
+              try:
+                with p.open(encoding='utf-8-sig',newline='') as f:
+                  for r,row in enumerate(csv.reader(f),1):
+                    for c,v in enumerate(row,1):
+                      if v and v[0] in prefixes: errors.append(f'CSV formula risk: {p}:{r}:{c}')
+              except Exception as e: errors.append(f'Unreadable CSV {p}: {e}')
+          if errors:
+            print('\n'.join(f'::error::{e}' for e in errors)); sys.exit(1)
+          PY
+  codeql:
+    permissions: {contents: read, security-events: write}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@f548e57e544e1ff5a4c46bf1e1b8685f8e4a348a
+        with: {persist-credentials: false}
+      - uses: github/codeql-action/init@18420e3271f74589575af831a523c833acda327f
+        with: {languages: python}
+      - uses: github/codeql-action/analyze@18420e3271f74589575af831a523c833acda327f
