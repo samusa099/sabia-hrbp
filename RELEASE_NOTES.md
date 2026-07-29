@@ -76,14 +76,18 @@ numpy>=2.5.1
 jupyter>=1.1.1
 ```
 
-#### GitHub Actions
+#### GitHub Actions — pinned state at publication
 
-```text
-Python validation runtime: 3.12
-actions/checkout: v7
-actions/setup-python: v7
-github/codeql-action: v4
-```
+| Component | Pinned release | Workflow scope |
+|---|---|---|
+| Python runtime | 3.12 | `validate-project.yml` |
+| Python runtime | 3.11 | `update-kaggle-metadata.yml` |
+| `actions/checkout` | v4.2.2 | `codeql.yml`, `validate-project.yml`, `portfolio-security.yml`, `update-kaggle-metadata.yml` |
+| `actions/checkout` | v7.0.1 | `validate-case-submission.yml` |
+| `actions/setup-python` | v7.0.0 | `validate-project.yml`, `update-kaggle-metadata.yml` |
+| `github/codeql-action` | v3.37.3 | `codeql.yml`, `portfolio-security.yml` |
+
+All third-party actions are referenced by immutable commit SHA. The release labels above are human-readable annotations for the exact workflow state published with v1.3.0.
 
 Related Dependabot updates were reviewed, consolidated into `main`, and superseded pull requests were closed.
 
