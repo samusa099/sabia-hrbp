@@ -25,6 +25,15 @@ This case converts the existing Sabia HRBP analytics project into a **controlled
 5. Follow `SUBMISSION_REQUIREMENTS.md` and the repository submission workflow.
 6. Use `RUBRIC.md` before opening a pull request.
 
+## Protected submission flow
+
+```mermaid
+flowchart LR
+    A["Fork repository"] --> B["Create submission branch"] --> C["Add files only under<br/>submissions/username/submission-id/"] --> D["Open pull request"] --> E["Automated scope and security checks"] --> F["Maintainer review"]
+```
+
+Direct changes to the official case, data, workflows, analytical assets or governance files are not part of a participant submission.
+
 ## Evidence discipline
 
 Every material claim must be classified as one of:
