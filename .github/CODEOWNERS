@@ -5,11 +5,23 @@
 /.github/ @samusa099
 /SECURITY.md @samusa099
 
-# Analytics code and data pipelines
+# Official case and participant submissions
+/case-study/ @samusa099
+/submissions/ @samusa099
+
+# Analytics code, source data and pipelines
+/00_Master/ @samusa099
+/01_Q1_Plan_and_Reset/ @samusa099
+/02_Q2_Controlled_Pilot/ @samusa099
+/03_Q3_Scale_and_Stabilize/ @samusa099
+/04_Q4_Full_Rollout/ @samusa099
+/05_Raw_Data/ @samusa099
+/06_Clean_Data/ @samusa099
 /07_Python/ @samusa099
 /13_Database_SQL/ @samusa099
 /scripts/ @samusa099
 
-# BI and release assets
+# BI, publishing and release assets
 /08_PowerBI/ @samusa099
+/10_Kaggle/ @samusa099
 /RELEASE_NOTES.md @samusa099
