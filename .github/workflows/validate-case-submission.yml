@@ -1,0 +1,89 @@
+name: Validate participant submission scope
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate-submission:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Validate path, file and content policy
+        env:
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+          HEAD_REF: ${{ github.head_ref }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+
+          if [[ "$HEAD_REF" != submission/* ]]; then
+            echo "Maintainer branch detected; participant-only scope enforcement skipped."
+            exit 0
+          fi
+
+          mapfile -t files < <(git diff --name-only "$BASE_SHA" "$HEAD_SHA")
+          [[ ${#files[@]} -gt 0 ]] || { echo "REJECTED: no changed files."; exit 1; }
+
+          root="submissions/${PR_AUTHOR}/"
+          submission_dirs=()
+          total=0
+
+          for file in "${files[@]}"; do
+            [[ "$file" == "$root"* ]] || {
+              echo "REJECTED: Participant submissions may modify only ${root}<submission-id>/"
+              echo "Unauthorized change detected: $file"
+              exit 1
+            }
+
+            rel="${file#${root}}"
+            submission_id="${rel%%/*}"
+            [[ -n "$submission_id" && "$rel" == */* ]] || { echo "REJECTED: invalid submission path: $file"; exit 1; }
+            submission_dirs+=("${root}${submission_id}")
+
+            ext="${file##*.}"
+            case "${ext,,}" in md|pdf|ipynb|png) ;; *) echo "REJECTED: blocked file type: $file"; exit 1 ;; esac
+
+            [[ -f "$file" ]] || continue
+            size=$(stat -c%s "$file")
+            total=$((total + size))
+            case "${ext,,}" in
+              pdf)   (( size <= 15728640 )) || { echo "REJECTED: PDF exceeds 15 MB: $file"; exit 1; } ;;
+              ipynb) (( size <= 5242880 ))  || { echo "REJECTED: notebook exceeds 5 MB: $file"; exit 1; } ;;
+              png)   (( size <= 3145728 ))  || { echo "REJECTED: image exceeds 3 MB: $file"; exit 1; } ;;
+            esac
+          done
+
+          (( total <= 26214400 )) || { echo "REJECTED: submission exceeds 25 MB total."; exit 1; }
+
+          mapfile -t unique_dirs < <(printf '%s\n' "${submission_dirs[@]}" | sort -u)
+          [[ ${#unique_dirs[@]} -eq 1 ]] || { echo "REJECTED: one pull request must contain one submission."; exit 1; }
+          dir="${unique_dirs[0]}"
+          [[ -f "$dir/README.md" ]] || { echo "REJECTED: missing $dir/README.md"; exit 1; }
+          [[ -f "$dir/report.pdf" ]] || { echo "REJECTED: missing $dir/report.pdf"; exit 1; }
+
+          while IFS= read -r notebook; do
+            python -m json.tool "$notebook" >/dev/null || { echo "REJECTED: invalid notebook JSON: $notebook"; exit 1; }
+          done < <(find "$dir" -type f -name '*.ipynb')
+
+          if grep -RInE --exclude='report.pdf' --exclude='*.png' \
+            '(BEGIN (RSA|OPENSSH|EC) PRIVATE KEY|AKIA[0-9A-Z]{16}|gh[pousr]_[A-Za-z0-9_]{20,}|kaggle\.json|api[_-]?token|client[_-]?secret)' "$dir"; then
+            echo "REJECTED: possible credential or secret detected."
+            exit 1
+          fi
+
+          if find "$dir" -type f \( -iname '*.csv' -o -iname '*.xlsx' -o -iname '*.xls' -o -iname '*.pbix' -o -iname '*.zip' -o -iname '*.7z' -o -iname '*.env' -o -iname '*.pem' -o -iname '*.key' \) | grep -q .; then
+            echo "REJECTED: blocked dataset, binary or credential file detected."
+            exit 1
+          fi
+
+          echo "Submission scope and file policy validation passed."
