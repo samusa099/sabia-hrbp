@@ -5,15 +5,19 @@ updates:
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 5
-    labels:
-      - "dependencies"
-      - "security"
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 5
-    labels:
-      - "dependencies"
-      - "security"
+    groups:
+      codeql-components:
+        patterns:
+          - "github/codeql-action/*"
+    ignore:
+      # v2+ switches this workflow from GitHub Models to Copilot CLI and
+      # requires a separate installation/authentication migration.
+      - dependency-name: "actions/ai-inference"
+        update-types:
+          - "version-update:semver-major"
