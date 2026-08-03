@@ -1,0 +1,21 @@
+name: "Sabia HRBP CodeQL Configuration"
+
+queries:
+  - uses: security-extended
+
+paths:
+  - 07_Python
+  - 08_PowerBI
+  - 10_Kaggle
+  - 13_Database_SQL
+  - scripts
+
+paths-ignore:
+  - "**/*.ipynb"
+  - "**/*.csv"
+  - "**/*.xlsx"
+  - "**/*.xls"
+  - "**/*.pbix"
+  - "data/**"
+  - "docs/**"
+  - "reports/**"
