@@ -1,4 +1,4 @@
-name: "Mokhles HR Analytics CodeQL Configuration"
+name: "Sabia HRBP CodeQL Configuration"
 
 queries:
   - uses: security-extended
