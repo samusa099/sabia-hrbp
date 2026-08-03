@@ -4,10 +4,11 @@ queries:
   - uses: security-extended
 
 paths:
-  - src
+  - 07_Python
+  - 08_PowerBI
+  - 10_Kaggle
+  - 13_Database_SQL
   - scripts
-  - tests
-  - packages/kaggle/structured_workspace/12_SCRIPTS
 
 paths-ignore:
   - "**/*.ipynb"
