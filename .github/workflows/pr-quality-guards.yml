@@ -2,7 +2,7 @@ name: PR Quality Guards
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
+    types: [opened, synchronize, reopened, ready_for_review, edited]
 
 permissions:
   contents: read
@@ -24,11 +24,53 @@ jobs:
           fetch-depth: 0
       - uses: chris-rutkowski/duplicate-guard@01e2af7b15e45e2ef66d65786a0b73855232748f # v1.0.2
 
+  branch-name-validator:
+    name: Naming conventions / Branch
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Validate branch name
+        shell: python
+        env:
+          HEAD_REF: ${{ github.head_ref }}
+        run: |
+          import os
+          import re
+          import sys
+
+          pattern = re.compile(r'^(?:feat|fix|docs|chore|ci|security|refactor|test|build|perf|revert|release|automation|agent|submission|dependabot)(?:/[a-z0-9][a-z0-9._-]*)+$')
+          value = os.environ['HEAD_REF']
+          if not pattern.fullmatch(value):
+              print(f'::error::Branch name does not follow the configured convention: {value}')
+              sys.exit(1)
+          print(f'Branch name is valid: {value}')
+
+  pull-request-name-validator:
+    name: Naming conventions / Pull request
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Validate pull-request title
+        shell: python
+        env:
+          PR_TITLE: ${{ github.event.pull_request.title }}
+        run: |
+          import os
+          import re
+          import sys
+
+          pattern = re.compile(r'^(?:feat|fix|docs|chore|ci|security|refactor|test|build|perf|revert|release)(?:\([a-z0-9._/-]+\))?!?: [^\r\n]+$')
+          value = os.environ['PR_TITLE']
+          if not pattern.fullmatch(value):
+              print(f'::error::Pull-request title does not follow the configured convention: {value}')
+              sys.exit(1)
+          print(f'Pull-request title is valid: {value}')
+
   commit-message-validator:
-    name: Commit Message Validator
-    # Conventional commit messages are a human-contributor policy. Dependency
-    # and automation bots use provider-generated subjects such as "Bump ...".
-    if: github.event.pull_request.draft == false && !endsWith(github.actor, '[bot]')
+    name: Naming conventions / Commits
+    if: github.event.pull_request.draft == false
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -36,18 +78,36 @@ jobs:
         with:
           fetch-depth: 0
       - name: Validate pull-request commit messages
-        shell: bash
+        shell: python
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
           HEAD_SHA: ${{ github.event.pull_request.head.sha }}
         run: |
-          set -euo pipefail
-          pattern='^(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert)(\([a-z0-9._/-]+\))?!?: .+'
-          invalid=0
-          while IFS= read -r subject; do
-            if [[ ! "$subject" =~ $pattern ]]; then
-              echo "::error::Invalid commit message: $subject"
-              invalid=1
-            fi
-          done < <(git log --format=%s "$BASE_SHA..$HEAD_SHA")
-          exit "$invalid"
+          import os
+          import re
+          import subprocess
+          import sys
+
+          pattern = re.compile(r'(?s)^(?:feat|fix|docs|chore|ci|security|refactor|test|build|perf|revert|release)(?:\([a-z0-9._/-]+\))?!?: [^\r\n]+(?:\r?\n.*)?$')
+          base = os.environ['BASE_SHA']
+          head = os.environ['HEAD_SHA']
+          shas = subprocess.check_output(
+              ['git', 'rev-list', '--reverse', f'{base}..{head}'],
+              text=True,
+          ).splitlines()
+
+          invalid = []
+          for sha in shas:
+              message = subprocess.check_output(
+                  ['git', 'show', '-s', '--format=%B', sha],
+                  text=True,
+              ).rstrip('\n')
+              if not pattern.fullmatch(message):
+                  invalid.append((sha[:12], message.splitlines()[0] if message else '<empty>'))
+
+          if invalid:
+              for sha, subject in invalid:
+                  print(f'::error::Invalid commit message ({sha}): {subject}')
+              sys.exit(1)
+
+          print(f'Validated {len(shas)} commit message(s).')
