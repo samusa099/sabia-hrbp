@@ -5,12 +5,26 @@ updates:
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 5
+    commit-message:
+      prefix: "chore"
+    pull-request-branch-name:
+      prefix: "chore"
+      separator: "/"
+      word-separator: "-"
+      branch-name-case: "lowercase"
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 5
+    commit-message:
+      prefix: "chore"
+    pull-request-branch-name:
+      prefix: "chore"
+      separator: "/"
+      word-separator: "-"
+      branch-name-case: "lowercase"
     groups:
       codeql-components:
         patterns:
