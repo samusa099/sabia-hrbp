@@ -26,7 +26,9 @@ jobs:
 
   commit-message-validator:
     name: Commit Message Validator
-    if: github.event.pull_request.draft == false
+    # Conventional commit messages are a human-contributor policy. Dependency
+    # and automation bots use provider-generated subjects such as "Bump ...".
+    if: github.event.pull_request.draft == false && !endsWith(github.actor, '[bot]')
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -39,6 +41,7 @@ jobs:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
           HEAD_SHA: ${{ github.event.pull_request.head.sha }}
         run: |
+          set -euo pipefail
           pattern='^(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert)(\([a-z0-9._/-]+\))?!?: .+'
           invalid=0
           while IFS= read -r subject; do
