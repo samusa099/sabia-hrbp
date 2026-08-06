@@ -6,9 +6,9 @@ updates:
       interval: "weekly"
     open-pull-requests-limit: 5
     commit-message:
-      prefix: "chore"
+      prefix: "chore(deps)"
     pull-request-branch-name:
-      prefix: "chore"
+      prefix: "chore/deps"
       separator: "/"
       word-separator: "-"
       branch-name-case: "lowercase"
@@ -19,9 +19,9 @@ updates:
       interval: "weekly"
     open-pull-requests-limit: 5
     commit-message:
-      prefix: "chore"
+      prefix: "chore(deps)"
     pull-request-branch-name:
-      prefix: "chore"
+      prefix: "chore/deps"
       separator: "/"
       word-separator: "-"
       branch-name-case: "lowercase"
